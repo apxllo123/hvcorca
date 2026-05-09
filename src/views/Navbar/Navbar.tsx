@@ -14,14 +14,16 @@ import { getColorInSequence, hex } from "utils/color3";
 import { px, scale } from "utils/udim2";
 import NavbarTab from "./NavbarTab";
 
-const NAVBAR_SIZE = px(400, 56);
+// 5 tabs × 100px each
+const NAVBAR_SIZE = px(500, 56);
 
 function Navbar() {
 	const theme = useTheme("navbar");
 	const page = useCurrentPage();
 	const isOpen = useAppSelector((state) => state.dashboard.isOpen);
 
-	const alpha = useSpring(PAGE_TO_INDEX[page] / 4, { frequency: 3.9, dampingRatio: 0.76 });
+	// Divide by 5 so alpha spans 0→0.8 across 5 tabs (each tab = 0.2 of navbar width)
+	const alpha = useSpring(PAGE_TO_INDEX[page] / 5, { frequency: 3.9, dampingRatio: 0.76 });
 
 	return (
 		<frame
@@ -41,10 +43,9 @@ function Navbar() {
 			/>
 			<Underglow
 				transparency={theme.glowTransparency}
-				position={alpha.map((a) => a + 0.125)}
-				sequenceColor={alpha.map((a) => getColorInSequence(theme.accentGradient.color, a + 0.125))}
+				position={alpha.map((a) => a + 0.1)}
+				sequenceColor={alpha.map((a) => getColorInSequence(theme.accentGradient.color, a + 0.1))}
 			/>
-
 			{/* Body */}
 			<Fill
 				color={theme.background}
@@ -52,16 +53,15 @@ function Navbar() {
 				radius={8}
 				transparency={theme.transparency}
 			/>
-
 			{/* Accent */}
 			<Canvas
 				size={px(100, 56)}
-				position={alpha.map((a) => scale(math.round(a * 800) / 800, 0))}
+				position={alpha.map((a) => scale(math.round(a * 1000) / 1000, 0))}
 				clipsDescendants
 			>
 				<frame
 					Size={NAVBAR_SIZE}
-					Position={alpha.map((a) => scale(-4 * (math.round(a * 800) / 800), 0))}
+					Position={alpha.map((a) => scale(-5 * (math.round(a * 1000) / 1000), 0))}
 					BackgroundColor3={hex("#FFFFFF")}
 					BorderSizePixel={0}
 				>
@@ -73,16 +73,14 @@ function Navbar() {
 					<uicorner CornerRadius={new UDim(0, 8)} />
 				</frame>
 			</Canvas>
-
 			{/* Overlapping border */}
 			{theme.outlined && <Border Key="border" color={theme.foreground} radius={8} transparency={0.8} />}
-
 			{/* Tabs */}
 			<NavbarTab page={DashboardPage.Home} />
 			<NavbarTab page={DashboardPage.Apps} />
 			<NavbarTab page={DashboardPage.Scripts} />
+			<NavbarTab page={DashboardPage.Misc} />
 			<NavbarTab page={DashboardPage.Options} />
-
 			{/* Effects */}
 			{theme.acrylic && <Acrylic />}
 		</frame>
