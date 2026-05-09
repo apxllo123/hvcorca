@@ -92,9 +92,9 @@ The **Options** page lets you configure theming and UI performance.
 
 &nbsp;
 
-## :sparkling_heart: Support
+## :desktop_computer: Executors
 
-- :performance.
+- Below are verified exectuors that work with my script with minial to no errors. 
 
  - [x] Pottasium
  - [x] Madium
