@@ -1,5 +1,4 @@
 import Roact from "@rbxts/roact";
-import { pure } from "@rbxts/roact-hooked";
 import Canvas from "components/Canvas";
 import * as http from "utils/http";
 import { scale } from "utils/udim2";
@@ -7,12 +6,15 @@ import { BASE_PADDING, BASE_WINDOW_HEIGHT } from "views/Pages/Scripts/constants"
 import Content from "views/Pages/Scripts/Content";
 import ScriptCard from "views/Pages/Scripts/ScriptCard";
 
-async function runScriptFromUrl(url: string, src: string) {
+declare function loadstring(chunk: string, chunkname?: string): [(...args: unknown[]) => unknown, string];
+
+async function runScriptFromUrl(url: string, src: string): Promise<string> {
 	try {
 		const content = await http.get(url);
 		const [fn, err] = loadstring(content, "@" + src);
 		assert(fn, `Failed to call loadstring on Lua script from '${url}': ${err}`);
 		task.defer(fn);
+		return "";
 	} catch (e) {
 		warn(`Failed to run Lua script from '${url}': ${e}`);
 		return "";
@@ -22,11 +24,10 @@ async function runScriptFromUrl(url: string, src: string) {
 function Scripts() {
 	return (
 		<Canvas position={scale(0, 1)} anchor={new Vector2(0, 1)}>
-			{/* Solaris Hub */}
 			<ScriptCard
-				onActivate={() => runScriptFromUrl("https://solarishub.dev/script.lua", "Solaris")}
+				onActivate={() => runScriptFromUrl("https://absent.wtf/AKADMIN.lua", "AKADMIN")}
 				index={4}
-				backgroundImage="rbxassetid://8992292705"
+				backgroundImage="rbxassetid://126623834306744"
 				backgroundImageSize={new Vector2(1023, 682)}
 				dropshadow="rbxassetid://8992292536"
 				dropshadowSize={new Vector2(1.15, 1.25)}
@@ -42,16 +43,13 @@ function Scripts() {
 				}
 				position={scale(0, 0)}
 			>
-				<Content header="Solaris" body="A collection\nof your favorite\nscripts." footer="solarishub.dev" />
+				<Content header="AK ADMIN" body="Universal with 60k+ users!" footer="absent.wtf" />
 			</ScriptCard>
 
-			{/* V.G Hub */}
 			<ScriptCard
-				onActivate={() =>
-					runScriptFromUrl("https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub", "V.G Hub")
-				}
+				onActivate={() => runScriptFromUrl("https://novoline.pro", "Novoline")}
 				index={1}
-				backgroundImage="rbxassetid://8992292381"
+				backgroundImage="rbxassetid://127094516248328"
 				backgroundImageSize={new Vector2(1021, 1023)}
 				dropshadow="rbxassetid://8992291993"
 				dropshadowSize={new Vector2(1.15, 1.25)}
@@ -67,16 +65,13 @@ function Scripts() {
 				}
 				position={scale(0, 1)}
 			>
-				<Content header="V.G Hub" body="Featuring over\n100 games." footer="github.com/1201for" />
+				<Content header="Novoline" body="Keyless Universal by Gladius." footer="novoline.pro" />
 			</ScriptCard>
 
-			{/* CMD-X */}
 			<ScriptCard
-				onActivate={() =>
-					runScriptFromUrl("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", "CMD-X")
-				}
+				onActivate={() => runScriptFromUrl("https://onyxv2.lol/main.lua", "ONYX")}
 				index={5}
-				backgroundImage="rbxassetid://8992291779"
+				backgroundImage="rbxassetid://130072532268670"
 				backgroundImageSize={new Vector2(818, 1023)}
 				dropshadow="rbxassetid://8992291581"
 				dropshadowSize={new Vector2(1.15, 1.4)}
@@ -92,10 +87,9 @@ function Scripts() {
 				}
 				position={scale(0.5, 0)}
 			>
-				<Content header="CMD-X" footer="github.com/CMD-X" />
+				<Content header="ONYX" footer="Made by Biscit" />
 			</ScriptCard>
 
-			{/* Infinite Yield */}
 			<ScriptCard
 				onActivate={() =>
 					runScriptFromUrl(
@@ -118,7 +112,6 @@ function Scripts() {
 				<Content header="Infinite Yield" footer="github.com/EdgeIY" />
 			</ScriptCard>
 
-			{/* Dex Explorer */}
 			<ScriptCard
 				onActivate={() => runScriptFromUrl("https://pastebin.com/raw/mMbsHWiQ", "Dex Explorer")}
 				index={1}
@@ -141,7 +134,6 @@ function Scripts() {
 				<Content header="Dex Explorer" footer="github.com/LorekeeperZinnia" />
 			</ScriptCard>
 
-			{/* Unnamed ESP */}
 			<ScriptCard
 				onActivate={() =>
 					runScriptFromUrl(
@@ -169,7 +161,6 @@ function Scripts() {
 				<Content header="Unnamed ESP" footer="github.com/ic3w0lf22" />
 			</ScriptCard>
 
-			{/* EvoV2 */}
 			<ScriptCard
 				onActivate={() => runScriptFromUrl("https://projectevo.xyz/script/loader.lua", "EvoV2")}
 				index={2}
@@ -199,4 +190,4 @@ function Scripts() {
 	);
 }
 
-export default pure(Scripts);
+export default Scripts;
