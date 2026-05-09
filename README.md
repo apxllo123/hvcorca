@@ -26,8 +26,7 @@ When run with auto-execution, Orca will start minimized by default.
 Runs the latest release build of Orca.
 
 ```lua
-loadstring(
-  game:HttpGetAsync("https://raw.githubusercontent.com/apxllo1/hsorca/master/public/latest.lua")
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/apxllo1/hsorca/master/public/latest.lua")
 )()
 ```
 
@@ -36,8 +35,7 @@ loadstring(
 Runs a snapshot of new updates we have not published yet. You will get new features earlier, but they may be unstable.
 
 ```lua
-loadstring(
-  game:HttpGetAsync("https://raw.githubusercontent.com/apxllo1/hsorca/master/public/snapshot.lua")
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/apxllo1/hsorca/master/public/snapshot.lua")
 )()
 ```
 
