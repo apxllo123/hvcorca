@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Setup PNPM
-      uses: pnpm/action-setup@v4  # Fixed v4
+      uses: pnpm/action-setup@v4
       with:
         version: 9.12.2
 
@@ -32,11 +32,11 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: 18
-        cache: 'pnpm'  # PNPM cache
+        cache: 'pnpm'
         
-    - name: Install dependencies  # Replaces run_install + darklua
-      run: pnpm install --frozen-lockfile
-        
+    - name: Install dependencies
+      run: pnpm install  # Fixed: removed --frozen-lockfile
+
     - name: Resolve version tag
       id: version
       run: |
@@ -53,8 +53,8 @@ jobs:
       
     - name: Bundle Luau
       run: |
-        pnpm run bundle:prod  # Uses your package.json (ENV=production)
-        pnpm run bundle:dev   # Uses your package.json (ENV=development)
+        pnpm run bundle:prod
+        pnpm run bundle:dev
       
     - name: Commit artifacts
       uses: EndBug/add-and-commit@v9
