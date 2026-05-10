@@ -32,9 +32,8 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "@rbxts/roact": "^3.0.1",
+    "@rbxts/roact": "npm:@rbxts/react-ts@^3.0.0",
     "@rbxts/roact-hooked": "^3.0.0",
-    "@rbxts/roact-rodux-hooked": "^2.0.0",
     "@rbxts/rodux": "^3.0.0",
     "@rbxts/services": "^2.1.2",
     "rbxts-transform-debug": "^3.0.0"
