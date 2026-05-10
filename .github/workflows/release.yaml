@@ -15,29 +15,29 @@ jobs:
 
     steps:
     - name: GitHub Checkout
-      uses: actions/checkout@v4  # Updated
+      uses: actions/checkout@v4
 
     - name: Setup PNPM
-      uses: pnpm/action-setup@v2.2.4
+      uses: pnpm/action-setup@v4  # Fixed v4
       with:
-        version: 7.25.1
-        run_install: true
-    
+        version: 9.12.2
+
     - name: Setup Aftman
       uses: ok-nick/setup-aftman@v0.3.0
     
     - name: Install Rojo & Remodel
       run: aftman install
         
-    - name: Setup Node.js  # Added for darklua if needed
+    - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: 18
+        cache: 'pnpm'  # PNPM cache
         
-    - name: Install darklua globally  # Your dark minifier
-      run: npm install -g darklua
+    - name: Install dependencies  # Replaces run_install + darklua
+      run: pnpm install --frozen-lockfile
         
-    - name: Resolve version tag  # From second workflow
+    - name: Resolve version tag
       id: version
       run: |
         TAG="${{ github.event.release.tag_name }}"
@@ -51,18 +51,20 @@ jobs:
         pnpm run build --verbose
         pnpm run rojo --verbose
       
-    - name: Bundle Luau  # Enhanced w/ version
+    - name: Bundle Luau
       run: |
-        ENV=production remodel run bundle.lua dist/main.lua ${{ steps.version.outputs.tag }} minify
-        remodel run bundle.lua dist/main-dev.lua ${{ steps.version.outputs.tag }} debug
+        pnpm run bundle:prod  # Uses your package.json (ENV=production)
+        pnpm run bundle:dev   # Uses your package.json (ENV=development)
       
-    - name: Commit artifacts to public/  # From second
+    - name: Commit artifacts
       uses: EndBug/add-and-commit@v9
       with:
-        add: "['dist/main.lua', 'dist/main-dev.lua']"
+        add: '["dist/main.lua", "dist/main-dev.lua"]'
         message: "🐋 Release ${{ steps.version.outputs.tag }}"
         
     - name: Upload Release Assets
       uses: alexellis/upload-assets@0.4.0
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
       with:
         asset_paths: '["dist/main.rbxm", "dist/main.lua", "dist/main-dev.lua"]'
