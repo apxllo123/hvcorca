@@ -20,7 +20,7 @@ jobs:
     - name: Setup PNPM
       uses: pnpm/action-setup@v4
       with:
-        version: 9.12.2
+        version: latest  # Matches local pnpm → no lockfile warnings
 
     - name: Setup Aftman
       uses: ok-nick/setup-aftman@v0.3.0
@@ -31,11 +31,11 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: 18
+        node-version: 20  # LTS (18 EOL), supports eslint 9.x
         cache: 'pnpm'
         
     - name: Install dependencies
-      run: pnpm install  # Fixed: removed --frozen-lockfile
+      run: pnpm install --frozen-lockfile  # Strict CI matching
 
     - name: Resolve version tag
       id: version
@@ -59,7 +59,7 @@ jobs:
     - name: Commit artifacts
       uses: EndBug/add-and-commit@v9
       with:
-        add: '["dist/main.lua", "dist/main-dev.lua"]'
+        add: '["dist/main.rbxm", "dist/main.lua", "dist/main-dev.lua"]'  # Fixed paths
         message: "🐋 Release ${{ steps.version.outputs.tag }}"
         
     - name: Upload Release Assets
