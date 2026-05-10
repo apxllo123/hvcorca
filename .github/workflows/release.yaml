@@ -3,68 +3,66 @@ name: Publish Release
 on:
   workflow_dispatch:
   release:
-    types: [published]
+    types: [ published, prereleased ]
+    
+permissions:
+  contents: write
+  packages: write
 
 jobs:
-  bundle-release:
-    # change this from ubuntu-22.04 to ubuntu-latest
+  publish-release:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          repository: ${{ github.event.repository.full_name }}
-          ref: master
+    - name: GitHub Checkout
+      uses: actions/checkout@v4  # Updated
 
-      # add this step before the setup-foreman step
-      - name: Clean foreman install
-        run: |
-          rm -rf .foreman-install
+    - name: Setup PNPM
+      uses: pnpm/action-setup@v2.2.4
+      with:
+        version: 7.25.1
+        run_install: true
+    
+    - name: Setup Aftman
+      uses: ok-nick/setup-aftman@v0.3.0
+    
+    - name: Install Rojo & Remodel
+      run: aftman install
+        
+    - name: Setup Node.js  # Added for darklua if needed
+      uses: actions/setup-node@v4
+      with:
+        node-version: 18
+        
+    - name: Install darklua globally  # Your dark minifier
+      run: npm install -g darklua
+        
+    - name: Resolve version tag  # From second workflow
+      id: version
+      run: |
+        TAG="${{ github.event.release.tag_name }}"
+        if [ -z "$TAG" ]; then
+          TAG="v$(date +%Y%m%d-%H%M)"
+        fi
+        echo "tag=$TAG" >> $GITHUB_OUTPUT
 
-      - name: Install Foreman
-        uses: rojo-rbx/setup-foreman@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Add Foreman to PATH
-        run: echo "$HOME/.foreman/bin" >> $GITHUB_PATH
-
-      - name: Install Foreman tools
-        run: foreman install
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: npm
-
-      - name: Install NPM dependencies
-        run: npm ci
-
-      - name: Compile roblox-ts
-        run: npm run compile
-
-      - name: Build model
-        run: npm run build
-
-      - name: Resolve version tag
-        id: version
-        run: |
-          TAG="${{ github.event.release.tag_name }}"
-          if [ -z "$TAG" ]; then
-            TAG="v$(date +%Y%m%d-%H%M)"
-          fi
-          echo "tag=$TAG" >> $GITHUB_OUTPUT
-
-      - name: Bundle release
-        run: |
-          remodel run ci/bundle.lua public/latest.lua ${{ steps.version.outputs.tag }}
-          remodel run ci/bundle.lua public/latest.debug.lua ${{ steps.version.outputs.tag }} debug
-
-      - name: Commit artifacts
-        uses: EndBug/add-and-commit@v9
-        with:
-          default_author: github_actions
-          add: "['public/latest.lua', 'public/latest.debug.lua']"
-          message: "🐋 Release ${{ steps.version.outputs.tag }}"
+    - name: Build & Compile
+      run: |
+        pnpm run build --verbose
+        pnpm run rojo --verbose
+      
+    - name: Bundle Luau  # Enhanced w/ version
+      run: |
+        ENV=production remodel run bundle.lua dist/main.lua ${{ steps.version.outputs.tag }} minify
+        remodel run bundle.lua dist/main-dev.lua ${{ steps.version.outputs.tag }} debug
+      
+    - name: Commit artifacts to public/  # From second
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: "['dist/main.lua', 'dist/main-dev.lua']"
+        message: "🐋 Release ${{ steps.version.outputs.tag }}"
+        
+    - name: Upload Release Assets
+      uses: alexellis/upload-assets@0.4.0
+      with:
+        asset_paths: '["dist/main.rbxm", "dist/main.lua", "dist/main-dev.lua"]'
