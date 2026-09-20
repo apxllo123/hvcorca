@@ -29,17 +29,16 @@ export function persistentState<T extends object>(name: string, selector: (state
 	try {
 		const serializedState = read(`_orca/${name}.json`);
 
-		if (serializedState === undefined) {
-			write(`_orca/${name}.json`, HttpService.JSONEncode(defaultValue));
-			return defaultValue;
-		}
-		const value = HttpService.JSONDecode(serializedState) as T;
-
 		autosave(name, selector).catch(() => {
 			warn("Autosave failed");
 		});
 
-		return value;
+		if (serializedState === undefined) {
+			write(`_orca/${name}.json`, HttpService.JSONEncode(defaultValue));
+			return defaultValue;
+		}
+
+		return HttpService.JSONDecode(serializedState) as T;
 	} catch (err) {
 		warn(`Failed to load ${name}.json: ${err}`);
 		return defaultValue;
@@ -54,7 +53,7 @@ async function autosave(name: string, selector: (state: RootState) => object) {
 		write(`_orca/${name}.json`, HttpService.JSONEncode(state));
 	}
 
-	setInterval(() => save, 60000);
+	setInterval(save, 60000);
 
 	Players.PlayerRemoving.Connect((player) => {
 		if (player === Players.LocalPlayer) {
