@@ -22,16 +22,14 @@ jobs:
       with:
         version: 7.33.7  # Matches pnpm-lock.yaml lockfileVersion 5.4
 
-    - name: Setup Foreman
-      uses: rojo-rbx/setup-foreman@v1
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Add Foreman tools to PATH
-      run: echo "$HOME/.foreman/bin" >> "$GITHUB_PATH"
-
-    - name: Install Rojo and Remodel
-      run: foreman install
+    - name: Install release tools
+      run: |
+        curl --fail --location --silent --show-error --output /tmp/foreman.zip https://github.com/Roblox/foreman/releases/download/v1.7.0/foreman-linux-x86_64.zip
+        unzip -q /tmp/foreman.zip -d /tmp/foreman
+        install /tmp/foreman/foreman /usr/local/bin/foreman
+        foreman install
+        RUSTFLAGS="--cap-lints allow" cargo install --git https://github.com/rojo-rbx/remodel --tag v0.11.0 --locked remodel
+        echo "$HOME/.foreman/bin" >> "$GITHUB_PATH"
         
     - name: Setup Node.js
       uses: actions/setup-node@v4
@@ -58,8 +56,9 @@ jobs:
       
     - name: Bundle Luau
       run: |
-        pnpm run bundle:prod
-        pnpm run bundle:dev
+        pnpm run rojo
+        pnpm exec cross-env ENV=production remodel run ci/bundle.lua dist/main.lua "${{ steps.version.outputs.tag }}"
+        pnpm exec cross-env ENV=development remodel run ci/bundle.lua dist/main-dev.lua "${{ steps.version.outputs.tag }}" debug
       
     - name: Commit artifacts
       uses: EndBug/add-and-commit@v9
