@@ -1,4 +1,5 @@
 import Roact from "@rbxts/roact";
+import { HttpService } from "@rbxts/services";
 import { hooked, useEffect, useState } from "@rbxts/roact-hooked";
 import Canvas from "components/Canvas";
 import * as http from "utils/http";
@@ -36,7 +37,7 @@ function Misc() {
 		task.spawn(async () => {
 			try {
 				const raw = await http.get(GIST_URL);
-				const parsed = http.parseJson(raw) as Command[];
+				const parsed = HttpService.JSONDecode(raw) as Command[];
 				setCommands(parsed);
 				setStatus("");
 			} catch (e) {
@@ -70,12 +71,12 @@ function Misc() {
 					PlaceholderText="Search commands..."
 					PlaceholderColor3={Color3.fromHex("#666666")}
 					TextSize={14}
-					Font={Enum.Font.GothamMedium}
+					Font={Enum.Font.Gotham}
 					TextXAlignment={Enum.TextXAlignment.Left}
 					ClearTextOnFocus={false}
 					Text={search}
-					Event={{
-						Changed: (rbx) => setSearch(rbx.Text),
+					Change={{
+						Text: (rbx) => setSearch(rbx.Text),
 					}}
 				/>
 			</frame>
