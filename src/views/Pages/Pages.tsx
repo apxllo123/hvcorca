@@ -1,6 +1,7 @@
 import Roact from "@rbxts/roact";
 import { hooked } from "@rbxts/roact-hooked";
 import { useDelayedUpdate } from "hooks/common/use-delayed-update";
+import { useCommandBarShortcut } from "hooks/use-command-bar-shortcut";
 import { useCurrentPage } from "hooks/use-current-page";
 import { DashboardPage } from "store/models/dashboard.model";
 import Apps from "./Apps";
@@ -11,15 +12,15 @@ import Scripts from "./Scripts";
 
 function Pages() {
 	const currentPage = useCurrentPage();
+	useCommandBarShortcut();
 	const isScriptsVisible = useDelayedUpdate(currentPage === DashboardPage.Scripts, 2000, (isVisible) => isVisible);
-	const isMiscVisible = useDelayedUpdate(currentPage === DashboardPage.Misc, 2000, (isVisible) => isVisible);
 
 	return (
 		<>
 			<Home Key="home" />
 			<Apps Key="apps" />
 			{isScriptsVisible && <Scripts Key="scripts" />}
-			{isMiscVisible && <Misc Key="misc" />}
+			<Misc Key="misc" />
 			<Options Key="options" />
 		</>
 	);
