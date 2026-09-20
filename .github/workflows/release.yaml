@@ -60,10 +60,15 @@ jobs:
         pnpm exec cross-env ENV=production remodel run ci/bundle.lua dist/main.lua "${{ steps.version.outputs.tag }}"
         pnpm exec cross-env ENV=development remodel run ci/bundle.lua dist/main-dev.lua "${{ steps.version.outputs.tag }}" debug
       
+    - name: Publish latest Lua bundles
+      run: |
+        cp dist/main.lua public/latest.lua
+        cp dist/main-dev.lua public/latest.debug.lua
+
     - name: Commit artifacts
       uses: EndBug/add-and-commit@v9
       with:
-        add: '["dist/main.rbxm", "dist/main.lua", "dist/main-dev.lua"]'  # Fixed paths
+        add: public/latest.lua public/latest.debug.lua dist/main.rbxm dist/main.lua dist/main-dev.lua
         message: "🐋 Release ${{ steps.version.outputs.tag }}"
         
     - name: Upload Release Assets
