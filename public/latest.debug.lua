@@ -46,7 +46,7 @@ local function requireModule(object, context)
 	end
 end
 
-local function __rbx(name, className, path, parentPath)
+local function newInstance(name, className, path, parentPath)
 	local rbx = Instance.new(className)
 	rbx.Name = name
 	rbx.Parent = instances[parentPath]
@@ -54,8 +54,8 @@ local function __rbx(name, className, path, parentPath)
 	return rbx
 end
 
-local function __lua(name, className, path, parentPath, callback)
-	local rbx = __rbx(name, className, path, parentPath)
+local function newModule(name, className, path, parentPath, callback)
+	local rbx = newInstance(name, className, path, parentPath)
 
 	modules[rbx] = {
 		callback = callback,
@@ -74,11 +74,11 @@ local function __lua(name, className, path, parentPath, callback)
 	}
 end
 
-local function __env(path)
+local function newEnv(path)
 	return modules[instances[path]].globals
 end
 
-local function __start()
+local function init()
 	for rbx, module in pairs(modules) do
 		if rbx.ClassName == "LocalScript" and not rbx.Disabled then
 			task.spawn(module.callback)
