@@ -67,8 +67,11 @@ jobs:
         message: "🐋 Release ${{ steps.version.outputs.tag }}"
         
     - name: Upload Release Assets
-      uses: alexellis/upload-assets@0.4.0
       env:
-        GITHUB_TOKEN: ${{ github.token }}
-      with:
-        asset_paths: '["dist/main.rbxm", "dist/main.lua", "dist/main-dev.lua"]'
+        GH_TOKEN: ${{ github.token }}
+        RELEASE_TAG: ${{ steps.version.outputs.tag }}
+      run: |
+        if ! gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+          gh release create "$RELEASE_TAG" --target "$GITHUB_SHA" --title "$RELEASE_TAG" --generate-notes
+        fi
+        gh release upload "$RELEASE_TAG" dist/main.rbxm dist/main.lua dist/main-dev.lua --clobber
