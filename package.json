@@ -10,6 +10,7 @@
     "bundle:dev": "pnpm run rojo && cross-env ENV=development remodel run ci/bundle.lua dist/main-dev.lua dev debug",
     "bundle:prod": "pnpm run rojo && cross-env ENV=production remodel run ci/bundle.lua dist/main.lua",
     "bundle": "pnpm run bundle:dev && pnpm run bundle:prod",
+    "verify:bundle": "node ci/verify-bundle.mjs dist/main.lua dist/main-dev.lua",
     "lint": "eslint src/ --ext .ts,.tsx --fix",
     "lint:ci": "eslint src/ --ext .ts,.tsx --max-warnings 0"
   },
@@ -39,6 +40,7 @@
     "@rbxts/roact": "1.4.0-ts.2",
     "@rbxts/roact-hooked": "1.2.4",
     "@rbxts/roact-rodux-hooked": "1.0.4",
+    "@rbxts/object-utils": "1.0.4",
     "@rbxts/rodux": "3.0.0-ts.3",
     "@rbxts/services": "1.2.0",
     "rbxts-transform-debug": "^2.0.3",

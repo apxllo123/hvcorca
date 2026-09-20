@@ -59,6 +59,9 @@ jobs:
         pnpm run rojo
         pnpm exec cross-env ENV=production remodel run ci/bundle.lua dist/main.lua "${{ steps.version.outputs.tag }}"
         pnpm exec cross-env ENV=development remodel run ci/bundle.lua dist/main-dev.lua "${{ steps.version.outputs.tag }}" debug
+
+    - name: Verify bundle
+      run: pnpm run verify:bundle
       
     - name: Publish latest Lua bundles
       run: |

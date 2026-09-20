@@ -107,8 +107,7 @@ end
 local default = App
 return {
 	default = default,
-}
- end, newEnv("hvcorca.App"))() end)
+} end, newEnv("hvcorca.App"))() end)
 
 newInstance("components", "Folder", "hvcorca.components", "hvcorca")
 
@@ -116,8 +115,7 @@ newModule("Acrylic", "ModuleScript", "hvcorca.components.Acrylic", "hvcorca.comp
 local TS = require(script.Parent.Parent.include.RuntimeLib)
 local exports = {}
 exports.default = TS.import(script, script, "Acrylic").default
-return exports
- end, newEnv("hvcorca.components.Acrylic"))() end)
+return exports end, newEnv("hvcorca.components.Acrylic"))() end)
 
 newModule("Acrylic", "ModuleScript", "hvcorca.components.Acrylic.Acrylic", "hvcorca.components.Acrylic", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -285,8 +283,7 @@ end
 AcrylicBlur = hooked(AcrylicBlurComponent)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.components.Acrylic.Acrylic"))() end)
+} end, newEnv("hvcorca.components.Acrylic.Acrylic"))() end)
 
 newModule("Acrylic.story", "ModuleScript", "hvcorca.components.Acrylic.Acrylic.story", "hvcorca.components.Acrylic", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -329,8 +326,7 @@ return function(target)
 	return function()
 		return Roact.unmount(handle)
 	end
-end
- end, newEnv("hvcorca.components.Acrylic.Acrylic.story"))() end)
+end end, newEnv("hvcorca.components.Acrylic.Acrylic.story"))() end)
 
 newModule("acrylic-instance", "ModuleScript", "hvcorca.components.Acrylic.acrylic-instance", "hvcorca.components.Acrylic", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -422,8 +418,7 @@ _object[_left] = { _exp, _exp_1, _exp_2, _exp_3, _exp_4, Make("Part", _object_6)
 local acrylicInstance = Make("Model", _object)
 return {
 	acrylicInstance = acrylicInstance,
-}
- end, newEnv("hvcorca.components.Acrylic.acrylic-instance"))() end)
+} end, newEnv("hvcorca.components.Acrylic.acrylic-instance"))() end)
 
 newModule("ActionButton", "ModuleScript", "hvcorca.components.ActionButton", "hvcorca.components", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -515,8 +510,7 @@ end
 local default = hooked(ActionButton)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.components.ActionButton"))() end)
+} end, newEnv("hvcorca.components.ActionButton"))() end)
 
 newModule("Border", "ModuleScript", "hvcorca.components.Border", "hvcorca.components", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -588,8 +582,7 @@ end
 local default = hooked(Border)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.components.Border"))() end)
+} end, newEnv("hvcorca.components.Border"))() end)
 
 newModule("BrightButton", "ModuleScript", "hvcorca.components.BrightButton", "hvcorca.components", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -725,8 +718,7 @@ end
 local default = hooked(BrightButton)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.components.BrightButton"))() end)
+} end, newEnv("hvcorca.components.BrightButton"))() end)
 
 newModule("BrightSlider", "ModuleScript", "hvcorca.components.BrightSlider", "hvcorca.components", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -919,8 +911,7 @@ end
 Drag = hooked(DragComponent)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.components.BrightSlider"))() end)
+} end, newEnv("hvcorca.components.BrightSlider"))() end)
 
 newModule("Canvas", "ModuleScript", "hvcorca.components.Canvas", "hvcorca.components", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -999,8 +990,7 @@ end
 local default = hooked(Canvas)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.components.Canvas"))() end)
+} end, newEnv("hvcorca.components.Canvas"))() end)
 
 newModule("Card", "ModuleScript", "hvcorca.components.Card", "hvcorca.components", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -1097,8 +1087,7 @@ end
 local default = hooked(Card)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.components.Card"))() end)
+} end, newEnv("hvcorca.components.Card"))() end)
 
 newModule("Fill", "ModuleScript", "hvcorca.components.Fill", "hvcorca.components", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -1177,8 +1166,7 @@ end
 local default = hooked(Fill)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.components.Fill"))() end)
+} end, newEnv("hvcorca.components.Fill"))() end)
 
 newModule("Glow", "ModuleScript", "hvcorca.components.Glow", "hvcorca.components", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -1315,8 +1303,7 @@ return {
 	GlowRadius = GlowRadius,
 	RADIUS_TO_CENTER_OFFSET = RADIUS_TO_CENTER_OFFSET,
 	default = default,
-}
- end, newEnv("hvcorca.components.Glow"))() end)
+} end, newEnv("hvcorca.components.Glow"))() end)
 
 newModule("ParallaxImage", "ModuleScript", "hvcorca.components.ParallaxImage", "hvcorca.components", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -1357,8 +1344,7 @@ end
 local default = ParallaxImage
 return {
 	default = default,
-}
- end, newEnv("hvcorca.components.ParallaxImage"))() end)
+} end, newEnv("hvcorca.components.ParallaxImage"))() end)
 
 newModule("constants", "ModuleScript", "hvcorca.constants", "hvcorca", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local IS_DEV = getgenv == nil
@@ -1370,8 +1356,7 @@ local VERSION_TAG = _condition
 return {
 	IS_DEV = IS_DEV,
 	VERSION_TAG = VERSION_TAG,
-}
- end, newEnv("hvcorca.constants"))() end)
+} end, newEnv("hvcorca.constants"))() end)
 
 newInstance("context", "Folder", "hvcorca.context", "hvcorca")
 
@@ -1381,8 +1366,7 @@ local Roact = TS.import(script, TS.getModule(script, "@rbxts", "roact").src)
 local ScaleContext = Roact.createContext((Roact.createBinding(1)))
 return {
 	ScaleContext = ScaleContext,
-}
- end, newEnv("hvcorca.context.scale-context"))() end)
+} end, newEnv("hvcorca.context.scale-context"))() end)
 
 newInstance("hooks", "Folder", "hvcorca.hooks", "hvcorca")
 
@@ -1397,8 +1381,7 @@ exports.useInstant = TS.import(script, script, "use-instant").useInstant
 exports.useLinear = TS.import(script, script, "use-linear").useLinear
 exports.useMotor = TS.import(script, script, "use-motor").useMotor
 exports.useSpring = TS.import(script, script, "use-spring").useSpring
-return exports
- end, newEnv("hvcorca.hooks.common.flipper-hooks"))() end)
+return exports end, newEnv("hvcorca.hooks.common.flipper-hooks"))() end)
 
 newModule("get-binding", "ModuleScript", "hvcorca.hooks.common.flipper-hooks.get-binding", "hvcorca.hooks.common.flipper-hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -1423,8 +1406,7 @@ local function getBinding(motor)
 end
 return {
 	getBinding = getBinding,
-}
- end, newEnv("hvcorca.hooks.common.flipper-hooks.get-binding"))() end)
+} end, newEnv("hvcorca.hooks.common.flipper-hooks.get-binding"))() end)
 
 newModule("use-goal", "ModuleScript", "hvcorca.hooks.common.flipper-hooks.use-goal", "hvcorca.hooks.common.flipper-hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -1437,8 +1419,7 @@ local function useGoal(goal)
 end
 return {
 	useGoal = useGoal,
-}
- end, newEnv("hvcorca.hooks.common.flipper-hooks.use-goal"))() end)
+} end, newEnv("hvcorca.hooks.common.flipper-hooks.use-goal"))() end)
 
 newModule("use-instant", "ModuleScript", "hvcorca.hooks.common.flipper-hooks.use-instant", "hvcorca.hooks.common.flipper-hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -1449,8 +1430,7 @@ local function useInstant(targetValue)
 end
 return {
 	useInstant = useInstant,
-}
- end, newEnv("hvcorca.hooks.common.flipper-hooks.use-instant"))() end)
+} end, newEnv("hvcorca.hooks.common.flipper-hooks.use-instant"))() end)
 
 newModule("use-linear", "ModuleScript", "hvcorca.hooks.common.flipper-hooks.use-linear", "hvcorca.hooks.common.flipper-hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -1461,8 +1441,7 @@ local function useLinear(targetValue, options)
 end
 return {
 	useLinear = useLinear,
-}
- end, newEnv("hvcorca.hooks.common.flipper-hooks.use-linear"))() end)
+} end, newEnv("hvcorca.hooks.common.flipper-hooks.use-linear"))() end)
 
 newModule("use-motor", "ModuleScript", "hvcorca.hooks.common.flipper-hooks.use-motor", "hvcorca.hooks.common.flipper-hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -1484,8 +1463,7 @@ local function useMotor(initialValue)
 end
 return {
 	useMotor = useMotor,
-}
- end, newEnv("hvcorca.hooks.common.flipper-hooks.use-motor"))() end)
+} end, newEnv("hvcorca.hooks.common.flipper-hooks.use-motor"))() end)
 
 newModule("use-spring", "ModuleScript", "hvcorca.hooks.common.flipper-hooks.use-spring", "hvcorca.hooks.common.flipper-hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -1496,8 +1474,7 @@ local function useSpring(targetValue, options)
 end
 return {
 	useSpring = useSpring,
-}
- end, newEnv("hvcorca.hooks.common.flipper-hooks.use-spring"))() end)
+} end, newEnv("hvcorca.hooks.common.flipper-hooks.use-spring"))() end)
 
 newModule("rodux-hooks", "ModuleScript", "hvcorca.hooks.common.rodux-hooks", "hvcorca.hooks.common", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -1516,8 +1493,7 @@ return {
 	useAppSelector = useAppSelector,
 	useAppDispatch = useAppDispatch,
 	useAppStore = useAppStore,
-}
- end, newEnv("hvcorca.hooks.common.rodux-hooks"))() end)
+} end, newEnv("hvcorca.hooks.common.rodux-hooks"))() end)
 
 newModule("use-delayed-update", "ModuleScript", "hvcorca.hooks.common.use-delayed-update", "hvcorca.hooks.common", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -1580,8 +1556,7 @@ local function useDelayedUpdate(value, delay, isImmediate)
 end
 return {
 	useDelayedUpdate = useDelayedUpdate,
-}
- end, newEnv("hvcorca.hooks.common.use-delayed-update"))() end)
+} end, newEnv("hvcorca.hooks.common.use-delayed-update"))() end)
 
 newModule("use-did-mount", "ModuleScript", "hvcorca.hooks.common.use-did-mount", "hvcorca.hooks.common", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -1607,8 +1582,7 @@ end
 return {
 	useDidMount = useDidMount,
 	useIsMount = useIsMount,
-}
- end, newEnv("hvcorca.hooks.common.use-did-mount"))() end)
+} end, newEnv("hvcorca.hooks.common.use-did-mount"))() end)
 
 newModule("use-forced-update", "ModuleScript", "hvcorca.hooks.common.use-forced-update", "hvcorca.hooks.common", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -1626,8 +1600,7 @@ local function useForcedUpdate()
 end
 return {
 	useForcedUpdate = useForcedUpdate,
-}
- end, newEnv("hvcorca.hooks.common.use-forced-update"))() end)
+} end, newEnv("hvcorca.hooks.common.use-forced-update"))() end)
 
 newModule("use-interval", "ModuleScript", "hvcorca.hooks.common.use-interval", "hvcorca.hooks.common", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -1655,8 +1628,7 @@ local function useInterval(callback, delay, deps)
 end
 return {
 	useInterval = useInterval,
-}
- end, newEnv("hvcorca.hooks.common.use-interval"))() end)
+} end, newEnv("hvcorca.hooks.common.use-interval"))() end)
 
 newModule("use-mouse-location", "ModuleScript", "hvcorca.hooks.common.use-mouse-location", "hvcorca.hooks.common", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -1686,8 +1658,7 @@ local function useMouseLocation(onChange)
 end
 return {
 	useMouseLocation = useMouseLocation,
-}
- end, newEnv("hvcorca.hooks.common.use-mouse-location"))() end)
+} end, newEnv("hvcorca.hooks.common.use-mouse-location"))() end)
 
 newModule("use-promise", "ModuleScript", "hvcorca.hooks.common.use-promise", "hvcorca.hooks.common", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -1773,8 +1744,7 @@ local function usePromise(promise, deps)
 end
 return {
 	usePromise = usePromise,
-}
- end, newEnv("hvcorca.hooks.common.use-promise"))() end)
+} end, newEnv("hvcorca.hooks.common.use-promise"))() end)
 
 newModule("use-set-state", "ModuleScript", "hvcorca.hooks.common.use-set-state", "hvcorca.hooks.common", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -1809,8 +1779,7 @@ local function useSetState(initialState)
 end
 return {
 	default = useSetState,
-}
- end, newEnv("hvcorca.hooks.common.use-set-state"))() end)
+} end, newEnv("hvcorca.hooks.common.use-set-state"))() end)
 
 newModule("use-spring", "ModuleScript", "hvcorca.hooks.common.use-spring", "hvcorca.hooks.common", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -1873,8 +1842,7 @@ local function useSpring(value, options)
 end
 return {
 	useSpring = useSpring,
-}
- end, newEnv("hvcorca.hooks.common.use-spring"))() end)
+} end, newEnv("hvcorca.hooks.common.use-spring"))() end)
 
 newModule("use-viewport-size", "ModuleScript", "hvcorca.hooks.common.use-viewport-size", "hvcorca.hooks.common", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -1921,8 +1889,7 @@ local function useViewportSize(onChange)
 end
 return {
 	useViewportSize = useViewportSize,
-}
- end, newEnv("hvcorca.hooks.common.use-viewport-size"))() end)
+} end, newEnv("hvcorca.hooks.common.use-viewport-size"))() end)
 
 newModule("use-current-page", "ModuleScript", "hvcorca.hooks.use-current-page", "hvcorca.hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -1940,8 +1907,7 @@ end
 return {
 	useCurrentPage = useCurrentPage,
 	useIsPageOpen = useIsPageOpen,
-}
- end, newEnv("hvcorca.hooks.use-current-page"))() end)
+} end, newEnv("hvcorca.hooks.use-current-page"))() end)
 
 newModule("use-friends", "ModuleScript", "hvcorca.hooks.use-friends", "hvcorca.hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -2031,8 +1997,7 @@ return {
 	useFriends = useFriends,
 	useFriendsPlaying = useFriendsPlaying,
 	useFriendActivity = useFriendActivity,
-}
- end, newEnv("hvcorca.hooks.use-friends"))() end)
+} end, newEnv("hvcorca.hooks.use-friends"))() end)
 
 newModule("use-parallax-offset", "ModuleScript", "hvcorca.hooks.use-parallax-offset", "hvcorca.hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -2068,8 +2033,7 @@ local function useParallaxOffset()
 end
 return {
 	useParallaxOffset = useParallaxOffset,
-}
- end, newEnv("hvcorca.hooks.use-parallax-offset"))() end)
+} end, newEnv("hvcorca.hooks.use-parallax-offset"))() end)
 
 newModule("use-scale", "ModuleScript", "hvcorca.hooks.use-scale", "hvcorca.hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -2086,8 +2050,7 @@ local function useScale()
 end
 return {
 	useScale = useScale,
-}
- end, newEnv("hvcorca.hooks.use-scale"))() end)
+} end, newEnv("hvcorca.hooks.use-scale"))() end)
 
 newModule("use-theme", "ModuleScript", "hvcorca.hooks.use-theme", "hvcorca.hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -2115,15 +2078,13 @@ local function useTheme(key)
 end
 return {
 	useTheme = useTheme,
-}
- end, newEnv("hvcorca.hooks.use-theme"))() end)
+} end, newEnv("hvcorca.hooks.use-theme"))() end)
 
 newModule("jobs", "ModuleScript", "hvcorca.jobs", "hvcorca", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.include.RuntimeLib)
 local exports = {}
 exports.setStore = TS.import(script, script, "helpers", "job-store").setStore
-return exports
- end, newEnv("hvcorca.jobs"))() end)
+return exports end, newEnv("hvcorca.jobs"))() end)
 
 newModule("acrylic", "LocalScript", "hvcorca.jobs.acrylic", "hvcorca.jobs", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -2181,8 +2142,7 @@ local main = TS.async(function()
 end)
 main():catch(function(err)
 	warn("[acrylic-worker] " .. tostring(err))
-end)
- end, newEnv("hvcorca.jobs.acrylic"))() end)
+end) end, newEnv("hvcorca.jobs.acrylic"))() end)
 
 newInstance("character", "Folder", "hvcorca.jobs.character", "hvcorca.jobs")
 
@@ -2345,8 +2305,7 @@ function updateDirection(code, begin)
 end
 main():catch(function(err)
 	warn("[flight-worker] " .. tostring(err))
-end)
- end, newEnv("hvcorca.jobs.character.flight"))() end)
+end) end, newEnv("hvcorca.jobs.character.flight"))() end)
 
 newModule("ghost", "LocalScript", "hvcorca.jobs.character.ghost", "hvcorca.jobs.character", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -2521,8 +2480,7 @@ deactivateGhost = TS.async(function()
 end)
 main():catch(function(err)
 	warn("[ghost-worker] " .. tostring(err))
-end)
- end, newEnv("hvcorca.jobs.character.ghost"))() end)
+end) end, newEnv("hvcorca.jobs.character.ghost"))() end)
 
 newModule("godmode", "LocalScript", "hvcorca.jobs.character.godmode", "hvcorca.jobs.character", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -2599,8 +2557,7 @@ activateGodmode = TS.async(function()
 end)
 main():catch(function(err)
 	warn("[godmode-worker] " .. tostring(err))
-end)
- end, newEnv("hvcorca.jobs.character.godmode"))() end)
+end) end, newEnv("hvcorca.jobs.character.godmode"))() end)
 
 newModule("humanoid", "LocalScript", "hvcorca.jobs.character.humanoid", "hvcorca.jobs.character", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -2694,8 +2651,7 @@ function updateJumpHeight(humanoid, jumpHeightJob)
 end
 main():catch(function(err)
 	warn("[humanoid-worker] " .. tostring(err))
-end)
- end, newEnv("hvcorca.jobs.character.humanoid"))() end)
+end) end, newEnv("hvcorca.jobs.character.humanoid"))() end)
 
 newModule("refresh", "LocalScript", "hvcorca.jobs.character.refresh", "hvcorca.jobs.character", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -2762,8 +2718,7 @@ respawn = TS.async(function()
 end)
 main():catch(function(err)
 	warn("[refresh-worker] " .. tostring(err))
-end)
- end, newEnv("hvcorca.jobs.character.refresh"))() end)
+end) end, newEnv("hvcorca.jobs.character.refresh"))() end)
 
 newModule("freecam", "LocalScript", "hvcorca.jobs.freecam", "hvcorca.jobs", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -2782,8 +2737,7 @@ local main = TS.async(function()
 end)
 main():catch(function(err)
 	warn("[freecam-worker] " .. tostring(err))
-end)
- end, newEnv("hvcorca.jobs.freecam"))() end)
+end) end, newEnv("hvcorca.jobs.freecam"))() end)
 
 newInstance("helpers", "Folder", "hvcorca.jobs.helpers", "hvcorca.jobs")
 
@@ -3243,8 +3197,7 @@ end
 return {
 	EnableFreecam = EnableFreecam,
 	DisableFreecam = DisableFreecam,
-}
- end, newEnv("hvcorca.jobs.helpers.freecam"))() end)
+} end, newEnv("hvcorca.jobs.helpers.freecam"))() end)
 
 newModule("get-selected-player", "ModuleScript", "hvcorca.jobs.helpers.get-selected-player", "hvcorca.jobs.helpers", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -3272,8 +3225,7 @@ local getSelectedPlayer = TS.async(function(onChange)
 end)
 return {
 	getSelectedPlayer = getSelectedPlayer,
-}
- end, newEnv("hvcorca.jobs.helpers.get-selected-player"))() end)
+} end, newEnv("hvcorca.jobs.helpers.get-selected-player"))() end)
 
 newModule("job-store", "ModuleScript", "hvcorca.jobs.helpers.job-store", "hvcorca.jobs.helpers", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -3326,8 +3278,7 @@ return {
 	setStore = setStore,
 	getStore = getStore,
 	onJobChange = onJobChange,
-}
- end, newEnv("hvcorca.jobs.helpers.job-store"))() end)
+} end, newEnv("hvcorca.jobs.helpers.job-store"))() end)
 
 newInstance("players", "Folder", "hvcorca.jobs.players", "hvcorca.jobs")
 
@@ -3406,8 +3357,7 @@ local main = TS.async(function()
 end)
 main():catch(function(err)
 	warn("[hide-worker] " .. tostring(err))
-end)
- end, newEnv("hvcorca.jobs.players.hide"))() end)
+end) end, newEnv("hvcorca.jobs.players.hide"))() end)
 
 newModule("kill", "LocalScript", "hvcorca.jobs.players.kill", "hvcorca.jobs.players", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -3558,8 +3508,7 @@ local main = TS.async(function()
 end)
 main():catch(function(err)
 	warn("[kill-worker] " .. tostring(err))
-end)
- end, newEnv("hvcorca.jobs.players.kill"))() end)
+end) end, newEnv("hvcorca.jobs.players.kill"))() end)
 
 newModule("spectate", "LocalScript", "hvcorca.jobs.players.spectate", "hvcorca.jobs.players", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -3618,8 +3567,7 @@ local main = TS.async(function()
 end)
 main():catch(function(err)
 	warn("[spectate-worker] " .. tostring(err))
-end)
- end, newEnv("hvcorca.jobs.players.spectate"))() end)
+end) end, newEnv("hvcorca.jobs.players.spectate"))() end)
 
 newModule("teleport", "LocalScript", "hvcorca.jobs.players.teleport", "hvcorca.jobs.players", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -3672,8 +3620,7 @@ local main = TS.async(function()
 end)
 main():catch(function(err)
 	warn("[teleport-worker] " .. tostring(err))
-end)
- end, newEnv("hvcorca.jobs.players.teleport"))() end)
+end) end, newEnv("hvcorca.jobs.players.teleport"))() end)
 
 newModule("server", "LocalScript", "hvcorca.jobs.server", "hvcorca.jobs", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -3778,8 +3725,7 @@ local main = TS.async(function()
 end)
 main():catch(function(err)
 	warn("[server-worker] " .. tostring(err))
-end)
- end, newEnv("hvcorca.jobs.server"))() end)
+end) end, newEnv("hvcorca.jobs.server"))() end)
 
 newModule("main", "LocalScript", "hvcorca.main", "hvcorca", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.include.RuntimeLib)
@@ -3833,8 +3779,7 @@ local main = TS.async(function()
 end)
 main():catch(function(err)
 	warn("Orca failed to load: " .. tostring(err))
-end)
- end, newEnv("hvcorca.main"))() end)
+end) end, newEnv("hvcorca.main"))() end)
 
 newInstance("store", "Folder", "hvcorca.store", "hvcorca")
 
@@ -3874,8 +3819,7 @@ return {
 	clearHint = clearHint,
 	playerSelected = playerSelected,
 	playerDeselected = playerDeselected,
-}
- end, newEnv("hvcorca.store.actions.dashboard.action"))() end)
+} end, newEnv("hvcorca.store.actions.dashboard.action"))() end)
 
 newModule("jobs.action", "ModuleScript", "hvcorca.store.actions.jobs.action", "hvcorca.store.actions", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -3895,8 +3839,7 @@ end)
 return {
 	setJobActive = setJobActive,
 	setJobValue = setJobValue,
-}
- end, newEnv("hvcorca.store.actions.jobs.action"))() end)
+} end, newEnv("hvcorca.store.actions.jobs.action"))() end)
 
 newModule("options.action", "ModuleScript", "hvcorca.store.actions.options.action", "hvcorca.store.actions", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -3928,8 +3871,7 @@ return {
 	setShortcut = setShortcut,
 	removeShortcut = removeShortcut,
 	setTheme = setTheme,
-}
- end, newEnv("hvcorca.store.actions.options.action"))() end)
+} end, newEnv("hvcorca.store.actions.options.action"))() end)
 
 newInstance("models", "Folder", "hvcorca.store.models", "hvcorca.store")
 
@@ -3969,14 +3911,11 @@ return {
 	DashboardPage = DashboardPage,
 	PAGE_TO_INDEX = PAGE_TO_INDEX,
 	PAGE_TO_ICON = PAGE_TO_ICON,
-}
- end, newEnv("hvcorca.store.models.dashboard.model"))() end)
+} end, newEnv("hvcorca.store.models.dashboard.model"))() end)
 
-newModule("jobs.model", "ModuleScript", "hvcorca.store.models.jobs.model", "hvcorca.store.models", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
- end, newEnv("hvcorca.store.models.jobs.model"))() end)
+newModule("jobs.model", "ModuleScript", "hvcorca.store.models.jobs.model", "hvcorca.store.models", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7 end, newEnv("hvcorca.store.models.jobs.model"))() end)
 
-newModule("options.model", "ModuleScript", "hvcorca.store.models.options.model", "hvcorca.store.models", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
- end, newEnv("hvcorca.store.models.options.model"))() end)
+newModule("options.model", "ModuleScript", "hvcorca.store.models.options.model", "hvcorca.store.models", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7 end, newEnv("hvcorca.store.models.options.model"))() end)
 
 newModule("persistent-state", "ModuleScript", "hvcorca.store.persistent-state", "hvcorca.store", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -4039,8 +3978,7 @@ autosave = TS.async(function(name, selector)
 end)
 return {
 	persistentState = persistentState,
-}
- end, newEnv("hvcorca.store.persistent-state"))() end)
+} end, newEnv("hvcorca.store.persistent-state"))() end)
 
 newInstance("reducers", "Folder", "hvcorca.store.reducers", "hvcorca.store")
 
@@ -4120,8 +4058,7 @@ local dashboardReducer = Rodux.createReducer(initialState, {
 })
 return {
 	dashboardReducer = dashboardReducer,
-}
- end, newEnv("hvcorca.store.reducers.dashboard.reducer"))() end)
+} end, newEnv("hvcorca.store.reducers.dashboard.reducer"))() end)
 
 newModule("jobs.reducer", "ModuleScript", "hvcorca.store.reducers.jobs.reducer", "hvcorca.store.reducers", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -4202,8 +4139,7 @@ local jobsReducer = Rodux.createReducer(initialState, {
 })
 return {
 	jobsReducer = jobsReducer,
-}
- end, newEnv("hvcorca.store.reducers.jobs.reducer"))() end)
+} end, newEnv("hvcorca.store.reducers.jobs.reducer"))() end)
 
 newModule("options.reducer", "ModuleScript", "hvcorca.store.reducers.options.reducer", "hvcorca.store.reducers", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -4274,8 +4210,7 @@ local optionsReducer = Rodux.createReducer(initialState, {
 })
 return {
 	optionsReducer = optionsReducer,
-}
- end, newEnv("hvcorca.store.reducers.options.reducer"))() end)
+} end, newEnv("hvcorca.store.reducers.options.reducer"))() end)
 
 newModule("store", "ModuleScript", "hvcorca.store.store", "hvcorca.store", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -4293,8 +4228,7 @@ local function configureStore(initialState)
 end
 return {
 	configureStore = configureStore,
-}
- end, newEnv("hvcorca.store.store"))() end)
+} end, newEnv("hvcorca.store.store"))() end)
 
 newModule("themes", "ModuleScript", "hvcorca.themes", "hvcorca", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.include.RuntimeLib)
@@ -4310,8 +4244,7 @@ local function getThemes()
 end
 return {
 	getThemes = getThemes,
-}
- end, newEnv("hvcorca.themes"))() end)
+} end, newEnv("hvcorca.themes"))() end)
 
 newModule("dark-theme", "ModuleScript", "hvcorca.themes.dark-theme", "hvcorca.themes", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -4564,8 +4497,7 @@ local darkTheme = {
 }
 return {
 	darkTheme = darkTheme,
-}
- end, newEnv("hvcorca.themes.dark-theme"))() end)
+} end, newEnv("hvcorca.themes.dark-theme"))() end)
 
 newModule("frosted-glass", "ModuleScript", "hvcorca.themes.frosted-glass", "hvcorca.themes", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -4853,8 +4785,7 @@ _object[_left_17] = _object_18
 local frostedGlass = _object
 return {
 	frostedGlass = frostedGlass,
-}
- end, newEnv("hvcorca.themes.frosted-glass"))() end)
+} end, newEnv("hvcorca.themes.frosted-glass"))() end)
 
 newModule("high-contrast", "ModuleScript", "hvcorca.themes.high-contrast", "hvcorca.themes", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -5093,8 +5024,7 @@ _object[_left_18] = _object_19
 local highContrast = _object
 return {
 	highContrast = highContrast,
-}
- end, newEnv("hvcorca.themes.high-contrast"))() end)
+} end, newEnv("hvcorca.themes.high-contrast"))() end)
 
 newModule("light-theme", "ModuleScript", "hvcorca.themes.light-theme", "hvcorca.themes", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -5326,8 +5256,7 @@ _object[_left_18] = _object_19
 local lightTheme = _object
 return {
 	lightTheme = lightTheme,
-}
- end, newEnv("hvcorca.themes.light-theme"))() end)
+} end, newEnv("hvcorca.themes.light-theme"))() end)
 
 newModule("obsidian", "ModuleScript", "hvcorca.themes.obsidian", "hvcorca.themes", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -5646,8 +5575,7 @@ _object[_left_18] = _object_19
 local obsidian = _object
 return {
 	obsidian = obsidian,
-}
- end, newEnv("hvcorca.themes.obsidian"))() end)
+} end, newEnv("hvcorca.themes.obsidian"))() end)
 
 newModule("sorbet", "ModuleScript", "hvcorca.themes.sorbet", "hvcorca.themes", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -5917,11 +5845,9 @@ _object[_left_18] = _object_19
 local sorbet = _object
 return {
 	sorbet = sorbet,
-}
- end, newEnv("hvcorca.themes.sorbet"))() end)
+} end, newEnv("hvcorca.themes.sorbet"))() end)
 
-newModule("theme.interface", "ModuleScript", "hvcorca.themes.theme.interface", "hvcorca.themes", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
- end, newEnv("hvcorca.themes.theme.interface"))() end)
+newModule("theme.interface", "ModuleScript", "hvcorca.themes.theme.interface", "hvcorca.themes", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7 end, newEnv("hvcorca.themes.theme.interface"))() end)
 
 newInstance("utils", "Folder", "hvcorca.utils", "hvcorca")
 
@@ -5941,8 +5867,7 @@ local function arrayToMap(arr, mapper)
 end
 return {
 	arrayToMap = arrayToMap,
-}
- end, newEnv("hvcorca.utils.array-util"))() end)
+} end, newEnv("hvcorca.utils.array-util"))() end)
 
 newModule("binding-util", "ModuleScript", "hvcorca.utils.binding-util", "hvcorca.utils", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -5960,8 +5885,7 @@ return {
 	isBinding = isBinding,
 	mapBinding = mapBinding,
 	asBinding = asBinding,
-}
- end, newEnv("hvcorca.utils.binding-util"))() end)
+} end, newEnv("hvcorca.utils.binding-util"))() end)
 
 newModule("color3", "ModuleScript", "hvcorca.utils.color3", "hvcorca.utils", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local function getLuminance(color)
@@ -6018,8 +5942,7 @@ return {
 	rgb = rgb,
 	hsv = hsv,
 	hsl = hsl,
-}
- end, newEnv("hvcorca.utils.color3"))() end)
+} end, newEnv("hvcorca.utils.color3"))() end)
 
 newModule("debug", "ModuleScript", "hvcorca.utils.debug", "hvcorca.utils", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local clock = os.clock()
@@ -6046,8 +5969,7 @@ end
 return {
 	startTimer = startTimer,
 	endTimer = endTimer,
-}
- end, newEnv("hvcorca.utils.debug"))() end)
+} end, newEnv("hvcorca.utils.debug"))() end)
 
 newModule("http", "ModuleScript", "hvcorca.utils.http", "hvcorca.utils", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -6075,8 +5997,7 @@ return {
 	request = request,
 	get = get,
 	post = post,
-}
- end, newEnv("hvcorca.utils.http"))() end)
+} end, newEnv("hvcorca.utils.http"))() end)
 
 newModule("number-util", "ModuleScript", "hvcorca.utils.number-util", "hvcorca.utils", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local function map(n, min0, max0, min1, max1)
@@ -6088,8 +6009,7 @@ end
 return {
 	map = map,
 	lerp = lerp,
-}
- end, newEnv("hvcorca.utils.number-util"))() end)
+} end, newEnv("hvcorca.utils.number-util"))() end)
 
 newModule("timeout", "ModuleScript", "hvcorca.utils.timeout", "hvcorca.utils", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
@@ -6173,8 +6093,7 @@ return {
 	clearInterval = clearInterval,
 	Timeout = Timeout,
 	Interval = Interval,
-}
- end, newEnv("hvcorca.utils.timeout"))() end)
+} end, newEnv("hvcorca.utils.timeout"))() end)
 
 newModule("udim2", "ModuleScript", "hvcorca.utils.udim2", "hvcorca.utils", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local function px(x, y)
@@ -6193,8 +6112,7 @@ return {
 	px = px,
 	scale = scale,
 	applyUDim2 = applyUDim2,
-}
- end, newEnv("hvcorca.utils.udim2"))() end)
+} end, newEnv("hvcorca.utils.udim2"))() end)
 
 newInstance("views", "Folder", "hvcorca.views", "hvcorca")
 
@@ -6202,8 +6120,7 @@ newModule("Clock", "ModuleScript", "hvcorca.views.Clock", "hvcorca.views", funct
 local TS = require(script.Parent.Parent.include.RuntimeLib)
 local exports = {}
 exports.default = TS.import(script, script, "Clock").default
-return exports
- end, newEnv("hvcorca.views.Clock"))() end)
+return exports end, newEnv("hvcorca.views.Clock"))() end)
 
 newModule("Clock", "ModuleScript", "hvcorca.views.Clock.Clock", "hvcorca.views.Clock", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -6322,15 +6239,13 @@ end
 local default = hooked(Clock)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Clock.Clock"))() end)
+} end, newEnv("hvcorca.views.Clock.Clock"))() end)
 
 newModule("Dashboard", "ModuleScript", "hvcorca.views.Dashboard", "hvcorca.views", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
 local exports = {}
 exports.default = TS.import(script, script, "Dashboard").default
-return exports
- end, newEnv("hvcorca.views.Dashboard"))() end)
+return exports end, newEnv("hvcorca.views.Dashboard"))() end)
 
 newModule("Dashboard", "ModuleScript", "hvcorca.views.Dashboard.Dashboard", "hvcorca.views.Dashboard", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -6424,8 +6339,7 @@ end
 local default = hooked(Dashboard)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Dashboard.Dashboard"))() end)
+} end, newEnv("hvcorca.views.Dashboard.Dashboard"))() end)
 
 newModule("Dashboard.story", "ModuleScript", "hvcorca.views.Dashboard.Dashboard.story", "hvcorca.views.Dashboard", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -6450,15 +6364,13 @@ return function(target)
 	return function()
 		return Roact.unmount(handle)
 	end
-end
- end, newEnv("hvcorca.views.Dashboard.Dashboard.story"))() end)
+end end, newEnv("hvcorca.views.Dashboard.Dashboard.story"))() end)
 
 newModule("Hint", "ModuleScript", "hvcorca.views.Hint", "hvcorca.views", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
 local exports = {}
 exports.default = TS.import(script, script, "Hint").default
-return exports
- end, newEnv("hvcorca.views.Hint"))() end)
+return exports end, newEnv("hvcorca.views.Hint"))() end)
 
 newModule("Hint", "ModuleScript", "hvcorca.views.Hint.Hint", "hvcorca.views.Hint", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -6516,15 +6428,13 @@ end
 local default = hooked(Hint)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Hint.Hint"))() end)
+} end, newEnv("hvcorca.views.Hint.Hint"))() end)
 
 newModule("Navbar", "ModuleScript", "hvcorca.views.Navbar", "hvcorca.views", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
 local exports = {}
 exports.default = TS.import(script, script, "Navbar").default
-return exports
- end, newEnv("hvcorca.views.Navbar"))() end)
+return exports end, newEnv("hvcorca.views.Navbar"))() end)
 
 newModule("Navbar", "ModuleScript", "hvcorca.views.Navbar.Navbar", "hvcorca.views.Navbar", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -6680,8 +6590,7 @@ function Underglow(props)
 end
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Navbar.Navbar"))() end)
+} end, newEnv("hvcorca.views.Navbar.Navbar"))() end)
 
 newModule("Navbar.story", "ModuleScript", "hvcorca.views.Navbar.Navbar.story", "hvcorca.views.Navbar", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -6706,8 +6615,7 @@ return function(target)
 	return function()
 		return Roact.unmount(handle)
 	end
-end
- end, newEnv("hvcorca.views.Navbar.Navbar.story"))() end)
+end end, newEnv("hvcorca.views.Navbar.Navbar.story"))() end)
 
 newModule("NavbarTab", "ModuleScript", "hvcorca.views.Navbar.NavbarTab", "hvcorca.views.Navbar", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -6766,22 +6674,19 @@ end
 local default = hooked(NavbarTab)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Navbar.NavbarTab"))() end)
+} end, newEnv("hvcorca.views.Navbar.NavbarTab"))() end)
 
 newModule("Pages", "ModuleScript", "hvcorca.views.Pages", "hvcorca.views", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.include.RuntimeLib)
 local exports = {}
 exports.default = TS.import(script, script, "Pages").default
-return exports
- end, newEnv("hvcorca.views.Pages"))() end)
+return exports end, newEnv("hvcorca.views.Pages"))() end)
 
 newModule("Apps", "ModuleScript", "hvcorca.views.Pages.Apps", "hvcorca.views.Pages", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
 local exports = {}
 exports.default = TS.import(script, script, "Apps").default
-return exports
- end, newEnv("hvcorca.views.Pages.Apps"))() end)
+return exports end, newEnv("hvcorca.views.Pages.Apps"))() end)
 
 newModule("Apps", "ModuleScript", "hvcorca.views.Pages.Apps.Apps", "hvcorca.views.Pages.Apps", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -6806,15 +6711,13 @@ end
 local default = pure(Apps)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Apps.Apps"))() end)
+} end, newEnv("hvcorca.views.Pages.Apps.Apps"))() end)
 
 newModule("Players", "ModuleScript", "hvcorca.views.Pages.Apps.Players", "hvcorca.views.Pages.Apps", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
 local exports = {}
 exports.default = TS.import(script, script, "Players").default
-return exports
- end, newEnv("hvcorca.views.Pages.Apps.Players"))() end)
+return exports end, newEnv("hvcorca.views.Pages.Apps.Players"))() end)
 
 newModule("Actions", "ModuleScript", "hvcorca.views.Pages.Apps.Players.Actions", "hvcorca.views.Pages.Apps.Players", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -6867,8 +6770,7 @@ end
 local default = hooked(Actions)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Apps.Players.Actions"))() end)
+} end, newEnv("hvcorca.views.Pages.Apps.Players.Actions"))() end)
 
 newModule("Avatar", "ModuleScript", "hvcorca.views.Pages.Apps.Players.Avatar", "hvcorca.views.Pages.Apps.Players", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -6922,8 +6824,7 @@ end
 local default = hooked(Avatar)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Apps.Players.Avatar"))() end)
+} end, newEnv("hvcorca.views.Pages.Apps.Players.Avatar"))() end)
 
 newModule("Players", "ModuleScript", "hvcorca.views.Pages.Apps.Players.Players", "hvcorca.views.Pages.Apps.Players", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -6955,8 +6856,7 @@ end
 local default = hooked(Players)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Apps.Players.Players"))() end)
+} end, newEnv("hvcorca.views.Pages.Apps.Players.Players"))() end)
 
 newModule("Selection", "ModuleScript", "hvcorca.views.Pages.Apps.Players.Selection", "hvcorca.views.Pages.Apps.Players", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -7281,8 +7181,7 @@ end
 PlayerEntry = hooked(PlayerEntryComponent)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Apps.Players.Selection"))() end)
+} end, newEnv("hvcorca.views.Pages.Apps.Players.Selection"))() end)
 
 newModule("Username", "ModuleScript", "hvcorca.views.Pages.Apps.Players.Username", "hvcorca.views.Pages.Apps.Players", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -7337,22 +7236,19 @@ end
 local default = hooked(Username)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Apps.Players.Username"))() end)
+} end, newEnv("hvcorca.views.Pages.Apps.Players.Username"))() end)
 
 newModule("Home", "ModuleScript", "hvcorca.views.Pages.Home", "hvcorca.views.Pages", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
 local exports = {}
 exports.default = TS.import(script, script, "Home").default
-return exports
- end, newEnv("hvcorca.views.Pages.Home"))() end)
+return exports end, newEnv("hvcorca.views.Pages.Home"))() end)
 
 newModule("FriendActivity", "ModuleScript", "hvcorca.views.Pages.Home.FriendActivity", "hvcorca.views.Pages.Home", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
 local exports = {}
 exports.default = TS.import(script, script, "FriendActivity").default
-return exports
- end, newEnv("hvcorca.views.Pages.Home.FriendActivity"))() end)
+return exports end, newEnv("hvcorca.views.Pages.Home.FriendActivity"))() end)
 
 newModule("FriendActivity", "ModuleScript", "hvcorca.views.Pages.Home.FriendActivity.FriendActivity", "hvcorca.views.Pages.Home.FriendActivity", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -7456,8 +7352,7 @@ end
 local default = hooked(FriendActivity)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Home.FriendActivity.FriendActivity"))() end)
+} end, newEnv("hvcorca.views.Pages.Home.FriendActivity.FriendActivity"))() end)
 
 newModule("FriendItem", "ModuleScript", "hvcorca.views.Pages.Home.FriendActivity.FriendItem", "hvcorca.views.Pages.Home.FriendActivity", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -7570,8 +7465,7 @@ end
 local default = hooked(FriendItem)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Home.FriendActivity.FriendItem"))() end)
+} end, newEnv("hvcorca.views.Pages.Home.FriendActivity.FriendItem"))() end)
 
 newModule("GameItem", "ModuleScript", "hvcorca.views.Pages.Home.FriendActivity.GameItem", "hvcorca.views.Pages.Home.FriendActivity", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -7655,8 +7549,7 @@ local default = pure(GameItem)
 return {
 	GAME_PADDING = GAME_PADDING,
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Home.FriendActivity.GameItem"))() end)
+} end, newEnv("hvcorca.views.Pages.Home.FriendActivity.GameItem"))() end)
 
 newModule("Home", "ModuleScript", "hvcorca.views.Pages.Home.Home", "hvcorca.views.Pages.Home", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -7687,15 +7580,13 @@ end
 local default = pure(Home)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Home.Home"))() end)
+} end, newEnv("hvcorca.views.Pages.Home.Home"))() end)
 
 newModule("Profile", "ModuleScript", "hvcorca.views.Pages.Home.Profile", "hvcorca.views.Pages.Home", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
 local exports = {}
 exports.default = TS.import(script, script, "Profile").default
-return exports
- end, newEnv("hvcorca.views.Pages.Home.Profile"))() end)
+return exports end, newEnv("hvcorca.views.Pages.Home.Profile"))() end)
 
 newModule("Actions", "ModuleScript", "hvcorca.views.Pages.Home.Profile.Actions", "hvcorca.views.Pages.Home.Profile", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -7747,8 +7638,7 @@ end
 local default = hooked(Actions)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Home.Profile.Actions"))() end)
+} end, newEnv("hvcorca.views.Pages.Home.Profile.Actions"))() end)
 
 newModule("Avatar", "ModuleScript", "hvcorca.views.Pages.Home.Profile.Avatar", "hvcorca.views.Pages.Home.Profile", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -7793,8 +7683,7 @@ end
 local default = hooked(Avatar)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Home.Profile.Avatar"))() end)
+} end, newEnv("hvcorca.views.Pages.Home.Profile.Avatar"))() end)
 
 newModule("Info", "ModuleScript", "hvcorca.views.Pages.Home.Profile.Info", "hvcorca.views.Pages.Home.Profile", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -7910,8 +7799,7 @@ end
 local default = hooked(Info)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Home.Profile.Info"))() end)
+} end, newEnv("hvcorca.views.Pages.Home.Profile.Info"))() end)
 
 newModule("Profile", "ModuleScript", "hvcorca.views.Pages.Home.Profile.Profile", "hvcorca.views.Pages.Home.Profile", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -7953,8 +7841,7 @@ end
 local default = hooked(Profile)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Home.Profile.Profile"))() end)
+} end, newEnv("hvcorca.views.Pages.Home.Profile.Profile"))() end)
 
 newModule("Sliders", "ModuleScript", "hvcorca.views.Pages.Home.Profile.Sliders", "hvcorca.views.Pages.Home.Profile", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -8121,8 +8008,7 @@ end
 Slider = hooked(SliderComponent)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Home.Profile.Sliders"))() end)
+} end, newEnv("hvcorca.views.Pages.Home.Profile.Sliders"))() end)
 
 newModule("Username", "ModuleScript", "hvcorca.views.Pages.Home.Profile.Username", "hvcorca.views.Pages.Home.Profile", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -8167,15 +8053,13 @@ end
 local default = hooked(Username)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Home.Profile.Username"))() end)
+} end, newEnv("hvcorca.views.Pages.Home.Profile.Username"))() end)
 
 newModule("Server", "ModuleScript", "hvcorca.views.Pages.Home.Server", "hvcorca.views.Pages.Home", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
 local exports = {}
 exports.default = TS.import(script, script, "Server").default
-return exports
- end, newEnv("hvcorca.views.Pages.Home.Server"))() end)
+return exports end, newEnv("hvcorca.views.Pages.Home.Server"))() end)
 
 newModule("Server", "ModuleScript", "hvcorca.views.Pages.Home.Server.Server", "hvcorca.views.Pages.Home.Server", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -8256,8 +8140,7 @@ end
 local default = hooked(Server)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Home.Server.Server"))() end)
+} end, newEnv("hvcorca.views.Pages.Home.Server.Server"))() end)
 
 newModule("ServerAction", "ModuleScript", "hvcorca.views.Pages.Home.Server.ServerAction", "hvcorca.views.Pages.Home.Server", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -8345,8 +8228,7 @@ end
 local default = hooked(ServerAction)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Home.Server.ServerAction"))() end)
+} end, newEnv("hvcorca.views.Pages.Home.Server.ServerAction"))() end)
 
 newModule("StatusLabel", "ModuleScript", "hvcorca.views.Pages.Home.Server.StatusLabel", "hvcorca.views.Pages.Home.Server", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -8412,8 +8294,7 @@ end
 local default = hooked(StatusLabel)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Home.Server.StatusLabel"))() end)
+} end, newEnv("hvcorca.views.Pages.Home.Server.StatusLabel"))() end)
 
 newModule("Title", "ModuleScript", "hvcorca.views.Pages.Home.Title", "hvcorca.views.Pages.Home", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -8551,15 +8432,13 @@ end
 Label = hooked(LabelComponent)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Home.Title"))() end)
+} end, newEnv("hvcorca.views.Pages.Home.Title"))() end)
 
 newModule("Misc", "ModuleScript", "hvcorca.views.Pages.Misc", "hvcorca.views.Pages", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
 local exports = {}
 exports.default = TS.import(script, script, "Misc").default
-return exports
- end, newEnv("hvcorca.views.Pages.Misc"))() end)
+return exports end, newEnv("hvcorca.views.Pages.Misc"))() end)
 
 newModule("Misc", "ModuleScript", "hvcorca.views.Pages.Misc.Misc", "hvcorca.views.Pages.Misc", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -8765,22 +8644,19 @@ end
 local default = hooked(Misc)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Misc.Misc"))() end)
+} end, newEnv("hvcorca.views.Pages.Misc.Misc"))() end)
 
 newModule("Options", "ModuleScript", "hvcorca.views.Pages.Options", "hvcorca.views.Pages", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
 local exports = {}
 exports.default = TS.import(script, script, "Options").default
-return exports
- end, newEnv("hvcorca.views.Pages.Options"))() end)
+return exports end, newEnv("hvcorca.views.Pages.Options"))() end)
 
 newModule("Config", "ModuleScript", "hvcorca.views.Pages.Options.Config", "hvcorca.views.Pages.Options", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
 local exports = {}
 exports.default = TS.import(script, script, "Config").default
-return exports
- end, newEnv("hvcorca.views.Pages.Options.Config"))() end)
+return exports end, newEnv("hvcorca.views.Pages.Options.Config"))() end)
 
 newModule("Config", "ModuleScript", "hvcorca.views.Pages.Options.Config.Config", "hvcorca.views.Pages.Options.Config", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -8849,8 +8725,7 @@ end
 local default = hooked(Config)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Options.Config.Config"))() end)
+} end, newEnv("hvcorca.views.Pages.Options.Config.Config"))() end)
 
 newModule("ConfigItem", "ModuleScript", "hvcorca.views.Pages.Options.Config.ConfigItem", "hvcorca.views.Pages.Options.Config", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -9002,8 +8877,7 @@ return {
 	ENTRY_WIDTH = ENTRY_WIDTH,
 	ENTRY_TEXT_PADDING = ENTRY_TEXT_PADDING,
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Options.Config.ConfigItem"))() end)
+} end, newEnv("hvcorca.views.Pages.Options.Config.ConfigItem"))() end)
 
 newModule("Options", "ModuleScript", "hvcorca.views.Pages.Options.Options", "hvcorca.views.Pages.Options", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -9032,15 +8906,13 @@ end
 local default = pure(Options)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Options.Options"))() end)
+} end, newEnv("hvcorca.views.Pages.Options.Options"))() end)
 
 newModule("Shortcuts", "ModuleScript", "hvcorca.views.Pages.Options.Shortcuts", "hvcorca.views.Pages.Options", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
 local exports = {}
 exports.default = TS.import(script, script, "Shortcuts").default
-return exports
- end, newEnv("hvcorca.views.Pages.Options.Shortcuts"))() end)
+return exports end, newEnv("hvcorca.views.Pages.Options.Shortcuts"))() end)
 
 newModule("ShortcutItem", "ModuleScript", "hvcorca.views.Pages.Options.Shortcuts.ShortcutItem", "hvcorca.views.Pages.Options.Shortcuts", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -9288,8 +9160,7 @@ return {
 	ENTRY_WIDTH = ENTRY_WIDTH,
 	ENTRY_TEXT_PADDING = ENTRY_TEXT_PADDING,
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Options.Shortcuts.ShortcutItem"))() end)
+} end, newEnv("hvcorca.views.Pages.Options.Shortcuts.ShortcutItem"))() end)
 
 newModule("Shortcuts", "ModuleScript", "hvcorca.views.Pages.Options.Shortcuts.Shortcuts", "hvcorca.views.Pages.Options.Shortcuts", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -9424,15 +9295,13 @@ end
 local default = hooked(Shortcuts)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Options.Shortcuts.Shortcuts"))() end)
+} end, newEnv("hvcorca.views.Pages.Options.Shortcuts.Shortcuts"))() end)
 
 newModule("Themes", "ModuleScript", "hvcorca.views.Pages.Options.Themes", "hvcorca.views.Pages.Options", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
 local exports = {}
 exports.default = TS.import(script, script, "Themes").default
-return exports
- end, newEnv("hvcorca.views.Pages.Options.Themes"))() end)
+return exports end, newEnv("hvcorca.views.Pages.Options.Themes"))() end)
 
 newModule("ThemeItem", "ModuleScript", "hvcorca.views.Pages.Options.Themes.ThemeItem", "hvcorca.views.Pages.Options.Themes", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -9669,8 +9538,7 @@ return {
 	ENTRY_WIDTH = ENTRY_WIDTH,
 	ENTRY_TEXT_PADDING = ENTRY_TEXT_PADDING,
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Options.Themes.ThemeItem"))() end)
+} end, newEnv("hvcorca.views.Pages.Options.Themes.ThemeItem"))() end)
 
 newModule("Themes", "ModuleScript", "hvcorca.views.Pages.Options.Themes.Themes", "hvcorca.views.Pages.Options.Themes", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -9752,8 +9620,7 @@ end
 local default = hooked(Themes)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Options.Themes.Themes"))() end)
+} end, newEnv("hvcorca.views.Pages.Options.Themes.Themes"))() end)
 
 newModule("Pages", "ModuleScript", "hvcorca.views.Pages.Pages", "hvcorca.views.Pages", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -9818,15 +9685,13 @@ end
 local default = hooked(Pages)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Pages"))() end)
+} end, newEnv("hvcorca.views.Pages.Pages"))() end)
 
 newModule("Scripts", "ModuleScript", "hvcorca.views.Pages.Scripts", "hvcorca.views.Pages", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
 local exports = {}
 exports.default = TS.import(script, script, "Scripts").default
-return exports
- end, newEnv("hvcorca.views.Pages.Scripts"))() end)
+return exports end, newEnv("hvcorca.views.Pages.Scripts"))() end)
 
 newModule("Content", "ModuleScript", "hvcorca.views.Pages.Scripts.Content", "hvcorca.views.Pages.Scripts", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -9972,8 +9837,7 @@ end
 local default = hooked(Content)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Scripts.Content"))() end)
+} end, newEnv("hvcorca.views.Pages.Scripts.Content"))() end)
 
 newModule("ScriptCard", "ModuleScript", "hvcorca.views.Pages.Scripts.ScriptCard", "hvcorca.views.Pages.Scripts", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -10155,8 +10019,7 @@ end
 local default = hooked(ScriptCard)
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Scripts.ScriptCard"))() end)
+} end, newEnv("hvcorca.views.Pages.Scripts.ScriptCard"))() end)
 
 newModule("Scripts", "ModuleScript", "hvcorca.views.Pages.Scripts.Scripts", "hvcorca.views.Pages.Scripts", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)
@@ -10333,8 +10196,7 @@ end
 local default = Scripts
 return {
 	default = default,
-}
- end, newEnv("hvcorca.views.Pages.Scripts.Scripts"))() end)
+} end, newEnv("hvcorca.views.Pages.Scripts.Scripts"))() end)
 
 newModule("constants", "ModuleScript", "hvcorca.views.Pages.Scripts.constants", "hvcorca.views.Pages.Scripts", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local BASE_WINDOW_HEIGHT = 880
@@ -10344,8 +10206,7 @@ return {
 	BASE_WINDOW_HEIGHT = BASE_WINDOW_HEIGHT,
 	BASE_WINDOW_WIDTH = BASE_WINDOW_WIDTH,
 	BASE_PADDING = BASE_PADDING,
-}
- end, newEnv("hvcorca.views.Pages.Scripts.constants"))() end)
+} end, newEnv("hvcorca.views.Pages.Scripts.constants"))() end)
 
 newInstance("include", "Folder", "hvcorca.include", "hvcorca")
 
@@ -11750,8 +11611,7 @@ function Promise.fromEvent(event, predicate)
 	end)
 end
 
-return Promise
- end, newEnv("hvcorca.include.Promise"))() end)
+return Promise end, newEnv("hvcorca.include.Promise"))() end)
 
 newModule("RuntimeLib", "ModuleScript", "hvcorca.include.RuntimeLib", "hvcorca.include", function () return setfenv(function() local Promise = require(script.Parent.Promise)
 
@@ -11981,8 +11841,7 @@ function TS.generator(callback)
 	}
 end
 
-return TS
- end, newEnv("hvcorca.include.RuntimeLib"))() end)
+return TS end, newEnv("hvcorca.include.RuntimeLib"))() end)
 
 newInstance("node_modules", "Folder", "hvcorca.include.node_modules", "hvcorca.include")
 
@@ -12061,8 +11920,7 @@ function BaseMotor:__tostring()
 	return "Motor"
 end
 
-return BaseMotor
- end, newEnv("hvcorca.include.node_modules.@rbxts.flipper.src.BaseMotor"))() end)
+return BaseMotor end, newEnv("hvcorca.include.node_modules.@rbxts.flipper.src.BaseMotor"))() end)
 
 newModule("GroupMotor", "ModuleScript", "hvcorca.include.node_modules.@rbxts.flipper.src.GroupMotor", "hvcorca.include.node_modules.@rbxts.flipper.src", function () return setfenv(function() local BaseMotor = require(script.Parent.BaseMotor)
 local SingleMotor = require(script.Parent.SingleMotor)
@@ -12170,8 +12028,7 @@ function GroupMotor:__tostring()
 	return "Motor(Group)"
 end
 
-return GroupMotor
- end, newEnv("hvcorca.include.node_modules.@rbxts.flipper.src.GroupMotor"))() end)
+return GroupMotor end, newEnv("hvcorca.include.node_modules.@rbxts.flipper.src.GroupMotor"))() end)
 
 newModule("Instant", "ModuleScript", "hvcorca.include.node_modules.@rbxts.flipper.src.Instant", "hvcorca.include.node_modules.@rbxts.flipper.src", function () return setfenv(function() local Instant = {}
 Instant.__index = Instant
@@ -12353,8 +12210,7 @@ function SingleMotor:__tostring()
 	return "Motor(Single)"
 end
 
-return SingleMotor
- end, newEnv("hvcorca.include.node_modules.@rbxts.flipper.src.SingleMotor"))() end)
+return SingleMotor end, newEnv("hvcorca.include.node_modules.@rbxts.flipper.src.SingleMotor"))() end)
 
 newModule("Spring", "ModuleScript", "hvcorca.include.node_modules.@rbxts.flipper.src.Spring", "hvcorca.include.node_modules.@rbxts.flipper.src", function () return setfenv(function() local VELOCITY_THRESHOLD = 0.001
 local POSITION_THRESHOLD = 0.001
@@ -12520,8 +12376,126 @@ local function Make(className, settings)
 	instance.Parent = parent
 	return instance
 end
-return Make
- end, newEnv("hvcorca.include.node_modules.@rbxts.make"))() end)
+return Make end, newEnv("hvcorca.include.node_modules.@rbxts.make"))() end)
+
+newModule("object-utils", "ModuleScript", "hvcorca.include.node_modules.@rbxts.object-utils", "hvcorca.include.node_modules.@rbxts", function () return setfenv(function() local HttpService = game:GetService("HttpService")
+
+local Object = {}
+
+function Object.keys(object)
+	local result = table.create(#object)
+	for key in pairs(object) do
+		result[#result + 1] = key
+	end
+	return result
+end
+
+function Object.values(object)
+	local result = table.create(#object)
+	for _, value in pairs(object) do
+		result[#result + 1] = value
+	end
+	return result
+end
+
+function Object.entries(object)
+	local result = table.create(#object)
+	for key, value in pairs(object) do
+		result[#result + 1] = { key, value }
+	end
+	return result
+end
+
+function Object.assign(toObj, ...)
+	for i = 1, select("#", ...) do
+		local arg = select(i, ...)
+		if type(arg) == "table" then
+			for key, value in pairs(arg) do
+				toObj[key] = value
+			end
+		end
+	end
+	return toObj
+end
+
+function Object.copy(object)
+	local result = table.create(#object)
+	for k, v in pairs(object) do
+		result[k] = v
+	end
+	return result
+end
+
+local function deepCopyHelper(object, encountered)
+	local result = table.create(#object)
+	encountered[object] = result
+
+	for k, v in pairs(object) do
+		if type(k) == "table" then
+			k = encountered[k] or deepCopyHelper(k, encountered)
+		end
+
+		if type(v) == "table" then
+			v = encountered[v] or deepCopyHelper(v, encountered)
+		end
+
+		result[k] = v
+	end
+
+	return result
+end
+
+function Object.deepCopy(object)
+	return deepCopyHelper(object, {})
+end
+
+function Object.deepEquals(a, b)
+	-- a[k] == b[k]
+	for k in pairs(a) do
+		local av = a[k]
+		local bv = b[k]
+		if type(av) == "table" and type(bv) == "table" then
+			local result = Object.deepEquals(av, bv)
+			if not result then
+				return false
+			end
+		elseif av ~= bv then
+			return false
+		end
+	end
+
+	-- extra keys in b
+	for k in pairs(b) do
+		if a[k] == nil then
+			return false
+		end
+	end
+
+	return true
+end
+
+function Object.toString(data)
+	return HttpService:JSONEncode(data)
+end
+
+function Object.isEmpty(object)
+	return next(object) == nil
+end
+
+function Object.fromEntries(entries)
+	local entriesLen = #entries
+
+	local result = table.create(entriesLen)
+	if entries then
+		for i = 1, entriesLen do
+			local pair = entries[i]
+			result[pair[1]] = pair[2]
+		end
+	end
+	return result
+end
+
+return Object end, newEnv("hvcorca.include.node_modules.@rbxts.object-utils"))() end)
 
 newInstance("roact", "Folder", "hvcorca.include.node_modules.@rbxts.roact", "hvcorca.include.node_modules.@rbxts")
 
@@ -13801,8 +13775,7 @@ setmetatable(Change, {
 	end,
 })
 
-return Change
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers.Change"))() end)
+return Change end, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers.Change"))() end)
 
 newModule("Children", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers.Children", "hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers", function () return setfenv(function() local Symbol = require(script.Parent.Parent.Symbol)
 
@@ -13850,8 +13823,7 @@ setmetatable(Event, {
 	end,
 })
 
-return Event
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers.Event"))() end)
+return Event end, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers.Event"))() end)
 
 newModule("Ref", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers.Ref", "hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers", function () return setfenv(function() local Symbol = require(script.Parent.Parent.Symbol)
 
@@ -14183,8 +14155,7 @@ function RobloxRenderer.updateHostNode(reconciler, virtualNode, newElement)
 	return virtualNode
 end
 
-return RobloxRenderer
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.RobloxRenderer"))() end)
+return RobloxRenderer end, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.RobloxRenderer"))() end)
 
 newModule("SingleEventManager", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact.src.SingleEventManager", "hvcorca.include.node_modules.@rbxts.roact.src", function () return setfenv(function() --[[
 	A manager for a single host virtual node's connected events.
@@ -14666,8 +14637,7 @@ local function createContext(defaultValue)
 	}
 end
 
-return createContext
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.createContext"))() end)
+return createContext end, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.createContext"))() end)
 
 newModule("createElement", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact.src.createElement", "hvcorca.include.node_modules.@rbxts.roact.src", function () return setfenv(function() local Children = require(script.Parent.PropMarkers.Children)
 local ElementKind = require(script.Parent.ElementKind)
@@ -15241,8 +15211,7 @@ local function createReconciler(renderer)
 	return reconciler
 end
 
-return createReconciler
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.createReconciler"))() end)
+return createReconciler end, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.createReconciler"))() end)
 
 newModule("createReconcilerCompat", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact.src.createReconcilerCompat", "hvcorca.include.node_modules.@rbxts.roact.src", function () return setfenv(function() --[[
 	Contains deprecated methods from Reconciler. Broken out so that removing
@@ -15398,8 +15367,7 @@ local function createSignal()
 	}
 end
 
-return createSignal
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.createSignal"))() end)
+return createSignal end, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.createSignal"))() end)
 
 newModule("createSpy", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact.src.createSpy", "hvcorca.include.node_modules.@rbxts.roact.src", function () return setfenv(function() --[[
 	A utility used to create a function spy that can be used to robustly test
@@ -15734,8 +15702,7 @@ local function pure(functionComponent)
 end
 exports.hooked = hooked
 exports.pure = pure
-return exports
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out"))() end)
+return exports end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out"))() end)
 
 newModule("hooks", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", "hvcorca.include.node_modules.@rbxts.roact-hooked.out", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = _G[script]
@@ -15749,8 +15716,7 @@ exports.useReducer = TS.import(script, script, "use-reducer").useReducer
 exports.useState = TS.import(script, script, "use-state").useState
 exports.useMutable = TS.import(script, script, "use-mutable").useMutable
 exports.useRef = TS.import(script, script, "use-ref").useRef
-return exports
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks"))() end)
+return exports end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks"))() end)
 
 newModule("use-binding", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-binding", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = _G[script]
@@ -15780,8 +15746,7 @@ local function useBinding(initialValue)
 end
 return {
 	useBinding = useBinding,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-binding"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-binding"))() end)
 
 newModule("use-callback", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-callback", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = _G[script]
@@ -15816,8 +15781,7 @@ local function useCallback(callback, deps)
 end
 return {
 	useCallback = useCallback,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-callback"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-callback"))() end)
 
 newModule("use-context", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-context", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = _G[script]
@@ -15872,8 +15836,7 @@ local function useContext(context)
 end
 return {
 	useContext = useContext,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-context"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-context"))() end)
 
 newModule("use-effect", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-effect", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = _G[script]
@@ -15949,8 +15912,7 @@ local function useEffect(callback, deps)
 end
 return {
 	useEffect = useEffect,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-effect"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-effect"))() end)
 
 newModule("use-memo", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-memo", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = _G[script]
@@ -15992,8 +15954,7 @@ local function useMemo(factory, deps)
 end
 return {
 	useMemo = useMemo,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-memo"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-memo"))() end)
 
 newModule("use-mutable", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-mutable", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = _G[script]
@@ -16094,8 +16055,7 @@ local function useMutable(initialValue)
 end
 return {
 	useMutable = useMutable,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-mutable"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-mutable"))() end)
 
 newModule("use-reducer", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-reducer", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = _G[script]
@@ -16242,8 +16202,7 @@ local function useReducer(reducer, initializerArg, initializer)
 end
 return {
 	useReducer = useReducer,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-reducer"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-reducer"))() end)
 
 newModule("use-ref", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-ref", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = _G[script]
@@ -16281,8 +16240,7 @@ local function useRef()
 end
 return {
 	useRef = useRef,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-ref"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-ref"))() end)
 
 newModule("use-state", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-state", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = _G[script]
@@ -16383,16 +16341,14 @@ local function useState(initialState)
 end
 return {
 	useState = useState,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-state"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-state"))() end)
 
 newModule("types", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.types", "hvcorca.include.node_modules.@rbxts.roact-hooked.out", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 -- Roact
 -- Reducers
 -- Utility types
 -- Hooks
-return nil
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.types"))() end)
+return nil end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.types"))() end)
 
 newInstance("utils", "Folder", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.utils", "hvcorca.include.node_modules.@rbxts.roact-hooked.out")
 
@@ -16426,8 +16382,7 @@ local function areDepsEqual(nextDeps, prevDeps)
 end
 return {
 	areDepsEqual = areDepsEqual,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.utils.are-deps-equal"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.utils.are-deps-equal"))() end)
 
 newModule("memoized-hook", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.utils.memoized-hook", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.utils", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local EXCEPTION_INVALID_HOOK_CALL = table.concat({ "Invalid hook call. Hooks can only be called inside of the body of a function component.", "This is usually the result of conflicting versions of roact-hooked.", "See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem." }, "\n")
@@ -16511,8 +16466,7 @@ return {
 	renderDone = renderDone,
 	resolveCurrentComponent = resolveCurrentComponent,
 	memoizedHook = memoizedHook,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.utils.memoized-hook"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.utils.memoized-hook"))() end)
 
 newModule("with-hooks", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks", "hvcorca.include.node_modules.@rbxts.roact-hooked.out", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = _G[script]
@@ -16520,8 +16474,7 @@ local exports = {}
 local _with_hooks = TS.import(script, script, "with-hooks")
 exports.withHooks = _with_hooks.withHooks
 exports.withHooksPure = _with_hooks.withHooksPure
-return exports
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks"))() end)
+return exports end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks"))() end)
 
 newModule("component-with-hooks", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks.component-with-hooks", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = _G[script]
@@ -16616,8 +16569,7 @@ do
 end
 return {
 	ComponentWithHooks = ComponentWithHooks,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks.component-with-hooks"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks.component-with-hooks"))() end)
 
 newModule("with-hooks", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks.with-hooks", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = _G[script]
@@ -16653,8 +16605,7 @@ end
 return {
 	withHooks = withHooks,
 	withHooksPure = withHooksPure,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks.with-hooks"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks.with-hooks"))() end)
 
 newInstance("roact-rodux-hooked", "Folder", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked", "hvcorca.include.node_modules.@rbxts")
 
@@ -16667,8 +16618,7 @@ exports.useSelector = TS.import(script, script, "hooks", "use-selector").useSele
 exports.useStore = TS.import(script, script, "hooks", "use-store").useStore
 exports.shallowEqual = TS.import(script, script, "helpers", "shallow-equal").shallowEqual
 exports.RoactRoduxContext = TS.import(script, script, "components", "context").RoactRoduxContext
-return exports
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out"))() end)
+return exports end, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out"))() end)
 
 newInstance("components", "Folder", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.components", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out")
 
@@ -16678,8 +16628,7 @@ local Roact = TS.import(script, TS.getModule(script, "@rbxts", "roact").src)
 local RoactRoduxContext = Roact.createContext(nil)
 return {
 	RoactRoduxContext = RoactRoduxContext,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.components.context"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.components.context"))() end)
 
 newModule("provider", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.components.provider", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.components", function () return setfenv(function() -- Compiled with roblox-ts v1.2.3
 local TS = _G[script]
@@ -16718,8 +16667,7 @@ local Provider = hooked(function(_param)
 end)
 return {
 	Provider = Provider,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.components.provider"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.components.provider"))() end)
 
 newInstance("helpers", "Folder", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.helpers", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out")
 
@@ -16759,8 +16707,7 @@ local function shallowEqual(left, right)
 end
 return {
 	shallowEqual = shallowEqual,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.helpers.shallow-equal"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.helpers.shallow-equal"))() end)
 
 newInstance("hooks", "Folder", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out")
 
@@ -16800,8 +16747,7 @@ local function useDispatch()
 end
 return {
 	useDispatch = useDispatch,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-dispatch"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-dispatch"))() end)
 
 newModule("use-selector", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-selector", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.3
 local TS = _G[script]
@@ -16922,8 +16868,7 @@ local function useSelector(selector, equalityFn)
 end
 return {
 	useSelector = useSelector,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-selector"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-selector"))() end)
 
 newModule("use-store", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-store", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks", function () return setfenv(function() -- Compiled with roblox-ts v1.2.3
 local TS = _G[script]
@@ -16951,16 +16896,14 @@ local function useStore()
 end
 return {
 	useStore = useStore,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-store"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-store"))() end)
 
 newModule("types", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.types", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out", function () return setfenv(function() -- Compiled with roblox-ts v1.2.3
 --[[
 	*
 	* A Roact Context
 ]]
-return nil
- end, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.types"))() end)
+return nil end, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.types"))() end)
 
 newInstance("rodux", "Folder", "hvcorca.include.node_modules.@rbxts.rodux", "hvcorca.include.node_modules.@rbxts")
 
@@ -16978,8 +16921,7 @@ return {
 	makeActionCreator = makeActionCreator,
 	loggerMiddleware = loggerMiddleware.middleware,
 	thunkMiddleware = thunkMiddleware,
-}
- end, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src"))() end)
+} end, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src"))() end)
 
 newModule("NoYield", "ModuleScript", "hvcorca.include.node_modules.@rbxts.rodux.src.NoYield", "hvcorca.include.node_modules.@rbxts.rodux.src", function () return setfenv(function() --!nocheck
 
@@ -17011,8 +16953,7 @@ local function NoYield(callback, ...)
 	return resultHandler(co, coroutine.resume(co, ...))
 end
 
-return NoYield
- end, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.NoYield"))() end)
+return NoYield end, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.NoYield"))() end)
 
 newModule("Signal", "ModuleScript", "hvcorca.include.node_modules.@rbxts.rodux.src.Signal", "hvcorca.include.node_modules.@rbxts.rodux.src", function () return setfenv(function() --[[
 	A limited, simple implementation of a Signal.
@@ -17335,8 +17276,7 @@ function Store:flush()
 	self._lastState = state
 end
 
-return Store
- end, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.Store"))() end)
+return Store end, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.Store"))() end)
 
 newModule("combineReducers", "ModuleScript", "hvcorca.include.node_modules.@rbxts.rodux.src.combineReducers", "hvcorca.include.node_modules.@rbxts.rodux.src", function () return setfenv(function() --[[
 	Create a composite reducer from a map of keys and sub-reducers.
@@ -17359,8 +17299,7 @@ local function combineReducers(map)
 	end
 end
 
-return combineReducers
- end, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.combineReducers"))() end)
+return combineReducers end, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.combineReducers"))() end)
 
 newModule("createReducer", "ModuleScript", "hvcorca.include.node_modules.@rbxts.rodux.src.createReducer", "hvcorca.include.node_modules.@rbxts.rodux.src", function () return setfenv(function() return function(initialState, handlers)
 	return function(state, action)
@@ -17376,8 +17315,7 @@ newModule("createReducer", "ModuleScript", "hvcorca.include.node_modules.@rbxts.
 
 		return state
 	end
-end
- end, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.createReducer"))() end)
+end end, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.createReducer"))() end)
 
 newModule("loggerMiddleware", "ModuleScript", "hvcorca.include.node_modules.@rbxts.rodux.src.loggerMiddleware", "hvcorca.include.node_modules.@rbxts.rodux.src", function () return setfenv(function() -- We want to be able to override outputFunction in tests, so the shape of this
 -- module is kind of unconventional.
@@ -17401,8 +17339,7 @@ function loggerMiddleware.middleware(nextDispatch, store)
 	end
 end
 
-return loggerMiddleware
- end, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.loggerMiddleware"))() end)
+return loggerMiddleware end, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.loggerMiddleware"))() end)
 
 newModule("makeActionCreator", "ModuleScript", "hvcorca.include.node_modules.@rbxts.rodux.src.makeActionCreator", "hvcorca.include.node_modules.@rbxts.rodux.src", function () return setfenv(function() --[[
 	A helper function to define a Rodux action creator with an associated name.
@@ -17427,8 +17364,7 @@ local function makeActionCreator(name, fn)
 	})
 end
 
-return makeActionCreator
- end, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.makeActionCreator"))() end)
+return makeActionCreator end, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.makeActionCreator"))() end)
 
 newModule("prettyPrint", "ModuleScript", "hvcorca.include.node_modules.@rbxts.rodux.src.prettyPrint", "hvcorca.include.node_modules.@rbxts.rodux.src", function () return setfenv(function() local indent = "    "
 
@@ -17498,8 +17434,7 @@ local function thunkMiddleware(nextDispatch, store)
 	end
 end
 
-return thunkMiddleware
- end, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.thunkMiddleware"))() end)
+return thunkMiddleware end, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.thunkMiddleware"))() end)
 
 newModule("services", "ModuleScript", "hvcorca.include.node_modules.@rbxts.services", "hvcorca.include.node_modules.@rbxts", function () return setfenv(function() return setmetatable({}, {
 	__index = function(self, serviceName)
@@ -17507,8 +17442,7 @@ newModule("services", "ModuleScript", "hvcorca.include.node_modules.@rbxts.servi
 		self[serviceName] = service
 		return service
 	end,
-})
- end, newEnv("hvcorca.include.node_modules.@rbxts.services"))() end)
+}) end, newEnv("hvcorca.include.node_modules.@rbxts.services"))() end)
 
 newInstance("types", "Folder", "hvcorca.include.node_modules.@rbxts.types", "hvcorca.include.node_modules.@rbxts")
 
