@@ -5,22 +5,21 @@ import { useCurrentPage } from "hooks/use-current-page";
 import { DashboardPage } from "store/models/dashboard.model";
 import Apps from "./Apps";
 import Home from "./Home";
-import Commands from "./Commands";
+import Misc from "./Misc";
 import Options from "./Options";
 import Scripts from "./Scripts";
-
-export const COMMANDS_PAGE = "commands" as DashboardPage;
 
 function Pages() {
 	const currentPage = useCurrentPage();
 	const isScriptsVisible = useDelayedUpdate(currentPage === DashboardPage.Scripts, 2000, (isVisible) => isVisible);
+	const isMiscVisible = useDelayedUpdate(currentPage === DashboardPage.Misc, 2000, (isVisible) => isVisible);
 
 	return (
 		<>
 			<Home Key="home" />
 			<Apps Key="apps" />
 			{isScriptsVisible && <Scripts Key="scripts" />}
-			<Commands Key="commands" />
+			{isMiscVisible && <Misc Key="misc" />}
 			<Options Key="options" />
 		</>
 	);
