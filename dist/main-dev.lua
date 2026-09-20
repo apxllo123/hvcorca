@@ -107,8 +107,7 @@ end\
 local default = App\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.App")) setfenv(fn, newEnv("hvcorca.App")) return fn() end)
+}", '@'.."hvcorca.App")) setfenv(fn, newEnv("hvcorca.App")) return fn() end)
 
 newInstance("components", "Folder", "hvcorca.components", "hvcorca")
 
@@ -116,8 +115,7 @@ newModule("Acrylic", "ModuleScript", "hvcorca.components.Acrylic", "hvcorca.comp
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
 local exports = {}\
 exports.default = TS.import(script, script, \"Acrylic\").default\
-return exports\
-", '@'.."hvcorca.components.Acrylic")) setfenv(fn, newEnv("hvcorca.components.Acrylic")) return fn() end)
+return exports", '@'.."hvcorca.components.Acrylic")) setfenv(fn, newEnv("hvcorca.components.Acrylic")) return fn() end)
 
 newModule("Acrylic", "ModuleScript", "hvcorca.components.Acrylic.Acrylic", "hvcorca.components.Acrylic", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -285,8 +283,7 @@ end\
 AcrylicBlur = hooked(AcrylicBlurComponent)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.components.Acrylic.Acrylic")) setfenv(fn, newEnv("hvcorca.components.Acrylic.Acrylic")) return fn() end)
+}", '@'.."hvcorca.components.Acrylic.Acrylic")) setfenv(fn, newEnv("hvcorca.components.Acrylic.Acrylic")) return fn() end)
 
 newModule("Acrylic.story", "ModuleScript", "hvcorca.components.Acrylic.Acrylic.story", "hvcorca.components.Acrylic", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -329,8 +326,7 @@ return function(target)\
 \9return function()\
 \9\9return Roact.unmount(handle)\
 \9end\
-end\
-", '@'.."hvcorca.components.Acrylic.Acrylic.story")) setfenv(fn, newEnv("hvcorca.components.Acrylic.Acrylic.story")) return fn() end)
+end", '@'.."hvcorca.components.Acrylic.Acrylic.story")) setfenv(fn, newEnv("hvcorca.components.Acrylic.Acrylic.story")) return fn() end)
 
 newModule("acrylic-instance", "ModuleScript", "hvcorca.components.Acrylic.acrylic-instance", "hvcorca.components.Acrylic", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -422,8 +418,7 @@ _object[_left] = { _exp, _exp_1, _exp_2, _exp_3, _exp_4, Make(\"Part\", _object_
 local acrylicInstance = Make(\"Model\", _object)\
 return {\
 \9acrylicInstance = acrylicInstance,\
-}\
-", '@'.."hvcorca.components.Acrylic.acrylic-instance")) setfenv(fn, newEnv("hvcorca.components.Acrylic.acrylic-instance")) return fn() end)
+}", '@'.."hvcorca.components.Acrylic.acrylic-instance")) setfenv(fn, newEnv("hvcorca.components.Acrylic.acrylic-instance")) return fn() end)
 
 newModule("ActionButton", "ModuleScript", "hvcorca.components.ActionButton", "hvcorca.components", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -515,8 +510,7 @@ end\
 local default = hooked(ActionButton)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.components.ActionButton")) setfenv(fn, newEnv("hvcorca.components.ActionButton")) return fn() end)
+}", '@'.."hvcorca.components.ActionButton")) setfenv(fn, newEnv("hvcorca.components.ActionButton")) return fn() end)
 
 newModule("Border", "ModuleScript", "hvcorca.components.Border", "hvcorca.components", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -588,8 +582,7 @@ end\
 local default = hooked(Border)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.components.Border")) setfenv(fn, newEnv("hvcorca.components.Border")) return fn() end)
+}", '@'.."hvcorca.components.Border")) setfenv(fn, newEnv("hvcorca.components.Border")) return fn() end)
 
 newModule("BrightButton", "ModuleScript", "hvcorca.components.BrightButton", "hvcorca.components", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -725,8 +718,7 @@ end\
 local default = hooked(BrightButton)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.components.BrightButton")) setfenv(fn, newEnv("hvcorca.components.BrightButton")) return fn() end)
+}", '@'.."hvcorca.components.BrightButton")) setfenv(fn, newEnv("hvcorca.components.BrightButton")) return fn() end)
 
 newModule("BrightSlider", "ModuleScript", "hvcorca.components.BrightSlider", "hvcorca.components", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -919,8 +911,7 @@ end\
 Drag = hooked(DragComponent)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.components.BrightSlider")) setfenv(fn, newEnv("hvcorca.components.BrightSlider")) return fn() end)
+}", '@'.."hvcorca.components.BrightSlider")) setfenv(fn, newEnv("hvcorca.components.BrightSlider")) return fn() end)
 
 newModule("Canvas", "ModuleScript", "hvcorca.components.Canvas", "hvcorca.components", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -999,8 +990,7 @@ end\
 local default = hooked(Canvas)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.components.Canvas")) setfenv(fn, newEnv("hvcorca.components.Canvas")) return fn() end)
+}", '@'.."hvcorca.components.Canvas")) setfenv(fn, newEnv("hvcorca.components.Canvas")) return fn() end)
 
 newModule("Card", "ModuleScript", "hvcorca.components.Card", "hvcorca.components", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -1097,8 +1087,7 @@ end\
 local default = hooked(Card)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.components.Card")) setfenv(fn, newEnv("hvcorca.components.Card")) return fn() end)
+}", '@'.."hvcorca.components.Card")) setfenv(fn, newEnv("hvcorca.components.Card")) return fn() end)
 
 newModule("Fill", "ModuleScript", "hvcorca.components.Fill", "hvcorca.components", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -1177,8 +1166,7 @@ end\
 local default = hooked(Fill)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.components.Fill")) setfenv(fn, newEnv("hvcorca.components.Fill")) return fn() end)
+}", '@'.."hvcorca.components.Fill")) setfenv(fn, newEnv("hvcorca.components.Fill")) return fn() end)
 
 newModule("Glow", "ModuleScript", "hvcorca.components.Glow", "hvcorca.components", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -1315,8 +1303,7 @@ return {\
 \9GlowRadius = GlowRadius,\
 \9RADIUS_TO_CENTER_OFFSET = RADIUS_TO_CENTER_OFFSET,\
 \9default = default,\
-}\
-", '@'.."hvcorca.components.Glow")) setfenv(fn, newEnv("hvcorca.components.Glow")) return fn() end)
+}", '@'.."hvcorca.components.Glow")) setfenv(fn, newEnv("hvcorca.components.Glow")) return fn() end)
 
 newModule("ParallaxImage", "ModuleScript", "hvcorca.components.ParallaxImage", "hvcorca.components", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -1357,8 +1344,7 @@ end\
 local default = ParallaxImage\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.components.ParallaxImage")) setfenv(fn, newEnv("hvcorca.components.ParallaxImage")) return fn() end)
+}", '@'.."hvcorca.components.ParallaxImage")) setfenv(fn, newEnv("hvcorca.components.ParallaxImage")) return fn() end)
 
 newModule("constants", "ModuleScript", "hvcorca.constants", "hvcorca", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local IS_DEV = getgenv == nil\
@@ -1370,8 +1356,7 @@ local VERSION_TAG = _condition\
 return {\
 \9IS_DEV = IS_DEV,\
 \9VERSION_TAG = VERSION_TAG,\
-}\
-", '@'.."hvcorca.constants")) setfenv(fn, newEnv("hvcorca.constants")) return fn() end)
+}", '@'.."hvcorca.constants")) setfenv(fn, newEnv("hvcorca.constants")) return fn() end)
 
 newInstance("context", "Folder", "hvcorca.context", "hvcorca")
 
@@ -1381,8 +1366,7 @@ local Roact = TS.import(script, TS.getModule(script, \"@rbxts\", \"roact\").src)
 local ScaleContext = Roact.createContext((Roact.createBinding(1)))\
 return {\
 \9ScaleContext = ScaleContext,\
-}\
-", '@'.."hvcorca.context.scale-context")) setfenv(fn, newEnv("hvcorca.context.scale-context")) return fn() end)
+}", '@'.."hvcorca.context.scale-context")) setfenv(fn, newEnv("hvcorca.context.scale-context")) return fn() end)
 
 newInstance("hooks", "Folder", "hvcorca.hooks", "hvcorca")
 
@@ -1397,8 +1381,7 @@ exports.useInstant = TS.import(script, script, \"use-instant\").useInstant\
 exports.useLinear = TS.import(script, script, \"use-linear\").useLinear\
 exports.useMotor = TS.import(script, script, \"use-motor\").useMotor\
 exports.useSpring = TS.import(script, script, \"use-spring\").useSpring\
-return exports\
-", '@'.."hvcorca.hooks.common.flipper-hooks")) setfenv(fn, newEnv("hvcorca.hooks.common.flipper-hooks")) return fn() end)
+return exports", '@'.."hvcorca.hooks.common.flipper-hooks")) setfenv(fn, newEnv("hvcorca.hooks.common.flipper-hooks")) return fn() end)
 
 newModule("get-binding", "ModuleScript", "hvcorca.hooks.common.flipper-hooks.get-binding", "hvcorca.hooks.common.flipper-hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -1423,8 +1406,7 @@ local function getBinding(motor)\
 end\
 return {\
 \9getBinding = getBinding,\
-}\
-", '@'.."hvcorca.hooks.common.flipper-hooks.get-binding")) setfenv(fn, newEnv("hvcorca.hooks.common.flipper-hooks.get-binding")) return fn() end)
+}", '@'.."hvcorca.hooks.common.flipper-hooks.get-binding")) setfenv(fn, newEnv("hvcorca.hooks.common.flipper-hooks.get-binding")) return fn() end)
 
 newModule("use-goal", "ModuleScript", "hvcorca.hooks.common.flipper-hooks.use-goal", "hvcorca.hooks.common.flipper-hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -1437,8 +1419,7 @@ local function useGoal(goal)\
 end\
 return {\
 \9useGoal = useGoal,\
-}\
-", '@'.."hvcorca.hooks.common.flipper-hooks.use-goal")) setfenv(fn, newEnv("hvcorca.hooks.common.flipper-hooks.use-goal")) return fn() end)
+}", '@'.."hvcorca.hooks.common.flipper-hooks.use-goal")) setfenv(fn, newEnv("hvcorca.hooks.common.flipper-hooks.use-goal")) return fn() end)
 
 newModule("use-instant", "ModuleScript", "hvcorca.hooks.common.flipper-hooks.use-instant", "hvcorca.hooks.common.flipper-hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -1449,8 +1430,7 @@ local function useInstant(targetValue)\
 end\
 return {\
 \9useInstant = useInstant,\
-}\
-", '@'.."hvcorca.hooks.common.flipper-hooks.use-instant")) setfenv(fn, newEnv("hvcorca.hooks.common.flipper-hooks.use-instant")) return fn() end)
+}", '@'.."hvcorca.hooks.common.flipper-hooks.use-instant")) setfenv(fn, newEnv("hvcorca.hooks.common.flipper-hooks.use-instant")) return fn() end)
 
 newModule("use-linear", "ModuleScript", "hvcorca.hooks.common.flipper-hooks.use-linear", "hvcorca.hooks.common.flipper-hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -1461,8 +1441,7 @@ local function useLinear(targetValue, options)\
 end\
 return {\
 \9useLinear = useLinear,\
-}\
-", '@'.."hvcorca.hooks.common.flipper-hooks.use-linear")) setfenv(fn, newEnv("hvcorca.hooks.common.flipper-hooks.use-linear")) return fn() end)
+}", '@'.."hvcorca.hooks.common.flipper-hooks.use-linear")) setfenv(fn, newEnv("hvcorca.hooks.common.flipper-hooks.use-linear")) return fn() end)
 
 newModule("use-motor", "ModuleScript", "hvcorca.hooks.common.flipper-hooks.use-motor", "hvcorca.hooks.common.flipper-hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -1484,8 +1463,7 @@ local function useMotor(initialValue)\
 end\
 return {\
 \9useMotor = useMotor,\
-}\
-", '@'.."hvcorca.hooks.common.flipper-hooks.use-motor")) setfenv(fn, newEnv("hvcorca.hooks.common.flipper-hooks.use-motor")) return fn() end)
+}", '@'.."hvcorca.hooks.common.flipper-hooks.use-motor")) setfenv(fn, newEnv("hvcorca.hooks.common.flipper-hooks.use-motor")) return fn() end)
 
 newModule("use-spring", "ModuleScript", "hvcorca.hooks.common.flipper-hooks.use-spring", "hvcorca.hooks.common.flipper-hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -1496,8 +1474,7 @@ local function useSpring(targetValue, options)\
 end\
 return {\
 \9useSpring = useSpring,\
-}\
-", '@'.."hvcorca.hooks.common.flipper-hooks.use-spring")) setfenv(fn, newEnv("hvcorca.hooks.common.flipper-hooks.use-spring")) return fn() end)
+}", '@'.."hvcorca.hooks.common.flipper-hooks.use-spring")) setfenv(fn, newEnv("hvcorca.hooks.common.flipper-hooks.use-spring")) return fn() end)
 
 newModule("rodux-hooks", "ModuleScript", "hvcorca.hooks.common.rodux-hooks", "hvcorca.hooks.common", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -1516,8 +1493,7 @@ return {\
 \9useAppSelector = useAppSelector,\
 \9useAppDispatch = useAppDispatch,\
 \9useAppStore = useAppStore,\
-}\
-", '@'.."hvcorca.hooks.common.rodux-hooks")) setfenv(fn, newEnv("hvcorca.hooks.common.rodux-hooks")) return fn() end)
+}", '@'.."hvcorca.hooks.common.rodux-hooks")) setfenv(fn, newEnv("hvcorca.hooks.common.rodux-hooks")) return fn() end)
 
 newModule("use-delayed-update", "ModuleScript", "hvcorca.hooks.common.use-delayed-update", "hvcorca.hooks.common", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -1580,8 +1556,7 @@ local function useDelayedUpdate(value, delay, isImmediate)\
 end\
 return {\
 \9useDelayedUpdate = useDelayedUpdate,\
-}\
-", '@'.."hvcorca.hooks.common.use-delayed-update")) setfenv(fn, newEnv("hvcorca.hooks.common.use-delayed-update")) return fn() end)
+}", '@'.."hvcorca.hooks.common.use-delayed-update")) setfenv(fn, newEnv("hvcorca.hooks.common.use-delayed-update")) return fn() end)
 
 newModule("use-did-mount", "ModuleScript", "hvcorca.hooks.common.use-did-mount", "hvcorca.hooks.common", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -1607,8 +1582,7 @@ end\
 return {\
 \9useDidMount = useDidMount,\
 \9useIsMount = useIsMount,\
-}\
-", '@'.."hvcorca.hooks.common.use-did-mount")) setfenv(fn, newEnv("hvcorca.hooks.common.use-did-mount")) return fn() end)
+}", '@'.."hvcorca.hooks.common.use-did-mount")) setfenv(fn, newEnv("hvcorca.hooks.common.use-did-mount")) return fn() end)
 
 newModule("use-forced-update", "ModuleScript", "hvcorca.hooks.common.use-forced-update", "hvcorca.hooks.common", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -1626,8 +1600,7 @@ local function useForcedUpdate()\
 end\
 return {\
 \9useForcedUpdate = useForcedUpdate,\
-}\
-", '@'.."hvcorca.hooks.common.use-forced-update")) setfenv(fn, newEnv("hvcorca.hooks.common.use-forced-update")) return fn() end)
+}", '@'.."hvcorca.hooks.common.use-forced-update")) setfenv(fn, newEnv("hvcorca.hooks.common.use-forced-update")) return fn() end)
 
 newModule("use-interval", "ModuleScript", "hvcorca.hooks.common.use-interval", "hvcorca.hooks.common", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -1655,8 +1628,7 @@ local function useInterval(callback, delay, deps)\
 end\
 return {\
 \9useInterval = useInterval,\
-}\
-", '@'.."hvcorca.hooks.common.use-interval")) setfenv(fn, newEnv("hvcorca.hooks.common.use-interval")) return fn() end)
+}", '@'.."hvcorca.hooks.common.use-interval")) setfenv(fn, newEnv("hvcorca.hooks.common.use-interval")) return fn() end)
 
 newModule("use-mouse-location", "ModuleScript", "hvcorca.hooks.common.use-mouse-location", "hvcorca.hooks.common", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -1686,8 +1658,7 @@ local function useMouseLocation(onChange)\
 end\
 return {\
 \9useMouseLocation = useMouseLocation,\
-}\
-", '@'.."hvcorca.hooks.common.use-mouse-location")) setfenv(fn, newEnv("hvcorca.hooks.common.use-mouse-location")) return fn() end)
+}", '@'.."hvcorca.hooks.common.use-mouse-location")) setfenv(fn, newEnv("hvcorca.hooks.common.use-mouse-location")) return fn() end)
 
 newModule("use-promise", "ModuleScript", "hvcorca.hooks.common.use-promise", "hvcorca.hooks.common", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -1773,8 +1744,7 @@ local function usePromise(promise, deps)\
 end\
 return {\
 \9usePromise = usePromise,\
-}\
-", '@'.."hvcorca.hooks.common.use-promise")) setfenv(fn, newEnv("hvcorca.hooks.common.use-promise")) return fn() end)
+}", '@'.."hvcorca.hooks.common.use-promise")) setfenv(fn, newEnv("hvcorca.hooks.common.use-promise")) return fn() end)
 
 newModule("use-set-state", "ModuleScript", "hvcorca.hooks.common.use-set-state", "hvcorca.hooks.common", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -1809,8 +1779,7 @@ local function useSetState(initialState)\
 end\
 return {\
 \9default = useSetState,\
-}\
-", '@'.."hvcorca.hooks.common.use-set-state")) setfenv(fn, newEnv("hvcorca.hooks.common.use-set-state")) return fn() end)
+}", '@'.."hvcorca.hooks.common.use-set-state")) setfenv(fn, newEnv("hvcorca.hooks.common.use-set-state")) return fn() end)
 
 newModule("use-spring", "ModuleScript", "hvcorca.hooks.common.use-spring", "hvcorca.hooks.common", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -1873,8 +1842,7 @@ local function useSpring(value, options)\
 end\
 return {\
 \9useSpring = useSpring,\
-}\
-", '@'.."hvcorca.hooks.common.use-spring")) setfenv(fn, newEnv("hvcorca.hooks.common.use-spring")) return fn() end)
+}", '@'.."hvcorca.hooks.common.use-spring")) setfenv(fn, newEnv("hvcorca.hooks.common.use-spring")) return fn() end)
 
 newModule("use-viewport-size", "ModuleScript", "hvcorca.hooks.common.use-viewport-size", "hvcorca.hooks.common", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -1921,8 +1889,7 @@ local function useViewportSize(onChange)\
 end\
 return {\
 \9useViewportSize = useViewportSize,\
-}\
-", '@'.."hvcorca.hooks.common.use-viewport-size")) setfenv(fn, newEnv("hvcorca.hooks.common.use-viewport-size")) return fn() end)
+}", '@'.."hvcorca.hooks.common.use-viewport-size")) setfenv(fn, newEnv("hvcorca.hooks.common.use-viewport-size")) return fn() end)
 
 newModule("use-current-page", "ModuleScript", "hvcorca.hooks.use-current-page", "hvcorca.hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -1940,8 +1907,7 @@ end\
 return {\
 \9useCurrentPage = useCurrentPage,\
 \9useIsPageOpen = useIsPageOpen,\
-}\
-", '@'.."hvcorca.hooks.use-current-page")) setfenv(fn, newEnv("hvcorca.hooks.use-current-page")) return fn() end)
+}", '@'.."hvcorca.hooks.use-current-page")) setfenv(fn, newEnv("hvcorca.hooks.use-current-page")) return fn() end)
 
 newModule("use-friends", "ModuleScript", "hvcorca.hooks.use-friends", "hvcorca.hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -2031,8 +1997,7 @@ return {\
 \9useFriends = useFriends,\
 \9useFriendsPlaying = useFriendsPlaying,\
 \9useFriendActivity = useFriendActivity,\
-}\
-", '@'.."hvcorca.hooks.use-friends")) setfenv(fn, newEnv("hvcorca.hooks.use-friends")) return fn() end)
+}", '@'.."hvcorca.hooks.use-friends")) setfenv(fn, newEnv("hvcorca.hooks.use-friends")) return fn() end)
 
 newModule("use-parallax-offset", "ModuleScript", "hvcorca.hooks.use-parallax-offset", "hvcorca.hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -2068,8 +2033,7 @@ local function useParallaxOffset()\
 end\
 return {\
 \9useParallaxOffset = useParallaxOffset,\
-}\
-", '@'.."hvcorca.hooks.use-parallax-offset")) setfenv(fn, newEnv("hvcorca.hooks.use-parallax-offset")) return fn() end)
+}", '@'.."hvcorca.hooks.use-parallax-offset")) setfenv(fn, newEnv("hvcorca.hooks.use-parallax-offset")) return fn() end)
 
 newModule("use-scale", "ModuleScript", "hvcorca.hooks.use-scale", "hvcorca.hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -2086,8 +2050,7 @@ local function useScale()\
 end\
 return {\
 \9useScale = useScale,\
-}\
-", '@'.."hvcorca.hooks.use-scale")) setfenv(fn, newEnv("hvcorca.hooks.use-scale")) return fn() end)
+}", '@'.."hvcorca.hooks.use-scale")) setfenv(fn, newEnv("hvcorca.hooks.use-scale")) return fn() end)
 
 newModule("use-theme", "ModuleScript", "hvcorca.hooks.use-theme", "hvcorca.hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -2115,15 +2078,13 @@ local function useTheme(key)\
 end\
 return {\
 \9useTheme = useTheme,\
-}\
-", '@'.."hvcorca.hooks.use-theme")) setfenv(fn, newEnv("hvcorca.hooks.use-theme")) return fn() end)
+}", '@'.."hvcorca.hooks.use-theme")) setfenv(fn, newEnv("hvcorca.hooks.use-theme")) return fn() end)
 
 newModule("jobs", "ModuleScript", "hvcorca.jobs", "hvcorca", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.include.RuntimeLib)\
 local exports = {}\
 exports.setStore = TS.import(script, script, \"helpers\", \"job-store\").setStore\
-return exports\
-", '@'.."hvcorca.jobs")) setfenv(fn, newEnv("hvcorca.jobs")) return fn() end)
+return exports", '@'.."hvcorca.jobs")) setfenv(fn, newEnv("hvcorca.jobs")) return fn() end)
 
 newModule("acrylic", "LocalScript", "hvcorca.jobs.acrylic", "hvcorca.jobs", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -2181,8 +2142,7 @@ local main = TS.async(function()\
 end)\
 main():catch(function(err)\
 \9warn(\"[acrylic-worker] \" .. tostring(err))\
-end)\
-", '@'.."hvcorca.jobs.acrylic")) setfenv(fn, newEnv("hvcorca.jobs.acrylic")) return fn() end)
+end)", '@'.."hvcorca.jobs.acrylic")) setfenv(fn, newEnv("hvcorca.jobs.acrylic")) return fn() end)
 
 newInstance("character", "Folder", "hvcorca.jobs.character", "hvcorca.jobs")
 
@@ -2345,8 +2305,7 @@ function updateDirection(code, begin)\
 end\
 main():catch(function(err)\
 \9warn(\"[flight-worker] \" .. tostring(err))\
-end)\
-", '@'.."hvcorca.jobs.character.flight")) setfenv(fn, newEnv("hvcorca.jobs.character.flight")) return fn() end)
+end)", '@'.."hvcorca.jobs.character.flight")) setfenv(fn, newEnv("hvcorca.jobs.character.flight")) return fn() end)
 
 newModule("ghost", "LocalScript", "hvcorca.jobs.character.ghost", "hvcorca.jobs.character", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -2521,8 +2480,7 @@ deactivateGhost = TS.async(function()\
 end)\
 main():catch(function(err)\
 \9warn(\"[ghost-worker] \" .. tostring(err))\
-end)\
-", '@'.."hvcorca.jobs.character.ghost")) setfenv(fn, newEnv("hvcorca.jobs.character.ghost")) return fn() end)
+end)", '@'.."hvcorca.jobs.character.ghost")) setfenv(fn, newEnv("hvcorca.jobs.character.ghost")) return fn() end)
 
 newModule("godmode", "LocalScript", "hvcorca.jobs.character.godmode", "hvcorca.jobs.character", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -2599,8 +2557,7 @@ activateGodmode = TS.async(function()\
 end)\
 main():catch(function(err)\
 \9warn(\"[godmode-worker] \" .. tostring(err))\
-end)\
-", '@'.."hvcorca.jobs.character.godmode")) setfenv(fn, newEnv("hvcorca.jobs.character.godmode")) return fn() end)
+end)", '@'.."hvcorca.jobs.character.godmode")) setfenv(fn, newEnv("hvcorca.jobs.character.godmode")) return fn() end)
 
 newModule("humanoid", "LocalScript", "hvcorca.jobs.character.humanoid", "hvcorca.jobs.character", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -2694,8 +2651,7 @@ function updateJumpHeight(humanoid, jumpHeightJob)\
 end\
 main():catch(function(err)\
 \9warn(\"[humanoid-worker] \" .. tostring(err))\
-end)\
-", '@'.."hvcorca.jobs.character.humanoid")) setfenv(fn, newEnv("hvcorca.jobs.character.humanoid")) return fn() end)
+end)", '@'.."hvcorca.jobs.character.humanoid")) setfenv(fn, newEnv("hvcorca.jobs.character.humanoid")) return fn() end)
 
 newModule("refresh", "LocalScript", "hvcorca.jobs.character.refresh", "hvcorca.jobs.character", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -2762,8 +2718,7 @@ respawn = TS.async(function()\
 end)\
 main():catch(function(err)\
 \9warn(\"[refresh-worker] \" .. tostring(err))\
-end)\
-", '@'.."hvcorca.jobs.character.refresh")) setfenv(fn, newEnv("hvcorca.jobs.character.refresh")) return fn() end)
+end)", '@'.."hvcorca.jobs.character.refresh")) setfenv(fn, newEnv("hvcorca.jobs.character.refresh")) return fn() end)
 
 newModule("freecam", "LocalScript", "hvcorca.jobs.freecam", "hvcorca.jobs", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -2782,8 +2737,7 @@ local main = TS.async(function()\
 end)\
 main():catch(function(err)\
 \9warn(\"[freecam-worker] \" .. tostring(err))\
-end)\
-", '@'.."hvcorca.jobs.freecam")) setfenv(fn, newEnv("hvcorca.jobs.freecam")) return fn() end)
+end)", '@'.."hvcorca.jobs.freecam")) setfenv(fn, newEnv("hvcorca.jobs.freecam")) return fn() end)
 
 newInstance("helpers", "Folder", "hvcorca.jobs.helpers", "hvcorca.jobs")
 
@@ -3243,8 +3197,7 @@ end\
 return {\
 \9EnableFreecam = EnableFreecam,\
 \9DisableFreecam = DisableFreecam,\
-}\
-", '@'.."hvcorca.jobs.helpers.freecam")) setfenv(fn, newEnv("hvcorca.jobs.helpers.freecam")) return fn() end)
+}", '@'.."hvcorca.jobs.helpers.freecam")) setfenv(fn, newEnv("hvcorca.jobs.helpers.freecam")) return fn() end)
 
 newModule("get-selected-player", "ModuleScript", "hvcorca.jobs.helpers.get-selected-player", "hvcorca.jobs.helpers", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -3272,8 +3225,7 @@ local getSelectedPlayer = TS.async(function(onChange)\
 end)\
 return {\
 \9getSelectedPlayer = getSelectedPlayer,\
-}\
-", '@'.."hvcorca.jobs.helpers.get-selected-player")) setfenv(fn, newEnv("hvcorca.jobs.helpers.get-selected-player")) return fn() end)
+}", '@'.."hvcorca.jobs.helpers.get-selected-player")) setfenv(fn, newEnv("hvcorca.jobs.helpers.get-selected-player")) return fn() end)
 
 newModule("job-store", "ModuleScript", "hvcorca.jobs.helpers.job-store", "hvcorca.jobs.helpers", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -3326,8 +3278,7 @@ return {\
 \9setStore = setStore,\
 \9getStore = getStore,\
 \9onJobChange = onJobChange,\
-}\
-", '@'.."hvcorca.jobs.helpers.job-store")) setfenv(fn, newEnv("hvcorca.jobs.helpers.job-store")) return fn() end)
+}", '@'.."hvcorca.jobs.helpers.job-store")) setfenv(fn, newEnv("hvcorca.jobs.helpers.job-store")) return fn() end)
 
 newInstance("players", "Folder", "hvcorca.jobs.players", "hvcorca.jobs")
 
@@ -3406,8 +3357,7 @@ local main = TS.async(function()\
 end)\
 main():catch(function(err)\
 \9warn(\"[hide-worker] \" .. tostring(err))\
-end)\
-", '@'.."hvcorca.jobs.players.hide")) setfenv(fn, newEnv("hvcorca.jobs.players.hide")) return fn() end)
+end)", '@'.."hvcorca.jobs.players.hide")) setfenv(fn, newEnv("hvcorca.jobs.players.hide")) return fn() end)
 
 newModule("kill", "LocalScript", "hvcorca.jobs.players.kill", "hvcorca.jobs.players", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -3558,8 +3508,7 @@ local main = TS.async(function()\
 end)\
 main():catch(function(err)\
 \9warn(\"[kill-worker] \" .. tostring(err))\
-end)\
-", '@'.."hvcorca.jobs.players.kill")) setfenv(fn, newEnv("hvcorca.jobs.players.kill")) return fn() end)
+end)", '@'.."hvcorca.jobs.players.kill")) setfenv(fn, newEnv("hvcorca.jobs.players.kill")) return fn() end)
 
 newModule("spectate", "LocalScript", "hvcorca.jobs.players.spectate", "hvcorca.jobs.players", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -3618,8 +3567,7 @@ local main = TS.async(function()\
 end)\
 main():catch(function(err)\
 \9warn(\"[spectate-worker] \" .. tostring(err))\
-end)\
-", '@'.."hvcorca.jobs.players.spectate")) setfenv(fn, newEnv("hvcorca.jobs.players.spectate")) return fn() end)
+end)", '@'.."hvcorca.jobs.players.spectate")) setfenv(fn, newEnv("hvcorca.jobs.players.spectate")) return fn() end)
 
 newModule("teleport", "LocalScript", "hvcorca.jobs.players.teleport", "hvcorca.jobs.players", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -3672,8 +3620,7 @@ local main = TS.async(function()\
 end)\
 main():catch(function(err)\
 \9warn(\"[teleport-worker] \" .. tostring(err))\
-end)\
-", '@'.."hvcorca.jobs.players.teleport")) setfenv(fn, newEnv("hvcorca.jobs.players.teleport")) return fn() end)
+end)", '@'.."hvcorca.jobs.players.teleport")) setfenv(fn, newEnv("hvcorca.jobs.players.teleport")) return fn() end)
 
 newModule("server", "LocalScript", "hvcorca.jobs.server", "hvcorca.jobs", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -3778,8 +3725,7 @@ local main = TS.async(function()\
 end)\
 main():catch(function(err)\
 \9warn(\"[server-worker] \" .. tostring(err))\
-end)\
-", '@'.."hvcorca.jobs.server")) setfenv(fn, newEnv("hvcorca.jobs.server")) return fn() end)
+end)", '@'.."hvcorca.jobs.server")) setfenv(fn, newEnv("hvcorca.jobs.server")) return fn() end)
 
 newModule("main", "LocalScript", "hvcorca.main", "hvcorca", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.include.RuntimeLib)\
@@ -3833,8 +3779,7 @@ local main = TS.async(function()\
 end)\
 main():catch(function(err)\
 \9warn(\"Orca failed to load: \" .. tostring(err))\
-end)\
-", '@'.."hvcorca.main")) setfenv(fn, newEnv("hvcorca.main")) return fn() end)
+end)", '@'.."hvcorca.main")) setfenv(fn, newEnv("hvcorca.main")) return fn() end)
 
 newInstance("store", "Folder", "hvcorca.store", "hvcorca")
 
@@ -3874,8 +3819,7 @@ return {\
 \9clearHint = clearHint,\
 \9playerSelected = playerSelected,\
 \9playerDeselected = playerDeselected,\
-}\
-", '@'.."hvcorca.store.actions.dashboard.action")) setfenv(fn, newEnv("hvcorca.store.actions.dashboard.action")) return fn() end)
+}", '@'.."hvcorca.store.actions.dashboard.action")) setfenv(fn, newEnv("hvcorca.store.actions.dashboard.action")) return fn() end)
 
 newModule("jobs.action", "ModuleScript", "hvcorca.store.actions.jobs.action", "hvcorca.store.actions", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -3895,8 +3839,7 @@ end)\
 return {\
 \9setJobActive = setJobActive,\
 \9setJobValue = setJobValue,\
-}\
-", '@'.."hvcorca.store.actions.jobs.action")) setfenv(fn, newEnv("hvcorca.store.actions.jobs.action")) return fn() end)
+}", '@'.."hvcorca.store.actions.jobs.action")) setfenv(fn, newEnv("hvcorca.store.actions.jobs.action")) return fn() end)
 
 newModule("options.action", "ModuleScript", "hvcorca.store.actions.options.action", "hvcorca.store.actions", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -3928,8 +3871,7 @@ return {\
 \9setShortcut = setShortcut,\
 \9removeShortcut = removeShortcut,\
 \9setTheme = setTheme,\
-}\
-", '@'.."hvcorca.store.actions.options.action")) setfenv(fn, newEnv("hvcorca.store.actions.options.action")) return fn() end)
+}", '@'.."hvcorca.store.actions.options.action")) setfenv(fn, newEnv("hvcorca.store.actions.options.action")) return fn() end)
 
 newInstance("models", "Folder", "hvcorca.store.models", "hvcorca.store")
 
@@ -3969,14 +3911,11 @@ return {\
 \9DashboardPage = DashboardPage,\
 \9PAGE_TO_INDEX = PAGE_TO_INDEX,\
 \9PAGE_TO_ICON = PAGE_TO_ICON,\
-}\
-", '@'.."hvcorca.store.models.dashboard.model")) setfenv(fn, newEnv("hvcorca.store.models.dashboard.model")) return fn() end)
+}", '@'.."hvcorca.store.models.dashboard.model")) setfenv(fn, newEnv("hvcorca.store.models.dashboard.model")) return fn() end)
 
-newModule("jobs.model", "ModuleScript", "hvcorca.store.models.jobs.model", "hvcorca.store.models", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
-", '@'.."hvcorca.store.models.jobs.model")) setfenv(fn, newEnv("hvcorca.store.models.jobs.model")) return fn() end)
+newModule("jobs.model", "ModuleScript", "hvcorca.store.models.jobs.model", "hvcorca.store.models", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7", '@'.."hvcorca.store.models.jobs.model")) setfenv(fn, newEnv("hvcorca.store.models.jobs.model")) return fn() end)
 
-newModule("options.model", "ModuleScript", "hvcorca.store.models.options.model", "hvcorca.store.models", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
-", '@'.."hvcorca.store.models.options.model")) setfenv(fn, newEnv("hvcorca.store.models.options.model")) return fn() end)
+newModule("options.model", "ModuleScript", "hvcorca.store.models.options.model", "hvcorca.store.models", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7", '@'.."hvcorca.store.models.options.model")) setfenv(fn, newEnv("hvcorca.store.models.options.model")) return fn() end)
 
 newModule("persistent-state", "ModuleScript", "hvcorca.store.persistent-state", "hvcorca.store", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -4039,8 +3978,7 @@ autosave = TS.async(function(name, selector)\
 end)\
 return {\
 \9persistentState = persistentState,\
-}\
-", '@'.."hvcorca.store.persistent-state")) setfenv(fn, newEnv("hvcorca.store.persistent-state")) return fn() end)
+}", '@'.."hvcorca.store.persistent-state")) setfenv(fn, newEnv("hvcorca.store.persistent-state")) return fn() end)
 
 newInstance("reducers", "Folder", "hvcorca.store.reducers", "hvcorca.store")
 
@@ -4120,8 +4058,7 @@ local dashboardReducer = Rodux.createReducer(initialState, {\
 })\
 return {\
 \9dashboardReducer = dashboardReducer,\
-}\
-", '@'.."hvcorca.store.reducers.dashboard.reducer")) setfenv(fn, newEnv("hvcorca.store.reducers.dashboard.reducer")) return fn() end)
+}", '@'.."hvcorca.store.reducers.dashboard.reducer")) setfenv(fn, newEnv("hvcorca.store.reducers.dashboard.reducer")) return fn() end)
 
 newModule("jobs.reducer", "ModuleScript", "hvcorca.store.reducers.jobs.reducer", "hvcorca.store.reducers", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -4202,8 +4139,7 @@ local jobsReducer = Rodux.createReducer(initialState, {\
 })\
 return {\
 \9jobsReducer = jobsReducer,\
-}\
-", '@'.."hvcorca.store.reducers.jobs.reducer")) setfenv(fn, newEnv("hvcorca.store.reducers.jobs.reducer")) return fn() end)
+}", '@'.."hvcorca.store.reducers.jobs.reducer")) setfenv(fn, newEnv("hvcorca.store.reducers.jobs.reducer")) return fn() end)
 
 newModule("options.reducer", "ModuleScript", "hvcorca.store.reducers.options.reducer", "hvcorca.store.reducers", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -4274,8 +4210,7 @@ local optionsReducer = Rodux.createReducer(initialState, {\
 })\
 return {\
 \9optionsReducer = optionsReducer,\
-}\
-", '@'.."hvcorca.store.reducers.options.reducer")) setfenv(fn, newEnv("hvcorca.store.reducers.options.reducer")) return fn() end)
+}", '@'.."hvcorca.store.reducers.options.reducer")) setfenv(fn, newEnv("hvcorca.store.reducers.options.reducer")) return fn() end)
 
 newModule("store", "ModuleScript", "hvcorca.store.store", "hvcorca.store", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -4293,8 +4228,7 @@ local function configureStore(initialState)\
 end\
 return {\
 \9configureStore = configureStore,\
-}\
-", '@'.."hvcorca.store.store")) setfenv(fn, newEnv("hvcorca.store.store")) return fn() end)
+}", '@'.."hvcorca.store.store")) setfenv(fn, newEnv("hvcorca.store.store")) return fn() end)
 
 newModule("themes", "ModuleScript", "hvcorca.themes", "hvcorca", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.include.RuntimeLib)\
@@ -4310,8 +4244,7 @@ local function getThemes()\
 end\
 return {\
 \9getThemes = getThemes,\
-}\
-", '@'.."hvcorca.themes")) setfenv(fn, newEnv("hvcorca.themes")) return fn() end)
+}", '@'.."hvcorca.themes")) setfenv(fn, newEnv("hvcorca.themes")) return fn() end)
 
 newModule("dark-theme", "ModuleScript", "hvcorca.themes.dark-theme", "hvcorca.themes", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -4564,8 +4497,7 @@ local darkTheme = {\
 }\
 return {\
 \9darkTheme = darkTheme,\
-}\
-", '@'.."hvcorca.themes.dark-theme")) setfenv(fn, newEnv("hvcorca.themes.dark-theme")) return fn() end)
+}", '@'.."hvcorca.themes.dark-theme")) setfenv(fn, newEnv("hvcorca.themes.dark-theme")) return fn() end)
 
 newModule("frosted-glass", "ModuleScript", "hvcorca.themes.frosted-glass", "hvcorca.themes", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -4853,8 +4785,7 @@ _object[_left_17] = _object_18\
 local frostedGlass = _object\
 return {\
 \9frostedGlass = frostedGlass,\
-}\
-", '@'.."hvcorca.themes.frosted-glass")) setfenv(fn, newEnv("hvcorca.themes.frosted-glass")) return fn() end)
+}", '@'.."hvcorca.themes.frosted-glass")) setfenv(fn, newEnv("hvcorca.themes.frosted-glass")) return fn() end)
 
 newModule("high-contrast", "ModuleScript", "hvcorca.themes.high-contrast", "hvcorca.themes", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -5093,8 +5024,7 @@ _object[_left_18] = _object_19\
 local highContrast = _object\
 return {\
 \9highContrast = highContrast,\
-}\
-", '@'.."hvcorca.themes.high-contrast")) setfenv(fn, newEnv("hvcorca.themes.high-contrast")) return fn() end)
+}", '@'.."hvcorca.themes.high-contrast")) setfenv(fn, newEnv("hvcorca.themes.high-contrast")) return fn() end)
 
 newModule("light-theme", "ModuleScript", "hvcorca.themes.light-theme", "hvcorca.themes", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -5326,8 +5256,7 @@ _object[_left_18] = _object_19\
 local lightTheme = _object\
 return {\
 \9lightTheme = lightTheme,\
-}\
-", '@'.."hvcorca.themes.light-theme")) setfenv(fn, newEnv("hvcorca.themes.light-theme")) return fn() end)
+}", '@'.."hvcorca.themes.light-theme")) setfenv(fn, newEnv("hvcorca.themes.light-theme")) return fn() end)
 
 newModule("obsidian", "ModuleScript", "hvcorca.themes.obsidian", "hvcorca.themes", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -5646,8 +5575,7 @@ _object[_left_18] = _object_19\
 local obsidian = _object\
 return {\
 \9obsidian = obsidian,\
-}\
-", '@'.."hvcorca.themes.obsidian")) setfenv(fn, newEnv("hvcorca.themes.obsidian")) return fn() end)
+}", '@'.."hvcorca.themes.obsidian")) setfenv(fn, newEnv("hvcorca.themes.obsidian")) return fn() end)
 
 newModule("sorbet", "ModuleScript", "hvcorca.themes.sorbet", "hvcorca.themes", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -5917,11 +5845,9 @@ _object[_left_18] = _object_19\
 local sorbet = _object\
 return {\
 \9sorbet = sorbet,\
-}\
-", '@'.."hvcorca.themes.sorbet")) setfenv(fn, newEnv("hvcorca.themes.sorbet")) return fn() end)
+}", '@'.."hvcorca.themes.sorbet")) setfenv(fn, newEnv("hvcorca.themes.sorbet")) return fn() end)
 
-newModule("theme.interface", "ModuleScript", "hvcorca.themes.theme.interface", "hvcorca.themes", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
-", '@'.."hvcorca.themes.theme.interface")) setfenv(fn, newEnv("hvcorca.themes.theme.interface")) return fn() end)
+newModule("theme.interface", "ModuleScript", "hvcorca.themes.theme.interface", "hvcorca.themes", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7", '@'.."hvcorca.themes.theme.interface")) setfenv(fn, newEnv("hvcorca.themes.theme.interface")) return fn() end)
 
 newInstance("utils", "Folder", "hvcorca.utils", "hvcorca")
 
@@ -5941,8 +5867,7 @@ local function arrayToMap(arr, mapper)\
 end\
 return {\
 \9arrayToMap = arrayToMap,\
-}\
-", '@'.."hvcorca.utils.array-util")) setfenv(fn, newEnv("hvcorca.utils.array-util")) return fn() end)
+}", '@'.."hvcorca.utils.array-util")) setfenv(fn, newEnv("hvcorca.utils.array-util")) return fn() end)
 
 newModule("binding-util", "ModuleScript", "hvcorca.utils.binding-util", "hvcorca.utils", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -5960,8 +5885,7 @@ return {\
 \9isBinding = isBinding,\
 \9mapBinding = mapBinding,\
 \9asBinding = asBinding,\
-}\
-", '@'.."hvcorca.utils.binding-util")) setfenv(fn, newEnv("hvcorca.utils.binding-util")) return fn() end)
+}", '@'.."hvcorca.utils.binding-util")) setfenv(fn, newEnv("hvcorca.utils.binding-util")) return fn() end)
 
 newModule("color3", "ModuleScript", "hvcorca.utils.color3", "hvcorca.utils", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local function getLuminance(color)\
@@ -6018,8 +5942,7 @@ return {\
 \9rgb = rgb,\
 \9hsv = hsv,\
 \9hsl = hsl,\
-}\
-", '@'.."hvcorca.utils.color3")) setfenv(fn, newEnv("hvcorca.utils.color3")) return fn() end)
+}", '@'.."hvcorca.utils.color3")) setfenv(fn, newEnv("hvcorca.utils.color3")) return fn() end)
 
 newModule("debug", "ModuleScript", "hvcorca.utils.debug", "hvcorca.utils", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local clock = os.clock()\
@@ -6046,8 +5969,7 @@ end\
 return {\
 \9startTimer = startTimer,\
 \9endTimer = endTimer,\
-}\
-", '@'.."hvcorca.utils.debug")) setfenv(fn, newEnv("hvcorca.utils.debug")) return fn() end)
+}", '@'.."hvcorca.utils.debug")) setfenv(fn, newEnv("hvcorca.utils.debug")) return fn() end)
 
 newModule("http", "ModuleScript", "hvcorca.utils.http", "hvcorca.utils", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -6075,8 +5997,7 @@ return {\
 \9request = request,\
 \9get = get,\
 \9post = post,\
-}\
-", '@'.."hvcorca.utils.http")) setfenv(fn, newEnv("hvcorca.utils.http")) return fn() end)
+}", '@'.."hvcorca.utils.http")) setfenv(fn, newEnv("hvcorca.utils.http")) return fn() end)
 
 newModule("number-util", "ModuleScript", "hvcorca.utils.number-util", "hvcorca.utils", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local function map(n, min0, max0, min1, max1)\
@@ -6088,8 +6009,7 @@ end\
 return {\
 \9map = map,\
 \9lerp = lerp,\
-}\
-", '@'.."hvcorca.utils.number-util")) setfenv(fn, newEnv("hvcorca.utils.number-util")) return fn() end)
+}", '@'.."hvcorca.utils.number-util")) setfenv(fn, newEnv("hvcorca.utils.number-util")) return fn() end)
 
 newModule("timeout", "ModuleScript", "hvcorca.utils.timeout", "hvcorca.utils", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
@@ -6173,8 +6093,7 @@ return {\
 \9clearInterval = clearInterval,\
 \9Timeout = Timeout,\
 \9Interval = Interval,\
-}\
-", '@'.."hvcorca.utils.timeout")) setfenv(fn, newEnv("hvcorca.utils.timeout")) return fn() end)
+}", '@'.."hvcorca.utils.timeout")) setfenv(fn, newEnv("hvcorca.utils.timeout")) return fn() end)
 
 newModule("udim2", "ModuleScript", "hvcorca.utils.udim2", "hvcorca.utils", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local function px(x, y)\
@@ -6193,8 +6112,7 @@ return {\
 \9px = px,\
 \9scale = scale,\
 \9applyUDim2 = applyUDim2,\
-}\
-", '@'.."hvcorca.utils.udim2")) setfenv(fn, newEnv("hvcorca.utils.udim2")) return fn() end)
+}", '@'.."hvcorca.utils.udim2")) setfenv(fn, newEnv("hvcorca.utils.udim2")) return fn() end)
 
 newInstance("views", "Folder", "hvcorca.views", "hvcorca")
 
@@ -6202,8 +6120,7 @@ newModule("Clock", "ModuleScript", "hvcorca.views.Clock", "hvcorca.views", funct
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
 local exports = {}\
 exports.default = TS.import(script, script, \"Clock\").default\
-return exports\
-", '@'.."hvcorca.views.Clock")) setfenv(fn, newEnv("hvcorca.views.Clock")) return fn() end)
+return exports", '@'.."hvcorca.views.Clock")) setfenv(fn, newEnv("hvcorca.views.Clock")) return fn() end)
 
 newModule("Clock", "ModuleScript", "hvcorca.views.Clock.Clock", "hvcorca.views.Clock", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -6322,15 +6239,13 @@ end\
 local default = hooked(Clock)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Clock.Clock")) setfenv(fn, newEnv("hvcorca.views.Clock.Clock")) return fn() end)
+}", '@'.."hvcorca.views.Clock.Clock")) setfenv(fn, newEnv("hvcorca.views.Clock.Clock")) return fn() end)
 
 newModule("Dashboard", "ModuleScript", "hvcorca.views.Dashboard", "hvcorca.views", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
 local exports = {}\
 exports.default = TS.import(script, script, \"Dashboard\").default\
-return exports\
-", '@'.."hvcorca.views.Dashboard")) setfenv(fn, newEnv("hvcorca.views.Dashboard")) return fn() end)
+return exports", '@'.."hvcorca.views.Dashboard")) setfenv(fn, newEnv("hvcorca.views.Dashboard")) return fn() end)
 
 newModule("Dashboard", "ModuleScript", "hvcorca.views.Dashboard.Dashboard", "hvcorca.views.Dashboard", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -6424,8 +6339,7 @@ end\
 local default = hooked(Dashboard)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Dashboard.Dashboard")) setfenv(fn, newEnv("hvcorca.views.Dashboard.Dashboard")) return fn() end)
+}", '@'.."hvcorca.views.Dashboard.Dashboard")) setfenv(fn, newEnv("hvcorca.views.Dashboard.Dashboard")) return fn() end)
 
 newModule("Dashboard.story", "ModuleScript", "hvcorca.views.Dashboard.Dashboard.story", "hvcorca.views.Dashboard", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -6450,15 +6364,13 @@ return function(target)\
 \9return function()\
 \9\9return Roact.unmount(handle)\
 \9end\
-end\
-", '@'.."hvcorca.views.Dashboard.Dashboard.story")) setfenv(fn, newEnv("hvcorca.views.Dashboard.Dashboard.story")) return fn() end)
+end", '@'.."hvcorca.views.Dashboard.Dashboard.story")) setfenv(fn, newEnv("hvcorca.views.Dashboard.Dashboard.story")) return fn() end)
 
 newModule("Hint", "ModuleScript", "hvcorca.views.Hint", "hvcorca.views", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
 local exports = {}\
 exports.default = TS.import(script, script, \"Hint\").default\
-return exports\
-", '@'.."hvcorca.views.Hint")) setfenv(fn, newEnv("hvcorca.views.Hint")) return fn() end)
+return exports", '@'.."hvcorca.views.Hint")) setfenv(fn, newEnv("hvcorca.views.Hint")) return fn() end)
 
 newModule("Hint", "ModuleScript", "hvcorca.views.Hint.Hint", "hvcorca.views.Hint", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -6516,15 +6428,13 @@ end\
 local default = hooked(Hint)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Hint.Hint")) setfenv(fn, newEnv("hvcorca.views.Hint.Hint")) return fn() end)
+}", '@'.."hvcorca.views.Hint.Hint")) setfenv(fn, newEnv("hvcorca.views.Hint.Hint")) return fn() end)
 
 newModule("Navbar", "ModuleScript", "hvcorca.views.Navbar", "hvcorca.views", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
 local exports = {}\
 exports.default = TS.import(script, script, \"Navbar\").default\
-return exports\
-", '@'.."hvcorca.views.Navbar")) setfenv(fn, newEnv("hvcorca.views.Navbar")) return fn() end)
+return exports", '@'.."hvcorca.views.Navbar")) setfenv(fn, newEnv("hvcorca.views.Navbar")) return fn() end)
 
 newModule("Navbar", "ModuleScript", "hvcorca.views.Navbar.Navbar", "hvcorca.views.Navbar", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -6680,8 +6590,7 @@ function Underglow(props)\
 end\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Navbar.Navbar")) setfenv(fn, newEnv("hvcorca.views.Navbar.Navbar")) return fn() end)
+}", '@'.."hvcorca.views.Navbar.Navbar")) setfenv(fn, newEnv("hvcorca.views.Navbar.Navbar")) return fn() end)
 
 newModule("Navbar.story", "ModuleScript", "hvcorca.views.Navbar.Navbar.story", "hvcorca.views.Navbar", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -6706,8 +6615,7 @@ return function(target)\
 \9return function()\
 \9\9return Roact.unmount(handle)\
 \9end\
-end\
-", '@'.."hvcorca.views.Navbar.Navbar.story")) setfenv(fn, newEnv("hvcorca.views.Navbar.Navbar.story")) return fn() end)
+end", '@'.."hvcorca.views.Navbar.Navbar.story")) setfenv(fn, newEnv("hvcorca.views.Navbar.Navbar.story")) return fn() end)
 
 newModule("NavbarTab", "ModuleScript", "hvcorca.views.Navbar.NavbarTab", "hvcorca.views.Navbar", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -6766,22 +6674,19 @@ end\
 local default = hooked(NavbarTab)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Navbar.NavbarTab")) setfenv(fn, newEnv("hvcorca.views.Navbar.NavbarTab")) return fn() end)
+}", '@'.."hvcorca.views.Navbar.NavbarTab")) setfenv(fn, newEnv("hvcorca.views.Navbar.NavbarTab")) return fn() end)
 
 newModule("Pages", "ModuleScript", "hvcorca.views.Pages", "hvcorca.views", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
 local exports = {}\
 exports.default = TS.import(script, script, \"Pages\").default\
-return exports\
-", '@'.."hvcorca.views.Pages")) setfenv(fn, newEnv("hvcorca.views.Pages")) return fn() end)
+return exports", '@'.."hvcorca.views.Pages")) setfenv(fn, newEnv("hvcorca.views.Pages")) return fn() end)
 
 newModule("Apps", "ModuleScript", "hvcorca.views.Pages.Apps", "hvcorca.views.Pages", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
 local exports = {}\
 exports.default = TS.import(script, script, \"Apps\").default\
-return exports\
-", '@'.."hvcorca.views.Pages.Apps")) setfenv(fn, newEnv("hvcorca.views.Pages.Apps")) return fn() end)
+return exports", '@'.."hvcorca.views.Pages.Apps")) setfenv(fn, newEnv("hvcorca.views.Pages.Apps")) return fn() end)
 
 newModule("Apps", "ModuleScript", "hvcorca.views.Pages.Apps.Apps", "hvcorca.views.Pages.Apps", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -6806,15 +6711,13 @@ end\
 local default = pure(Apps)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Apps.Apps")) setfenv(fn, newEnv("hvcorca.views.Pages.Apps.Apps")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Apps.Apps")) setfenv(fn, newEnv("hvcorca.views.Pages.Apps.Apps")) return fn() end)
 
 newModule("Players", "ModuleScript", "hvcorca.views.Pages.Apps.Players", "hvcorca.views.Pages.Apps", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
 local exports = {}\
 exports.default = TS.import(script, script, \"Players\").default\
-return exports\
-", '@'.."hvcorca.views.Pages.Apps.Players")) setfenv(fn, newEnv("hvcorca.views.Pages.Apps.Players")) return fn() end)
+return exports", '@'.."hvcorca.views.Pages.Apps.Players")) setfenv(fn, newEnv("hvcorca.views.Pages.Apps.Players")) return fn() end)
 
 newModule("Actions", "ModuleScript", "hvcorca.views.Pages.Apps.Players.Actions", "hvcorca.views.Pages.Apps.Players", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -6867,8 +6770,7 @@ end\
 local default = hooked(Actions)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Apps.Players.Actions")) setfenv(fn, newEnv("hvcorca.views.Pages.Apps.Players.Actions")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Apps.Players.Actions")) setfenv(fn, newEnv("hvcorca.views.Pages.Apps.Players.Actions")) return fn() end)
 
 newModule("Avatar", "ModuleScript", "hvcorca.views.Pages.Apps.Players.Avatar", "hvcorca.views.Pages.Apps.Players", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -6922,8 +6824,7 @@ end\
 local default = hooked(Avatar)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Apps.Players.Avatar")) setfenv(fn, newEnv("hvcorca.views.Pages.Apps.Players.Avatar")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Apps.Players.Avatar")) setfenv(fn, newEnv("hvcorca.views.Pages.Apps.Players.Avatar")) return fn() end)
 
 newModule("Players", "ModuleScript", "hvcorca.views.Pages.Apps.Players.Players", "hvcorca.views.Pages.Apps.Players", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -6955,8 +6856,7 @@ end\
 local default = hooked(Players)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Apps.Players.Players")) setfenv(fn, newEnv("hvcorca.views.Pages.Apps.Players.Players")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Apps.Players.Players")) setfenv(fn, newEnv("hvcorca.views.Pages.Apps.Players.Players")) return fn() end)
 
 newModule("Selection", "ModuleScript", "hvcorca.views.Pages.Apps.Players.Selection", "hvcorca.views.Pages.Apps.Players", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -7281,8 +7181,7 @@ end\
 PlayerEntry = hooked(PlayerEntryComponent)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Apps.Players.Selection")) setfenv(fn, newEnv("hvcorca.views.Pages.Apps.Players.Selection")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Apps.Players.Selection")) setfenv(fn, newEnv("hvcorca.views.Pages.Apps.Players.Selection")) return fn() end)
 
 newModule("Username", "ModuleScript", "hvcorca.views.Pages.Apps.Players.Username", "hvcorca.views.Pages.Apps.Players", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -7337,22 +7236,19 @@ end\
 local default = hooked(Username)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Apps.Players.Username")) setfenv(fn, newEnv("hvcorca.views.Pages.Apps.Players.Username")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Apps.Players.Username")) setfenv(fn, newEnv("hvcorca.views.Pages.Apps.Players.Username")) return fn() end)
 
 newModule("Home", "ModuleScript", "hvcorca.views.Pages.Home", "hvcorca.views.Pages", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
 local exports = {}\
 exports.default = TS.import(script, script, \"Home\").default\
-return exports\
-", '@'.."hvcorca.views.Pages.Home")) setfenv(fn, newEnv("hvcorca.views.Pages.Home")) return fn() end)
+return exports", '@'.."hvcorca.views.Pages.Home")) setfenv(fn, newEnv("hvcorca.views.Pages.Home")) return fn() end)
 
 newModule("FriendActivity", "ModuleScript", "hvcorca.views.Pages.Home.FriendActivity", "hvcorca.views.Pages.Home", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
 local exports = {}\
 exports.default = TS.import(script, script, \"FriendActivity\").default\
-return exports\
-", '@'.."hvcorca.views.Pages.Home.FriendActivity")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.FriendActivity")) return fn() end)
+return exports", '@'.."hvcorca.views.Pages.Home.FriendActivity")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.FriendActivity")) return fn() end)
 
 newModule("FriendActivity", "ModuleScript", "hvcorca.views.Pages.Home.FriendActivity.FriendActivity", "hvcorca.views.Pages.Home.FriendActivity", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -7456,8 +7352,7 @@ end\
 local default = hooked(FriendActivity)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Home.FriendActivity.FriendActivity")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.FriendActivity.FriendActivity")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Home.FriendActivity.FriendActivity")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.FriendActivity.FriendActivity")) return fn() end)
 
 newModule("FriendItem", "ModuleScript", "hvcorca.views.Pages.Home.FriendActivity.FriendItem", "hvcorca.views.Pages.Home.FriendActivity", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -7570,8 +7465,7 @@ end\
 local default = hooked(FriendItem)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Home.FriendActivity.FriendItem")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.FriendActivity.FriendItem")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Home.FriendActivity.FriendItem")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.FriendActivity.FriendItem")) return fn() end)
 
 newModule("GameItem", "ModuleScript", "hvcorca.views.Pages.Home.FriendActivity.GameItem", "hvcorca.views.Pages.Home.FriendActivity", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -7655,8 +7549,7 @@ local default = pure(GameItem)\
 return {\
 \9GAME_PADDING = GAME_PADDING,\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Home.FriendActivity.GameItem")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.FriendActivity.GameItem")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Home.FriendActivity.GameItem")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.FriendActivity.GameItem")) return fn() end)
 
 newModule("Home", "ModuleScript", "hvcorca.views.Pages.Home.Home", "hvcorca.views.Pages.Home", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -7687,15 +7580,13 @@ end\
 local default = pure(Home)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Home.Home")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Home")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Home.Home")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Home")) return fn() end)
 
 newModule("Profile", "ModuleScript", "hvcorca.views.Pages.Home.Profile", "hvcorca.views.Pages.Home", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
 local exports = {}\
 exports.default = TS.import(script, script, \"Profile\").default\
-return exports\
-", '@'.."hvcorca.views.Pages.Home.Profile")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Profile")) return fn() end)
+return exports", '@'.."hvcorca.views.Pages.Home.Profile")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Profile")) return fn() end)
 
 newModule("Actions", "ModuleScript", "hvcorca.views.Pages.Home.Profile.Actions", "hvcorca.views.Pages.Home.Profile", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -7747,8 +7638,7 @@ end\
 local default = hooked(Actions)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Home.Profile.Actions")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Profile.Actions")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Home.Profile.Actions")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Profile.Actions")) return fn() end)
 
 newModule("Avatar", "ModuleScript", "hvcorca.views.Pages.Home.Profile.Avatar", "hvcorca.views.Pages.Home.Profile", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -7793,8 +7683,7 @@ end\
 local default = hooked(Avatar)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Home.Profile.Avatar")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Profile.Avatar")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Home.Profile.Avatar")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Profile.Avatar")) return fn() end)
 
 newModule("Info", "ModuleScript", "hvcorca.views.Pages.Home.Profile.Info", "hvcorca.views.Pages.Home.Profile", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -7910,8 +7799,7 @@ end\
 local default = hooked(Info)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Home.Profile.Info")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Profile.Info")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Home.Profile.Info")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Profile.Info")) return fn() end)
 
 newModule("Profile", "ModuleScript", "hvcorca.views.Pages.Home.Profile.Profile", "hvcorca.views.Pages.Home.Profile", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -7953,8 +7841,7 @@ end\
 local default = hooked(Profile)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Home.Profile.Profile")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Profile.Profile")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Home.Profile.Profile")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Profile.Profile")) return fn() end)
 
 newModule("Sliders", "ModuleScript", "hvcorca.views.Pages.Home.Profile.Sliders", "hvcorca.views.Pages.Home.Profile", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -8121,8 +8008,7 @@ end\
 Slider = hooked(SliderComponent)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Home.Profile.Sliders")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Profile.Sliders")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Home.Profile.Sliders")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Profile.Sliders")) return fn() end)
 
 newModule("Username", "ModuleScript", "hvcorca.views.Pages.Home.Profile.Username", "hvcorca.views.Pages.Home.Profile", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -8167,15 +8053,13 @@ end\
 local default = hooked(Username)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Home.Profile.Username")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Profile.Username")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Home.Profile.Username")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Profile.Username")) return fn() end)
 
 newModule("Server", "ModuleScript", "hvcorca.views.Pages.Home.Server", "hvcorca.views.Pages.Home", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
 local exports = {}\
 exports.default = TS.import(script, script, \"Server\").default\
-return exports\
-", '@'.."hvcorca.views.Pages.Home.Server")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Server")) return fn() end)
+return exports", '@'.."hvcorca.views.Pages.Home.Server")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Server")) return fn() end)
 
 newModule("Server", "ModuleScript", "hvcorca.views.Pages.Home.Server.Server", "hvcorca.views.Pages.Home.Server", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -8256,8 +8140,7 @@ end\
 local default = hooked(Server)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Home.Server.Server")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Server.Server")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Home.Server.Server")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Server.Server")) return fn() end)
 
 newModule("ServerAction", "ModuleScript", "hvcorca.views.Pages.Home.Server.ServerAction", "hvcorca.views.Pages.Home.Server", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -8345,8 +8228,7 @@ end\
 local default = hooked(ServerAction)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Home.Server.ServerAction")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Server.ServerAction")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Home.Server.ServerAction")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Server.ServerAction")) return fn() end)
 
 newModule("StatusLabel", "ModuleScript", "hvcorca.views.Pages.Home.Server.StatusLabel", "hvcorca.views.Pages.Home.Server", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -8412,8 +8294,7 @@ end\
 local default = hooked(StatusLabel)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Home.Server.StatusLabel")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Server.StatusLabel")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Home.Server.StatusLabel")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Server.StatusLabel")) return fn() end)
 
 newModule("Title", "ModuleScript", "hvcorca.views.Pages.Home.Title", "hvcorca.views.Pages.Home", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -8551,15 +8432,13 @@ end\
 Label = hooked(LabelComponent)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Home.Title")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Title")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Home.Title")) setfenv(fn, newEnv("hvcorca.views.Pages.Home.Title")) return fn() end)
 
 newModule("Misc", "ModuleScript", "hvcorca.views.Pages.Misc", "hvcorca.views.Pages", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
 local exports = {}\
 exports.default = TS.import(script, script, \"Misc\").default\
-return exports\
-", '@'.."hvcorca.views.Pages.Misc")) setfenv(fn, newEnv("hvcorca.views.Pages.Misc")) return fn() end)
+return exports", '@'.."hvcorca.views.Pages.Misc")) setfenv(fn, newEnv("hvcorca.views.Pages.Misc")) return fn() end)
 
 newModule("Misc", "ModuleScript", "hvcorca.views.Pages.Misc.Misc", "hvcorca.views.Pages.Misc", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -8765,22 +8644,19 @@ end\
 local default = hooked(Misc)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Misc.Misc")) setfenv(fn, newEnv("hvcorca.views.Pages.Misc.Misc")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Misc.Misc")) setfenv(fn, newEnv("hvcorca.views.Pages.Misc.Misc")) return fn() end)
 
 newModule("Options", "ModuleScript", "hvcorca.views.Pages.Options", "hvcorca.views.Pages", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
 local exports = {}\
 exports.default = TS.import(script, script, \"Options\").default\
-return exports\
-", '@'.."hvcorca.views.Pages.Options")) setfenv(fn, newEnv("hvcorca.views.Pages.Options")) return fn() end)
+return exports", '@'.."hvcorca.views.Pages.Options")) setfenv(fn, newEnv("hvcorca.views.Pages.Options")) return fn() end)
 
 newModule("Config", "ModuleScript", "hvcorca.views.Pages.Options.Config", "hvcorca.views.Pages.Options", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
 local exports = {}\
 exports.default = TS.import(script, script, \"Config\").default\
-return exports\
-", '@'.."hvcorca.views.Pages.Options.Config")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Config")) return fn() end)
+return exports", '@'.."hvcorca.views.Pages.Options.Config")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Config")) return fn() end)
 
 newModule("Config", "ModuleScript", "hvcorca.views.Pages.Options.Config.Config", "hvcorca.views.Pages.Options.Config", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -8849,8 +8725,7 @@ end\
 local default = hooked(Config)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Options.Config.Config")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Config.Config")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Options.Config.Config")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Config.Config")) return fn() end)
 
 newModule("ConfigItem", "ModuleScript", "hvcorca.views.Pages.Options.Config.ConfigItem", "hvcorca.views.Pages.Options.Config", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -9002,8 +8877,7 @@ return {\
 \9ENTRY_WIDTH = ENTRY_WIDTH,\
 \9ENTRY_TEXT_PADDING = ENTRY_TEXT_PADDING,\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Options.Config.ConfigItem")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Config.ConfigItem")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Options.Config.ConfigItem")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Config.ConfigItem")) return fn() end)
 
 newModule("Options", "ModuleScript", "hvcorca.views.Pages.Options.Options", "hvcorca.views.Pages.Options", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -9032,15 +8906,13 @@ end\
 local default = pure(Options)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Options.Options")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Options")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Options.Options")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Options")) return fn() end)
 
 newModule("Shortcuts", "ModuleScript", "hvcorca.views.Pages.Options.Shortcuts", "hvcorca.views.Pages.Options", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
 local exports = {}\
 exports.default = TS.import(script, script, \"Shortcuts\").default\
-return exports\
-", '@'.."hvcorca.views.Pages.Options.Shortcuts")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Shortcuts")) return fn() end)
+return exports", '@'.."hvcorca.views.Pages.Options.Shortcuts")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Shortcuts")) return fn() end)
 
 newModule("ShortcutItem", "ModuleScript", "hvcorca.views.Pages.Options.Shortcuts.ShortcutItem", "hvcorca.views.Pages.Options.Shortcuts", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -9288,8 +9160,7 @@ return {\
 \9ENTRY_WIDTH = ENTRY_WIDTH,\
 \9ENTRY_TEXT_PADDING = ENTRY_TEXT_PADDING,\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Options.Shortcuts.ShortcutItem")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Shortcuts.ShortcutItem")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Options.Shortcuts.ShortcutItem")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Shortcuts.ShortcutItem")) return fn() end)
 
 newModule("Shortcuts", "ModuleScript", "hvcorca.views.Pages.Options.Shortcuts.Shortcuts", "hvcorca.views.Pages.Options.Shortcuts", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -9424,15 +9295,13 @@ end\
 local default = hooked(Shortcuts)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Options.Shortcuts.Shortcuts")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Shortcuts.Shortcuts")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Options.Shortcuts.Shortcuts")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Shortcuts.Shortcuts")) return fn() end)
 
 newModule("Themes", "ModuleScript", "hvcorca.views.Pages.Options.Themes", "hvcorca.views.Pages.Options", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
 local exports = {}\
 exports.default = TS.import(script, script, \"Themes\").default\
-return exports\
-", '@'.."hvcorca.views.Pages.Options.Themes")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Themes")) return fn() end)
+return exports", '@'.."hvcorca.views.Pages.Options.Themes")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Themes")) return fn() end)
 
 newModule("ThemeItem", "ModuleScript", "hvcorca.views.Pages.Options.Themes.ThemeItem", "hvcorca.views.Pages.Options.Themes", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -9669,8 +9538,7 @@ return {\
 \9ENTRY_WIDTH = ENTRY_WIDTH,\
 \9ENTRY_TEXT_PADDING = ENTRY_TEXT_PADDING,\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Options.Themes.ThemeItem")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Themes.ThemeItem")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Options.Themes.ThemeItem")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Themes.ThemeItem")) return fn() end)
 
 newModule("Themes", "ModuleScript", "hvcorca.views.Pages.Options.Themes.Themes", "hvcorca.views.Pages.Options.Themes", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -9752,8 +9620,7 @@ end\
 local default = hooked(Themes)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Options.Themes.Themes")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Themes.Themes")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Options.Themes.Themes")) setfenv(fn, newEnv("hvcorca.views.Pages.Options.Themes.Themes")) return fn() end)
 
 newModule("Pages", "ModuleScript", "hvcorca.views.Pages.Pages", "hvcorca.views.Pages", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
@@ -9818,15 +9685,13 @@ end\
 local default = hooked(Pages)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Pages")) setfenv(fn, newEnv("hvcorca.views.Pages.Pages")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Pages")) setfenv(fn, newEnv("hvcorca.views.Pages.Pages")) return fn() end)
 
 newModule("Scripts", "ModuleScript", "hvcorca.views.Pages.Scripts", "hvcorca.views.Pages", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
 local exports = {}\
 exports.default = TS.import(script, script, \"Scripts\").default\
-return exports\
-", '@'.."hvcorca.views.Pages.Scripts")) setfenv(fn, newEnv("hvcorca.views.Pages.Scripts")) return fn() end)
+return exports", '@'.."hvcorca.views.Pages.Scripts")) setfenv(fn, newEnv("hvcorca.views.Pages.Scripts")) return fn() end)
 
 newModule("Content", "ModuleScript", "hvcorca.views.Pages.Scripts.Content", "hvcorca.views.Pages.Scripts", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -9972,8 +9837,7 @@ end\
 local default = hooked(Content)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Scripts.Content")) setfenv(fn, newEnv("hvcorca.views.Pages.Scripts.Content")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Scripts.Content")) setfenv(fn, newEnv("hvcorca.views.Pages.Scripts.Content")) return fn() end)
 
 newModule("ScriptCard", "ModuleScript", "hvcorca.views.Pages.Scripts.ScriptCard", "hvcorca.views.Pages.Scripts", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -10155,8 +10019,7 @@ end\
 local default = hooked(ScriptCard)\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Scripts.ScriptCard")) setfenv(fn, newEnv("hvcorca.views.Pages.Scripts.ScriptCard")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Scripts.ScriptCard")) setfenv(fn, newEnv("hvcorca.views.Pages.Scripts.ScriptCard")) return fn() end)
 
 newModule("Scripts", "ModuleScript", "hvcorca.views.Pages.Scripts.Scripts", "hvcorca.views.Pages.Scripts", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
@@ -10333,8 +10196,7 @@ end\
 local default = Scripts\
 return {\
 \9default = default,\
-}\
-", '@'.."hvcorca.views.Pages.Scripts.Scripts")) setfenv(fn, newEnv("hvcorca.views.Pages.Scripts.Scripts")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Scripts.Scripts")) setfenv(fn, newEnv("hvcorca.views.Pages.Scripts.Scripts")) return fn() end)
 
 newModule("constants", "ModuleScript", "hvcorca.views.Pages.Scripts.constants", "hvcorca.views.Pages.Scripts", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local BASE_WINDOW_HEIGHT = 880\
@@ -10344,8 +10206,7 @@ return {\
 \9BASE_WINDOW_HEIGHT = BASE_WINDOW_HEIGHT,\
 \9BASE_WINDOW_WIDTH = BASE_WINDOW_WIDTH,\
 \9BASE_PADDING = BASE_PADDING,\
-}\
-", '@'.."hvcorca.views.Pages.Scripts.constants")) setfenv(fn, newEnv("hvcorca.views.Pages.Scripts.constants")) return fn() end)
+}", '@'.."hvcorca.views.Pages.Scripts.constants")) setfenv(fn, newEnv("hvcorca.views.Pages.Scripts.constants")) return fn() end)
 
 newInstance("include", "Folder", "hvcorca.include", "hvcorca")
 
@@ -11750,8 +11611,7 @@ function Promise.fromEvent(event, predicate)\
 \9end)\
 end\
 \
-return Promise\
-", '@'.."hvcorca.include.Promise")) setfenv(fn, newEnv("hvcorca.include.Promise")) return fn() end)
+return Promise", '@'.."hvcorca.include.Promise")) setfenv(fn, newEnv("hvcorca.include.Promise")) return fn() end)
 
 newModule("RuntimeLib", "ModuleScript", "hvcorca.include.RuntimeLib", "hvcorca.include", function () local fn = assert(loadstring("local Promise = require(script.Parent.Promise)\
 \
@@ -11981,8 +11841,7 @@ function TS.generator(callback)\
 \9}\
 end\
 \
-return TS\
-", '@'.."hvcorca.include.RuntimeLib")) setfenv(fn, newEnv("hvcorca.include.RuntimeLib")) return fn() end)
+return TS", '@'.."hvcorca.include.RuntimeLib")) setfenv(fn, newEnv("hvcorca.include.RuntimeLib")) return fn() end)
 
 newInstance("node_modules", "Folder", "hvcorca.include.node_modules", "hvcorca.include")
 
@@ -12061,8 +11920,7 @@ function BaseMotor:__tostring()\
 \9return \"Motor\"\
 end\
 \
-return BaseMotor\
-", '@'.."hvcorca.include.node_modules.@rbxts.flipper.src.BaseMotor")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.flipper.src.BaseMotor")) return fn() end)
+return BaseMotor", '@'.."hvcorca.include.node_modules.@rbxts.flipper.src.BaseMotor")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.flipper.src.BaseMotor")) return fn() end)
 
 newModule("GroupMotor", "ModuleScript", "hvcorca.include.node_modules.@rbxts.flipper.src.GroupMotor", "hvcorca.include.node_modules.@rbxts.flipper.src", function () local fn = assert(loadstring("local BaseMotor = require(script.Parent.BaseMotor)\
 local SingleMotor = require(script.Parent.SingleMotor)\
@@ -12170,8 +12028,7 @@ function GroupMotor:__tostring()\
 \9return \"Motor(Group)\"\
 end\
 \
-return GroupMotor\
-", '@'.."hvcorca.include.node_modules.@rbxts.flipper.src.GroupMotor")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.flipper.src.GroupMotor")) return fn() end)
+return GroupMotor", '@'.."hvcorca.include.node_modules.@rbxts.flipper.src.GroupMotor")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.flipper.src.GroupMotor")) return fn() end)
 
 newModule("Instant", "ModuleScript", "hvcorca.include.node_modules.@rbxts.flipper.src.Instant", "hvcorca.include.node_modules.@rbxts.flipper.src", function () local fn = assert(loadstring("local Instant = {}\
 Instant.__index = Instant\
@@ -12353,8 +12210,7 @@ function SingleMotor:__tostring()\
 \9return \"Motor(Single)\"\
 end\
 \
-return SingleMotor\
-", '@'.."hvcorca.include.node_modules.@rbxts.flipper.src.SingleMotor")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.flipper.src.SingleMotor")) return fn() end)
+return SingleMotor", '@'.."hvcorca.include.node_modules.@rbxts.flipper.src.SingleMotor")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.flipper.src.SingleMotor")) return fn() end)
 
 newModule("Spring", "ModuleScript", "hvcorca.include.node_modules.@rbxts.flipper.src.Spring", "hvcorca.include.node_modules.@rbxts.flipper.src", function () local fn = assert(loadstring("local VELOCITY_THRESHOLD = 0.001\
 local POSITION_THRESHOLD = 0.001\
@@ -12520,8 +12376,126 @@ local function Make(className, settings)\
 \9instance.Parent = parent\
 \9return instance\
 end\
-return Make\
-", '@'.."hvcorca.include.node_modules.@rbxts.make")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.make")) return fn() end)
+return Make", '@'.."hvcorca.include.node_modules.@rbxts.make")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.make")) return fn() end)
+
+newModule("object-utils", "ModuleScript", "hvcorca.include.node_modules.@rbxts.object-utils", "hvcorca.include.node_modules.@rbxts", function () local fn = assert(loadstring("local HttpService = game:GetService(\"HttpService\")\
+\
+local Object = {}\
+\
+function Object.keys(object)\
+\9local result = table.create(#object)\
+\9for key in pairs(object) do\
+\9\9result[#result + 1] = key\
+\9end\
+\9return result\
+end\
+\
+function Object.values(object)\
+\9local result = table.create(#object)\
+\9for _, value in pairs(object) do\
+\9\9result[#result + 1] = value\
+\9end\
+\9return result\
+end\
+\
+function Object.entries(object)\
+\9local result = table.create(#object)\
+\9for key, value in pairs(object) do\
+\9\9result[#result + 1] = { key, value }\
+\9end\
+\9return result\
+end\
+\
+function Object.assign(toObj, ...)\
+\9for i = 1, select(\"#\", ...) do\
+\9\9local arg = select(i, ...)\
+\9\9if type(arg) == \"table\" then\
+\9\9\9for key, value in pairs(arg) do\
+\9\9\9\9toObj[key] = value\
+\9\9\9end\
+\9\9end\
+\9end\
+\9return toObj\
+end\
+\
+function Object.copy(object)\
+\9local result = table.create(#object)\
+\9for k, v in pairs(object) do\
+\9\9result[k] = v\
+\9end\
+\9return result\
+end\
+\
+local function deepCopyHelper(object, encountered)\
+\9local result = table.create(#object)\
+\9encountered[object] = result\
+\
+\9for k, v in pairs(object) do\
+\9\9if type(k) == \"table\" then\
+\9\9\9k = encountered[k] or deepCopyHelper(k, encountered)\
+\9\9end\
+\
+\9\9if type(v) == \"table\" then\
+\9\9\9v = encountered[v] or deepCopyHelper(v, encountered)\
+\9\9end\
+\
+\9\9result[k] = v\
+\9end\
+\
+\9return result\
+end\
+\
+function Object.deepCopy(object)\
+\9return deepCopyHelper(object, {})\
+end\
+\
+function Object.deepEquals(a, b)\
+\9-- a[k] == b[k]\
+\9for k in pairs(a) do\
+\9\9local av = a[k]\
+\9\9local bv = b[k]\
+\9\9if type(av) == \"table\" and type(bv) == \"table\" then\
+\9\9\9local result = Object.deepEquals(av, bv)\
+\9\9\9if not result then\
+\9\9\9\9return false\
+\9\9\9end\
+\9\9elseif av ~= bv then\
+\9\9\9return false\
+\9\9end\
+\9end\
+\
+\9-- extra keys in b\
+\9for k in pairs(b) do\
+\9\9if a[k] == nil then\
+\9\9\9return false\
+\9\9end\
+\9end\
+\
+\9return true\
+end\
+\
+function Object.toString(data)\
+\9return HttpService:JSONEncode(data)\
+end\
+\
+function Object.isEmpty(object)\
+\9return next(object) == nil\
+end\
+\
+function Object.fromEntries(entries)\
+\9local entriesLen = #entries\
+\
+\9local result = table.create(entriesLen)\
+\9if entries then\
+\9\9for i = 1, entriesLen do\
+\9\9\9local pair = entries[i]\
+\9\9\9result[pair[1]] = pair[2]\
+\9\9end\
+\9end\
+\9return result\
+end\
+\
+return Object", '@'.."hvcorca.include.node_modules.@rbxts.object-utils")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.object-utils")) return fn() end)
 
 newInstance("roact", "Folder", "hvcorca.include.node_modules.@rbxts.roact", "hvcorca.include.node_modules.@rbxts")
 
@@ -13801,8 +13775,7 @@ setmetatable(Change, {\
 \9end,\
 })\
 \
-return Change\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers.Change")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers.Change")) return fn() end)
+return Change", '@'.."hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers.Change")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers.Change")) return fn() end)
 
 newModule("Children", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers.Children", "hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers", function () local fn = assert(loadstring("local Symbol = require(script.Parent.Parent.Symbol)\
 \
@@ -13850,8 +13823,7 @@ setmetatable(Event, {\
 \9end,\
 })\
 \
-return Event\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers.Event")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers.Event")) return fn() end)
+return Event", '@'.."hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers.Event")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers.Event")) return fn() end)
 
 newModule("Ref", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers.Ref", "hvcorca.include.node_modules.@rbxts.roact.src.PropMarkers", function () local fn = assert(loadstring("local Symbol = require(script.Parent.Parent.Symbol)\
 \
@@ -14183,8 +14155,7 @@ function RobloxRenderer.updateHostNode(reconciler, virtualNode, newElement)\
 \9return virtualNode\
 end\
 \
-return RobloxRenderer\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact.src.RobloxRenderer")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.RobloxRenderer")) return fn() end)
+return RobloxRenderer", '@'.."hvcorca.include.node_modules.@rbxts.roact.src.RobloxRenderer")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.RobloxRenderer")) return fn() end)
 
 newModule("SingleEventManager", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact.src.SingleEventManager", "hvcorca.include.node_modules.@rbxts.roact.src", function () local fn = assert(loadstring("--[[\
 \9A manager for a single host virtual node's connected events.\
@@ -14666,8 +14637,7 @@ local function createContext(defaultValue)\
 \9}\
 end\
 \
-return createContext\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact.src.createContext")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.createContext")) return fn() end)
+return createContext", '@'.."hvcorca.include.node_modules.@rbxts.roact.src.createContext")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.createContext")) return fn() end)
 
 newModule("createElement", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact.src.createElement", "hvcorca.include.node_modules.@rbxts.roact.src", function () local fn = assert(loadstring("local Children = require(script.Parent.PropMarkers.Children)\
 local ElementKind = require(script.Parent.ElementKind)\
@@ -15241,8 +15211,7 @@ local function createReconciler(renderer)\
 \9return reconciler\
 end\
 \
-return createReconciler\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact.src.createReconciler")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.createReconciler")) return fn() end)
+return createReconciler", '@'.."hvcorca.include.node_modules.@rbxts.roact.src.createReconciler")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.createReconciler")) return fn() end)
 
 newModule("createReconcilerCompat", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact.src.createReconcilerCompat", "hvcorca.include.node_modules.@rbxts.roact.src", function () local fn = assert(loadstring("--[[\
 \9Contains deprecated methods from Reconciler. Broken out so that removing\
@@ -15398,8 +15367,7 @@ local function createSignal()\
 \9}\
 end\
 \
-return createSignal\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact.src.createSignal")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.createSignal")) return fn() end)
+return createSignal", '@'.."hvcorca.include.node_modules.@rbxts.roact.src.createSignal")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact.src.createSignal")) return fn() end)
 
 newModule("createSpy", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact.src.createSpy", "hvcorca.include.node_modules.@rbxts.roact.src", function () local fn = assert(loadstring("--[[\
 \9A utility used to create a function spy that can be used to robustly test\
@@ -15734,8 +15702,7 @@ local function pure(functionComponent)\
 end\
 exports.hooked = hooked\
 exports.pure = pure\
-return exports\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out")) return fn() end)
+return exports", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out")) return fn() end)
 
 newModule("hooks", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", "hvcorca.include.node_modules.@rbxts.roact-hooked.out", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = _G[script]\
@@ -15749,8 +15716,7 @@ exports.useReducer = TS.import(script, script, \"use-reducer\").useReducer\
 exports.useState = TS.import(script, script, \"use-state\").useState\
 exports.useMutable = TS.import(script, script, \"use-mutable\").useMutable\
 exports.useRef = TS.import(script, script, \"use-ref\").useRef\
-return exports\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks")) return fn() end)
+return exports", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks")) return fn() end)
 
 newModule("use-binding", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-binding", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = _G[script]\
@@ -15780,8 +15746,7 @@ local function useBinding(initialValue)\
 end\
 return {\
 \9useBinding = useBinding,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-binding")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-binding")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-binding")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-binding")) return fn() end)
 
 newModule("use-callback", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-callback", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = _G[script]\
@@ -15816,8 +15781,7 @@ local function useCallback(callback, deps)\
 end\
 return {\
 \9useCallback = useCallback,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-callback")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-callback")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-callback")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-callback")) return fn() end)
 
 newModule("use-context", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-context", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = _G[script]\
@@ -15872,8 +15836,7 @@ local function useContext(context)\
 end\
 return {\
 \9useContext = useContext,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-context")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-context")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-context")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-context")) return fn() end)
 
 newModule("use-effect", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-effect", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = _G[script]\
@@ -15949,8 +15912,7 @@ local function useEffect(callback, deps)\
 end\
 return {\
 \9useEffect = useEffect,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-effect")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-effect")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-effect")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-effect")) return fn() end)
 
 newModule("use-memo", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-memo", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = _G[script]\
@@ -15992,8 +15954,7 @@ local function useMemo(factory, deps)\
 end\
 return {\
 \9useMemo = useMemo,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-memo")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-memo")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-memo")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-memo")) return fn() end)
 
 newModule("use-mutable", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-mutable", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = _G[script]\
@@ -16094,8 +16055,7 @@ local function useMutable(initialValue)\
 end\
 return {\
 \9useMutable = useMutable,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-mutable")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-mutable")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-mutable")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-mutable")) return fn() end)
 
 newModule("use-reducer", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-reducer", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = _G[script]\
@@ -16242,8 +16202,7 @@ local function useReducer(reducer, initializerArg, initializer)\
 end\
 return {\
 \9useReducer = useReducer,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-reducer")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-reducer")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-reducer")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-reducer")) return fn() end)
 
 newModule("use-ref", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-ref", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = _G[script]\
@@ -16281,8 +16240,7 @@ local function useRef()\
 end\
 return {\
 \9useRef = useRef,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-ref")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-ref")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-ref")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-ref")) return fn() end)
 
 newModule("use-state", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-state", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = _G[script]\
@@ -16383,16 +16341,14 @@ local function useState(initialState)\
 end\
 return {\
 \9useState = useState,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-state")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-state")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-state")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.hooks.use-state")) return fn() end)
 
 newModule("types", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.types", "hvcorca.include.node_modules.@rbxts.roact-hooked.out", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 -- Roact\
 -- Reducers\
 -- Utility types\
 -- Hooks\
-return nil\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.types")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.types")) return fn() end)
+return nil", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.types")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.types")) return fn() end)
 
 newInstance("utils", "Folder", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.utils", "hvcorca.include.node_modules.@rbxts.roact-hooked.out")
 
@@ -16426,8 +16382,7 @@ local function areDepsEqual(nextDeps, prevDeps)\
 end\
 return {\
 \9areDepsEqual = areDepsEqual,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.utils.are-deps-equal")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.utils.are-deps-equal")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.utils.are-deps-equal")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.utils.are-deps-equal")) return fn() end)
 
 newModule("memoized-hook", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.utils.memoized-hook", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.utils", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local EXCEPTION_INVALID_HOOK_CALL = table.concat({ \"Invalid hook call. Hooks can only be called inside of the body of a function component.\", \"This is usually the result of conflicting versions of roact-hooked.\", \"See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.\" }, \"\\n\")\
@@ -16511,8 +16466,7 @@ return {\
 \9renderDone = renderDone,\
 \9resolveCurrentComponent = resolveCurrentComponent,\
 \9memoizedHook = memoizedHook,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.utils.memoized-hook")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.utils.memoized-hook")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.utils.memoized-hook")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.utils.memoized-hook")) return fn() end)
 
 newModule("with-hooks", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks", "hvcorca.include.node_modules.@rbxts.roact-hooked.out", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = _G[script]\
@@ -16520,8 +16474,7 @@ local exports = {}\
 local _with_hooks = TS.import(script, script, \"with-hooks\")\
 exports.withHooks = _with_hooks.withHooks\
 exports.withHooksPure = _with_hooks.withHooksPure\
-return exports\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks")) return fn() end)
+return exports", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks")) return fn() end)
 
 newModule("component-with-hooks", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks.component-with-hooks", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = _G[script]\
@@ -16616,8 +16569,7 @@ do\
 end\
 return {\
 \9ComponentWithHooks = ComponentWithHooks,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks.component-with-hooks")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks.component-with-hooks")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks.component-with-hooks")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks.component-with-hooks")) return fn() end)
 
 newModule("with-hooks", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks.with-hooks", "hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = _G[script]\
@@ -16653,8 +16605,7 @@ end\
 return {\
 \9withHooks = withHooks,\
 \9withHooksPure = withHooksPure,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks.with-hooks")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks.with-hooks")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks.with-hooks")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-hooked.out.with-hooks.with-hooks")) return fn() end)
 
 newInstance("roact-rodux-hooked", "Folder", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked", "hvcorca.include.node_modules.@rbxts")
 
@@ -16667,8 +16618,7 @@ exports.useSelector = TS.import(script, script, \"hooks\", \"use-selector\").use
 exports.useStore = TS.import(script, script, \"hooks\", \"use-store\").useStore\
 exports.shallowEqual = TS.import(script, script, \"helpers\", \"shallow-equal\").shallowEqual\
 exports.RoactRoduxContext = TS.import(script, script, \"components\", \"context\").RoactRoduxContext\
-return exports\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out")) return fn() end)
+return exports", '@'.."hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out")) return fn() end)
 
 newInstance("components", "Folder", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.components", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out")
 
@@ -16678,8 +16628,7 @@ local Roact = TS.import(script, TS.getModule(script, \"@rbxts\", \"roact\").src)
 local RoactRoduxContext = Roact.createContext(nil)\
 return {\
 \9RoactRoduxContext = RoactRoduxContext,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.components.context")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.components.context")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.components.context")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.components.context")) return fn() end)
 
 newModule("provider", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.components.provider", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.components", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.3\
 local TS = _G[script]\
@@ -16718,8 +16667,7 @@ local Provider = hooked(function(_param)\
 end)\
 return {\
 \9Provider = Provider,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.components.provider")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.components.provider")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.components.provider")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.components.provider")) return fn() end)
 
 newInstance("helpers", "Folder", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.helpers", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out")
 
@@ -16759,8 +16707,7 @@ local function shallowEqual(left, right)\
 end\
 return {\
 \9shallowEqual = shallowEqual,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.helpers.shallow-equal")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.helpers.shallow-equal")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.helpers.shallow-equal")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.helpers.shallow-equal")) return fn() end)
 
 newInstance("hooks", "Folder", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out")
 
@@ -16800,8 +16747,7 @@ local function useDispatch()\
 end\
 return {\
 \9useDispatch = useDispatch,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-dispatch")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-dispatch")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-dispatch")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-dispatch")) return fn() end)
 
 newModule("use-selector", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-selector", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.3\
 local TS = _G[script]\
@@ -16922,8 +16868,7 @@ local function useSelector(selector, equalityFn)\
 end\
 return {\
 \9useSelector = useSelector,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-selector")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-selector")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-selector")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-selector")) return fn() end)
 
 newModule("use-store", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-store", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.3\
 local TS = _G[script]\
@@ -16951,16 +16896,14 @@ local function useStore()\
 end\
 return {\
 \9useStore = useStore,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-store")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-store")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-store")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.hooks.use-store")) return fn() end)
 
 newModule("types", "ModuleScript", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.types", "hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.3\
 --[[\
 \9*\
 \9* A Roact Context\
 ]]\
-return nil\
-", '@'.."hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.types")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.types")) return fn() end)
+return nil", '@'.."hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.types")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.roact-rodux-hooked.out.types")) return fn() end)
 
 newInstance("rodux", "Folder", "hvcorca.include.node_modules.@rbxts.rodux", "hvcorca.include.node_modules.@rbxts")
 
@@ -16978,8 +16921,7 @@ return {\
 \9makeActionCreator = makeActionCreator,\
 \9loggerMiddleware = loggerMiddleware.middleware,\
 \9thunkMiddleware = thunkMiddleware,\
-}\
-", '@'.."hvcorca.include.node_modules.@rbxts.rodux.src")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src")) return fn() end)
+}", '@'.."hvcorca.include.node_modules.@rbxts.rodux.src")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src")) return fn() end)
 
 newModule("NoYield", "ModuleScript", "hvcorca.include.node_modules.@rbxts.rodux.src.NoYield", "hvcorca.include.node_modules.@rbxts.rodux.src", function () local fn = assert(loadstring("--!nocheck\
 \
@@ -17011,8 +16953,7 @@ local function NoYield(callback, ...)\
 \9return resultHandler(co, coroutine.resume(co, ...))\
 end\
 \
-return NoYield\
-", '@'.."hvcorca.include.node_modules.@rbxts.rodux.src.NoYield")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.NoYield")) return fn() end)
+return NoYield", '@'.."hvcorca.include.node_modules.@rbxts.rodux.src.NoYield")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.NoYield")) return fn() end)
 
 newModule("Signal", "ModuleScript", "hvcorca.include.node_modules.@rbxts.rodux.src.Signal", "hvcorca.include.node_modules.@rbxts.rodux.src", function () local fn = assert(loadstring("--[[\
 \9A limited, simple implementation of a Signal.\
@@ -17335,8 +17276,7 @@ function Store:flush()\
 \9self._lastState = state\
 end\
 \
-return Store\
-", '@'.."hvcorca.include.node_modules.@rbxts.rodux.src.Store")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.Store")) return fn() end)
+return Store", '@'.."hvcorca.include.node_modules.@rbxts.rodux.src.Store")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.Store")) return fn() end)
 
 newModule("combineReducers", "ModuleScript", "hvcorca.include.node_modules.@rbxts.rodux.src.combineReducers", "hvcorca.include.node_modules.@rbxts.rodux.src", function () local fn = assert(loadstring("--[[\
 \9Create a composite reducer from a map of keys and sub-reducers.\
@@ -17359,8 +17299,7 @@ local function combineReducers(map)\
 \9end\
 end\
 \
-return combineReducers\
-", '@'.."hvcorca.include.node_modules.@rbxts.rodux.src.combineReducers")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.combineReducers")) return fn() end)
+return combineReducers", '@'.."hvcorca.include.node_modules.@rbxts.rodux.src.combineReducers")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.combineReducers")) return fn() end)
 
 newModule("createReducer", "ModuleScript", "hvcorca.include.node_modules.@rbxts.rodux.src.createReducer", "hvcorca.include.node_modules.@rbxts.rodux.src", function () local fn = assert(loadstring("return function(initialState, handlers)\
 \9return function(state, action)\
@@ -17376,8 +17315,7 @@ newModule("createReducer", "ModuleScript", "hvcorca.include.node_modules.@rbxts.
 \
 \9\9return state\
 \9end\
-end\
-", '@'.."hvcorca.include.node_modules.@rbxts.rodux.src.createReducer")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.createReducer")) return fn() end)
+end", '@'.."hvcorca.include.node_modules.@rbxts.rodux.src.createReducer")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.createReducer")) return fn() end)
 
 newModule("loggerMiddleware", "ModuleScript", "hvcorca.include.node_modules.@rbxts.rodux.src.loggerMiddleware", "hvcorca.include.node_modules.@rbxts.rodux.src", function () local fn = assert(loadstring("-- We want to be able to override outputFunction in tests, so the shape of this\
 -- module is kind of unconventional.\
@@ -17401,8 +17339,7 @@ function loggerMiddleware.middleware(nextDispatch, store)\
 \9end\
 end\
 \
-return loggerMiddleware\
-", '@'.."hvcorca.include.node_modules.@rbxts.rodux.src.loggerMiddleware")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.loggerMiddleware")) return fn() end)
+return loggerMiddleware", '@'.."hvcorca.include.node_modules.@rbxts.rodux.src.loggerMiddleware")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.loggerMiddleware")) return fn() end)
 
 newModule("makeActionCreator", "ModuleScript", "hvcorca.include.node_modules.@rbxts.rodux.src.makeActionCreator", "hvcorca.include.node_modules.@rbxts.rodux.src", function () local fn = assert(loadstring("--[[\
 \9A helper function to define a Rodux action creator with an associated name.\
@@ -17427,8 +17364,7 @@ local function makeActionCreator(name, fn)\
 \9})\
 end\
 \
-return makeActionCreator\
-", '@'.."hvcorca.include.node_modules.@rbxts.rodux.src.makeActionCreator")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.makeActionCreator")) return fn() end)
+return makeActionCreator", '@'.."hvcorca.include.node_modules.@rbxts.rodux.src.makeActionCreator")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.makeActionCreator")) return fn() end)
 
 newModule("prettyPrint", "ModuleScript", "hvcorca.include.node_modules.@rbxts.rodux.src.prettyPrint", "hvcorca.include.node_modules.@rbxts.rodux.src", function () local fn = assert(loadstring("local indent = \"    \"\
 \
@@ -17498,8 +17434,7 @@ local function thunkMiddleware(nextDispatch, store)\
 \9end\
 end\
 \
-return thunkMiddleware\
-", '@'.."hvcorca.include.node_modules.@rbxts.rodux.src.thunkMiddleware")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.thunkMiddleware")) return fn() end)
+return thunkMiddleware", '@'.."hvcorca.include.node_modules.@rbxts.rodux.src.thunkMiddleware")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.rodux.src.thunkMiddleware")) return fn() end)
 
 newModule("services", "ModuleScript", "hvcorca.include.node_modules.@rbxts.services", "hvcorca.include.node_modules.@rbxts", function () local fn = assert(loadstring("return setmetatable({}, {\
 \9__index = function(self, serviceName)\
@@ -17507,8 +17442,7 @@ newModule("services", "ModuleScript", "hvcorca.include.node_modules.@rbxts.servi
 \9\9self[serviceName] = service\
 \9\9return service\
 \9end,\
-})\
-", '@'.."hvcorca.include.node_modules.@rbxts.services")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.services")) return fn() end)
+})", '@'.."hvcorca.include.node_modules.@rbxts.services")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.services")) return fn() end)
 
 newInstance("types", "Folder", "hvcorca.include.node_modules.@rbxts.types", "hvcorca.include.node_modules.@rbxts")
 
