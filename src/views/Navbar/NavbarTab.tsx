@@ -6,13 +6,12 @@ import { useIsPageOpen } from "hooks/use-current-page";
 import { useTheme } from "hooks/use-theme";
 import { setDashboardPage } from "store/actions/dashboard.action";
 import { DashboardPage, PAGE_TO_ICON, PAGE_TO_INDEX } from "store/models/dashboard.model";
+import { TAB_COUNT, TAB_SIZE } from "./constants";
 import { px, scale } from "utils/udim2";
 
 interface Props {
 	page: DashboardPage;
 }
-
-const TAB_SIZE = px(100, 56);
 
 function NavbarTab({ page }: Props) {
 	const theme = useTheme("navbar");
@@ -26,7 +25,7 @@ function NavbarTab({ page }: Props) {
 			AutoButtonColor={false}
 			Active={!isActive}
 			Size={TAB_SIZE}
-			Position={scale(PAGE_TO_INDEX[page] / 4, 0)}
+			Position={scale(PAGE_TO_INDEX[page] / TAB_COUNT, 0)}
 			BackgroundTransparency={1}
 			Event={{
 				Activated: () => dispatch(setDashboardPage(page)),

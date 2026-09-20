@@ -13,17 +13,15 @@ import { DashboardPage, PAGE_TO_INDEX } from "store/models/dashboard.model";
 import { getColorInSequence, hex } from "utils/color3";
 import { px, scale } from "utils/udim2";
 import NavbarTab from "./NavbarTab";
-
-// 5 tabs × 100px each
-const NAVBAR_SIZE = px(500, 56);
+import { NAVBAR_SIZE, TAB_COUNT } from "./constants";
 
 function Navbar() {
 	const theme = useTheme("navbar");
 	const page = useCurrentPage();
 	const isOpen = useAppSelector((state) => state.dashboard.isOpen);
 
-	// Divide by 5 so alpha spans 0→0.8 across 5 tabs (each tab = 0.2 of navbar width)
-	const alpha = useSpring(PAGE_TO_INDEX[page] / 5, { frequency: 3.9, dampingRatio: 0.76 });
+	// Each tab occupies 1/TAB_COUNT of the navbar width, so alpha spans 0→(TAB_COUNT - 1)/TAB_COUNT
+	const alpha = useSpring(PAGE_TO_INDEX[page] / TAB_COUNT, { frequency: 3.9, dampingRatio: 0.76 });
 
 	return (
 		<frame
