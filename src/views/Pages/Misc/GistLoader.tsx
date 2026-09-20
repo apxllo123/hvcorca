@@ -187,7 +187,7 @@ interface CommandItemProps {
 	onSelect: () => void;
 }
 
-function CommandItem({ entry, isSelected, layoutOrder, onSelect }: CommandItemProps) {
+const CommandItem = hooked(({ entry, isSelected, layoutOrder, onSelect }: CommandItemProps) => {
 	const [hovered, setHovered] = useState(false);
 
 	return (
@@ -230,6 +230,6 @@ function CommandItem({ entry, isSelected, layoutOrder, onSelect }: CommandItemPr
 			/>
 		</textbutton>
 	);
-}
+});
 
 export default hooked(GistLoader);
