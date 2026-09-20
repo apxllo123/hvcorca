@@ -1924,6 +1924,64 @@ return {\
 }\
 ", '@'.."hvcorca.hooks.common.use-viewport-size")) setfenv(fn, newEnv("hvcorca.hooks.common.use-viewport-size")) return fn() end)
 
+newModule("use-command-bar-shortcut", "ModuleScript", "hvcorca.hooks.use-command-bar-shortcut", "hvcorca.hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
+local TS = require(script.Parent.Parent.include.RuntimeLib)\
+local useEffect = TS.import(script, TS.getModule(script, \"@rbxts\", \"roact-hooked\").out).useEffect\
+local UserInputService = TS.import(script, TS.getModule(script, \"@rbxts\", \"services\")).UserInputService\
+local _rodux_hooks = TS.import(script, script.Parent, \"common\", \"rodux-hooks\")\
+local useAppDispatch = _rodux_hooks.useAppDispatch\
+local useAppSelector = _rodux_hooks.useAppSelector\
+local _dashboard_action = TS.import(script, script.Parent.Parent, \"store\", \"actions\", \"dashboard.action\")\
+local setDashboardPage = _dashboard_action.setDashboardPage\
+local toggleDashboard = _dashboard_action.toggleDashboard\
+local DashboardPage = TS.import(script, script.Parent.Parent, \"store\", \"models\", \"dashboard.model\").DashboardPage\
+local COMMAND_BAR_KEY = Enum.KeyCode.Six\
+local function isShiftDown()\
+\9return UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) or UserInputService:IsKeyDown(Enum.KeyCode.RightShift)\
+end\
+local function useCommandBarShortcut()\
+\9local dispatch = useAppDispatch()\
+\9local isOpen = useAppSelector(function(state)\
+\9\9return state.dashboard.isOpen\
+\9end)\
+\9local page = useAppSelector(function(state)\
+\9\9return state.dashboard.page\
+\9end)\
+\9useEffect(function()\
+\9\9local handle = UserInputService.InputBegan:Connect(function(input, gameProcessed)\
+\9\9\9if gameProcessed then\
+\9\9\9\9return nil\
+\9\9\9end\
+\9\9\9if input.UserInputType ~= Enum.UserInputType.Keyboard then\
+\9\9\9\9return nil\
+\9\9\9end\
+\9\9\9if input.KeyCode ~= COMMAND_BAR_KEY then\
+\9\9\9\9return nil\
+\9\9\9end\
+\9\9\9if not isShiftDown() then\
+\9\9\9\9return nil\
+\9\9\9end\
+\9\9\9if isOpen and page == DashboardPage.Misc then\
+\9\9\9\9dispatch(toggleDashboard())\
+\9\9\9\9return nil\
+\9\9\9end\
+\9\9\9if page ~= DashboardPage.Misc then\
+\9\9\9\9dispatch(setDashboardPage(DashboardPage.Misc))\
+\9\9\9end\
+\9\9\9if not isOpen then\
+\9\9\9\9dispatch(toggleDashboard())\
+\9\9\9end\
+\9\9end)\
+\9\9return function()\
+\9\9\9return handle:Disconnect()\
+\9\9end\
+\9end, { isOpen, page })\
+end\
+return {\
+\9useCommandBarShortcut = useCommandBarShortcut,\
+}\
+", '@'.."hvcorca.hooks.use-command-bar-shortcut")) setfenv(fn, newEnv("hvcorca.hooks.use-command-bar-shortcut")) return fn() end)
+
 newModule("use-current-page", "ModuleScript", "hvcorca.hooks.use-current-page", "hvcorca.hooks", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.include.RuntimeLib)\
 local useAppSelector = TS.import(script, script.Parent, \"common\", \"rodux-hooks\").useAppSelector\
@@ -8635,206 +8693,364 @@ exports.default = TS.import(script, script, \"Misc\").default\
 return exports\
 ", '@'.."hvcorca.views.Pages.Misc")) setfenv(fn, newEnv("hvcorca.views.Pages.Misc")) return fn() end)
 
-newModule("Misc", "ModuleScript", "hvcorca.views.Pages.Misc.Misc", "hvcorca.views.Pages.Misc", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
+newModule("GistLoader", "ModuleScript", "hvcorca.views.Pages.Misc.GistLoader", "hvcorca.views.Pages.Misc", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
 local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
 local Roact = TS.import(script, TS.getModule(script, \"@rbxts\", \"roact\").src)\
-local HttpService = TS.import(script, TS.getModule(script, \"@rbxts\", \"services\")).HttpService\
 local _roact_hooked = TS.import(script, TS.getModule(script, \"@rbxts\", \"roact-hooked\").out)\
 local hooked = _roact_hooked.hooked\
-local useEffect = _roact_hooked.useEffect\
+local useCallback = _roact_hooked.useCallback\
 local useState = _roact_hooked.useState\
-local Canvas = TS.import(script, script.Parent.Parent.Parent.Parent, \"components\", \"Canvas\").default\
 local http = TS.import(script, script.Parent.Parent.Parent.Parent, \"utils\", \"http\")\
-local scale = TS.import(script, script.Parent.Parent.Parent.Parent, \"utils\", \"udim2\").scale\
-local GIST_URL = \"https://gist.githubusercontent.com/apxllo1/YOUR_GIST_ID/raw/commands.json\"\
-local runCommand = TS.async(function(cmd)\
-\9TS.try(function()\
-\9\9local content = TS.await(http.get(cmd.url))\
-\9\9local _binding = loadstring(content, \"@\" .. cmd.name)\
-\9\9local fn = _binding[1]\
-\9\9local err = _binding[2]\
-\9\9local _arg1 = \"loadstring failed for '\" .. (cmd.name .. (\"': \" .. err))\
-\9\9assert(fn, _arg1)\
-\9\9task.defer(fn)\
-\9end, function(e)\
-\9\9warn(\"[Havoc] Failed to run '\" .. (cmd.name .. (\"': \" .. tostring(e))))\
-\9end)\
-end)\
-local function Misc()\
-\9local _binding = useState({})\
-\9local commands = _binding[1]\
-\9local setCommands = _binding[2]\
+local COMMANDS = { {\
+\9name = \"Example Script\",\
+\9description = \"A placeholder - replace with your own Gist\",\
+\9gistId = \"YOUR_GIST_ID_HERE\",\
+} }\
+local ACCENT = Color3.fromRGB(80, 220, 140)\
+local BG_INPUT = Color3.fromRGB(20, 20, 20)\
+local BG_ITEM = Color3.fromRGB(25, 25, 25)\
+local BG_ITEM_HOVER = Color3.fromRGB(35, 35, 35)\
+local TEXT_PRIMARY = Color3.fromRGB(255, 255, 255)\
+local TEXT_SECONDARY = Color3.fromRGB(160, 160, 160)\
+local TEXT_DIM = Color3.fromRGB(100, 100, 100)\
+local GIST_RAW_URL = function(id)\
+\9return \"https://gist.githubusercontent.com/\" .. (id .. \"/raw\")\
+end\
+local CommandItem\
+local function GistLoader()\
+\9local _binding = useState(COMMANDS)\
+\9local filtered = _binding[1]\
+\9local setFiltered = _binding[2]\
 \9local _binding_1 = useState(\"\")\
-\9local search = _binding_1[1]\
-\9local setSearch = _binding_1[2]\
-\9local _binding_2 = useState(\"Loading...\")\
-\9local status = _binding_2[1]\
-\9local setStatus = _binding_2[2]\
-\9useEffect(function()\
-\9\9task.spawn(TS.async(function()\
-\9\9\9TS.try(function()\
-\9\9\9\9local raw = TS.await(http.get(GIST_URL))\
-\9\9\9\9local parsed = HttpService:JSONDecode(raw)\
-\9\9\9\9setCommands(parsed)\
-\9\9\9\9setStatus(\"\")\
-\9\9\9end, function(e)\
-\9\9\9\9setStatus(\"Failed to load commands.\")\
-\9\9\9\9warn(\"[Havoc] Misc tab error: \" .. tostring(e))\
-\9\9\9end)\
-\9\9end))\
-\9end, {})\
-\9local _arg0 = function(cmd)\
-\9\9local _exp = string.lower(cmd.name)\
-\9\9local _arg0_1 = string.lower(search)\
-\9\9return (string.find(_exp, _arg0_1)) ~= nil\
-\9end\
-\9-- ▼ ReadonlyArray.filter ▼\
-\9local _newValue = {}\
-\9local _length = 0\
-\9for _k, _v in ipairs(commands) do\
-\9\9if _arg0(_v, _k - 1, commands) == true then\
-\9\9\9_length += 1\
-\9\9\9_newValue[_length] = _v\
+\9local searchText = _binding_1[1]\
+\9local setSearchText = _binding_1[2]\
+\9local _binding_2 = useState(nil)\
+\9local selected = _binding_2[1]\
+\9local setSelected = _binding_2[2]\
+\9local _binding_3 = useState(tostring(#COMMANDS) .. \" commands available\")\
+\9local status = _binding_3[1]\
+\9local setStatus = _binding_3[2]\
+\9local _binding_4 = useState(false)\
+\9local isRunning = _binding_4[1]\
+\9local setIsRunning = _binding_4[2]\
+\9local handleSearch = useCallback(function(rbx)\
+\9\9local query = string.lower(rbx.Text)\
+\9\9setSearchText(rbx.Text)\
+\9\9if query == \"\" then\
+\9\9\9setFiltered(COMMANDS)\
+\9\9else\
+\9\9\9local _arg0 = function(cmd)\
+\9\9\9\9return (string.find(string.lower(cmd.name), query, 1, true)) ~= nil or (string.find(string.lower(cmd.description), query, 1, true)) ~= nil\
+\9\9\9end\
+\9\9\9-- ▼ ReadonlyArray.filter ▼\
+\9\9\9local _newValue = {}\
+\9\9\9local _length = 0\
+\9\9\9for _k, _v in ipairs(COMMANDS) do\
+\9\9\9\9if _arg0(_v, _k - 1, COMMANDS) == true then\
+\9\9\9\9\9_length += 1\
+\9\9\9\9\9_newValue[_length] = _v\
+\9\9\9\9end\
+\9\9\9end\
+\9\9\9-- ▲ ReadonlyArray.filter ▲\
+\9\9\9setFiltered(_newValue)\
 \9\9end\
-\9end\
-\9-- ▲ ReadonlyArray.filter ▲\
-\9local filtered = _newValue\
+\9end, {})\
+\9local handleRun = useCallback(function()\
+\9\9if selected == nil or isRunning then\
+\9\9\9return nil\
+\9\9end\
+\9\9setIsRunning(true)\
+\9\9setStatus(\"Fetching \" .. (selected.name .. \"...\"))\
+\9\9local entry = selected\
+\9\9task.spawn(function()\
+\9\9\9local _exp = http.get(GIST_RAW_URL(entry.gistId))\
+\9\9\9local _arg0 = function(body)\
+\9\9\9\9if body == \"\" then\
+\9\9\9\9\9setStatus(\"Gist returned empty content\")\
+\9\9\9\9\9setIsRunning(false)\
+\9\9\9\9\9return nil\
+\9\9\9\9end\
+\9\9\9\9local _binding_5 = loadstring(body, \"@\" .. entry.name)\
+\9\9\9\9local fn = _binding_5[1]\
+\9\9\9\9local err = _binding_5[2]\
+\9\9\9\9if fn == nil then\
+\9\9\9\9\9setStatus(\"Compile error: \" .. err)\
+\9\9\9\9\9setIsRunning(false)\
+\9\9\9\9\9return nil\
+\9\9\9\9end\
+\9\9\9\9TS.try(function()\
+\9\9\9\9\9fn()\
+\9\9\9\9\9setStatus(\"Ran \" .. entry.name)\
+\9\9\9\9end, function(runErr)\
+\9\9\9\9\9setStatus(\"Runtime error: \" .. tostring(runErr))\
+\9\9\9\9end)\
+\9\9\9\9setIsRunning(false)\
+\9\9\9end\
+\9\9\9_exp:andThen(_arg0):catch(function(err)\
+\9\9\9\9setStatus(\"Fetch error: \" .. tostring(err))\
+\9\9\9\9setIsRunning(false)\
+\9\9\9end)\
+\9\9end)\
+\9end, { selected, isRunning })\
+\9local runButtonActive = selected ~= nil and not isRunning\
 \9local _attributes = {\
-\9\9position = scale(0, 1),\
-\9\9anchor = Vector2.new(0, 1),\
+\9\9Size = UDim2.new(1, 0, 0, 400),\
+\9\9BackgroundTransparency = 1,\
 \9}\
 \9local _children = {\
+\9\9Roact.createElement(\"UIListLayout\", {\
+\9\9\9Padding = UDim.new(0, 8),\
+\9\9\9SortOrder = Enum.SortOrder.LayoutOrder,\
+\9\9}),\
 \9\9SearchBar = Roact.createElement(\"Frame\", {\
-\9\9\9Size = UDim2.new(1, -24, 0, 36),\
-\9\9\9Position = UDim2.new(0, 12, 0, 12),\
-\9\9\9BackgroundColor3 = Color3.fromHex(\"#0D0D0D\"),\
-\9\9\9BorderSizePixel = 0,\
+\9\9\9Size = UDim2.new(1, 0, 0, 36),\
+\9\9\9BackgroundColor3 = BG_INPUT,\
+\9\9\9LayoutOrder = 0,\
 \9\9}, {\
 \9\9\9Roact.createElement(\"UICorner\", {\
 \9\9\9\9CornerRadius = UDim.new(0, 8),\
 \9\9\9}),\
+\9\9\9Roact.createElement(\"UIStroke\", {\
+\9\9\9\9Color = Color3.fromRGB(40, 40, 40),\
+\9\9\9\9Thickness = 1,\
+\9\9\9}),\
 \9\9\9Input = Roact.createElement(\"TextBox\", {\
-\9\9\9\9Size = UDim2.new(1, -12, 1, 0),\
-\9\9\9\9Position = UDim2.new(0, 12, 0, 0),\
-\9\9\9\9BackgroundTransparency = 1,\
-\9\9\9\9TextColor3 = Color3.fromHex(\"#ffffff\"),\
+\9\9\9\9Text = searchText,\
 \9\9\9\9PlaceholderText = \"Search commands...\",\
-\9\9\9\9PlaceholderColor3 = Color3.fromHex(\"#666666\"),\
-\9\9\9\9TextSize = 14,\
+\9\9\9\9PlaceholderColor3 = TEXT_DIM,\
+\9\9\9\9Size = UDim2.new(1, -16, 1, 0),\
+\9\9\9\9Position = UDim2.new(0, 8, 0, 0),\
+\9\9\9\9BackgroundTransparency = 1,\
+\9\9\9\9TextColor3 = TEXT_PRIMARY,\
 \9\9\9\9Font = Enum.Font.Gotham,\
+\9\9\9\9TextSize = 14,\
 \9\9\9\9TextXAlignment = Enum.TextXAlignment.Left,\
 \9\9\9\9ClearTextOnFocus = false,\
-\9\9\9\9Text = search,\
-\9\9\9\9[Roact.Change.Text] = function(rbx)\
-\9\9\9\9\9return setSearch(rbx.Text)\
-\9\9\9\9end,\
+\9\9\9\9[Roact.Change.Text] = handleSearch,\
 \9\9\9}),\
 \9\9}),\
 \9}\
-\9local _length_1 = #_children\
-\9local _child = status ~= \"\" and (Roact.createFragment({\
-\9\9Status = Roact.createElement(\"TextLabel\", {\
-\9\9\9Size = UDim2.new(1, -24, 0, 24),\
-\9\9\9Position = UDim2.new(0, 12, 0, 56),\
-\9\9\9BackgroundTransparency = 1,\
-\9\9\9TextColor3 = Color3.fromHex(\"#666666\"),\
-\9\9\9TextSize = 13,\
-\9\9\9Font = Enum.Font.Gotham,\
-\9\9\9Text = status,\
-\9\9\9TextXAlignment = Enum.TextXAlignment.Left,\
-\9\9}),\
-\9}))\
-\9if _child then\
-\9\9if _child.elements ~= nil or _child.props ~= nil and _child.component ~= nil then\
-\9\9\9_children[_length_1 + 1] = _child\
-\9\9else\
-\9\9\9for _k, _v in ipairs(_child) do\
-\9\9\9\9_children[_length_1 + _k] = _v\
-\9\9\9end\
-\9\9end\
-\9end\
-\9_length_1 = #_children\
-\9local _arg0_1 = function(cmd, i)\
+\9local _length = #_children\
+\9local _arg0 = function(cmd, i)\
 \9\9return Roact.createFragment({\
-\9\9\9[cmd.name] = Roact.createElement(\"Frame\", {\
-\9\9\9\9LayoutOrder = i,\
-\9\9\9\9Size = UDim2.new(1, 0, 0, 48),\
-\9\9\9\9BackgroundColor3 = Color3.fromHex(\"#111111\"),\
-\9\9\9\9BorderSizePixel = 0,\
-\9\9\9}, {\
-\9\9\9\9Roact.createElement(\"UICorner\", {\
-\9\9\9\9\9CornerRadius = UDim.new(0, 8),\
-\9\9\9\9}),\
-\9\9\9\9Name = Roact.createElement(\"TextLabel\", {\
-\9\9\9\9\9Size = UDim2.new(1, -80, 0, 24),\
-\9\9\9\9\9Position = UDim2.new(0, 12, 0, 6),\
-\9\9\9\9\9BackgroundTransparency = 1,\
-\9\9\9\9\9TextColor3 = Color3.fromHex(\"#ffffff\"),\
-\9\9\9\9\9TextSize = 14,\
-\9\9\9\9\9Font = Enum.Font.GothamBold,\
-\9\9\9\9\9Text = cmd.name,\
-\9\9\9\9\9TextXAlignment = Enum.TextXAlignment.Left,\
-\9\9\9\9}),\
-\9\9\9\9Description = Roact.createElement(\"TextLabel\", {\
-\9\9\9\9\9Size = UDim2.new(1, -80, 0, 18),\
-\9\9\9\9\9Position = UDim2.new(0, 12, 0, 26),\
-\9\9\9\9\9BackgroundTransparency = 1,\
-\9\9\9\9\9TextColor3 = Color3.fromHex(\"#888888\"),\
-\9\9\9\9\9TextSize = 12,\
-\9\9\9\9\9Font = Enum.Font.Gotham,\
-\9\9\9\9\9Text = cmd.description,\
-\9\9\9\9\9TextXAlignment = Enum.TextXAlignment.Left,\
-\9\9\9\9}),\
-\9\9\9\9RunButton = Roact.createElement(\"TextButton\", {\
-\9\9\9\9\9Size = UDim2.new(0, 60, 0, 28),\
-\9\9\9\9\9Position = UDim2.new(1, -70, 0.5, -14),\
-\9\9\9\9\9BackgroundColor3 = Color3.fromHex(\"#CC2929\"),\
-\9\9\9\9\9BorderSizePixel = 0,\
-\9\9\9\9\9TextColor3 = Color3.fromHex(\"#ffffff\"),\
-\9\9\9\9\9TextSize = 13,\
-\9\9\9\9\9Font = Enum.Font.GothamBold,\
-\9\9\9\9\9Text = \"Run\",\
-\9\9\9\9\9[Roact.Event.MouseButton1Click] = function()\
-\9\9\9\9\9\9return task.spawn(function()\
-\9\9\9\9\9\9\9return runCommand(cmd)\
-\9\9\9\9\9\9end)\
-\9\9\9\9\9end,\
-\9\9\9\9}, {\
-\9\9\9\9\9Roact.createElement(\"UICorner\", {\
-\9\9\9\9\9\9CornerRadius = UDim.new(0, 6),\
-\9\9\9\9\9}),\
-\9\9\9\9}),\
+\9\9\9[cmd.gistId] = Roact.createElement(CommandItem, {\
+\9\9\9\9entry = cmd,\
+\9\9\9\9isSelected = selected ~= nil and selected.gistId == cmd.gistId,\
+\9\9\9\9layoutOrder = i,\
+\9\9\9\9onSelect = function()\
+\9\9\9\9\9return setSelected(cmd)\
+\9\9\9\9end,\
 \9\9\9}),\
 \9\9})\
 \9end\
 \9-- ▼ ReadonlyArray.map ▼\
-\9local _newValue_1 = table.create(#filtered)\
+\9local _newValue = table.create(#filtered)\
 \9for _k, _v in ipairs(filtered) do\
-\9\9_newValue_1[_k] = _arg0_1(_v, _k - 1, filtered)\
+\9\9_newValue[_k] = _arg0(_v, _k - 1, filtered)\
 \9end\
 \9-- ▲ ReadonlyArray.map ▲\
 \9local _attributes_1 = {\
-\9\9Size = UDim2.new(1, -24, 1, -68),\
-\9\9Position = UDim2.new(0, 12, 0, 56),\
+\9\9Size = UDim2.new(1, 0, 0, 260),\
 \9\9BackgroundTransparency = 1,\
-\9\9BorderSizePixel = 0,\
-\9\9ScrollBarThickness = 4,\
-\9\9ScrollBarImageColor3 = Color3.fromHex(\"#CC2929\"),\
-\9\9CanvasSize = UDim2.new(0, 0, 0, #filtered * 56),\
+\9\9ScrollBarThickness = 2,\
+\9\9ScrollBarImageColor3 = TEXT_DIM,\
 \9\9AutomaticCanvasSize = Enum.AutomaticSize.Y,\
+\9\9CanvasSize = UDim2.new(0, 0, 0, 0),\
+\9\9LayoutOrder = 1,\
 \9}\
 \9local _children_1 = {\
 \9\9Roact.createElement(\"UIListLayout\", {\
+\9\9\9Padding = UDim.new(0, 4),\
 \9\9\9SortOrder = Enum.SortOrder.LayoutOrder,\
-\9\9\9Padding = UDim.new(0, 8),\
 \9\9}),\
 \9}\
-\9local _length_2 = #_children_1\
-\9for _k, _v in ipairs(_newValue_1) do\
-\9\9_children_1[_length_2 + _k] = _v\
+\9local _length_1 = #_children_1\
+\9for _k, _v in ipairs(_newValue) do\
+\9\9_children_1[_length_1 + _k] = _v\
 \9end\
-\9_children.List = Roact.createElement(\"ScrollingFrame\", _attributes_1, _children_1)\
-\9return Roact.createElement(Canvas, _attributes, _children)\
+\9_length_1 = #_children_1\
+\9local _child = #filtered == 0 and (Roact.createFragment({\
+\9\9NoResults = Roact.createElement(\"TextLabel\", {\
+\9\9\9Text = \"No matching commands\",\
+\9\9\9Size = UDim2.new(1, 0, 0, 40),\
+\9\9\9BackgroundTransparency = 1,\
+\9\9\9TextColor3 = TEXT_DIM,\
+\9\9\9Font = Enum.Font.Gotham,\
+\9\9\9TextSize = 13,\
+\9\9\9TextXAlignment = Enum.TextXAlignment.Center,\
+\9\9}),\
+\9}))\
+\9if _child then\
+\9\9if _child.elements ~= nil or _child.props ~= nil and _child.component ~= nil then\
+\9\9\9_children_1[_length_1 + 1] = _child\
+\9\9else\
+\9\9\9for _k, _v in ipairs(_child) do\
+\9\9\9\9_children_1[_length_1 + _k] = _v\
+\9\9\9end\
+\9\9end\
+\9end\
+\9_children.CommandList = Roact.createElement(\"ScrollingFrame\", _attributes_1, _children_1)\
+\9_children.Footer = Roact.createElement(\"Frame\", {\
+\9\9Size = UDim2.new(1, 0, 0, 40),\
+\9\9BackgroundTransparency = 1,\
+\9\9LayoutOrder = 2,\
+\9}, {\
+\9\9RunButton = Roact.createElement(\"TextButton\", {\
+\9\9\9Text = isRunning and \"Running...\" or (selected ~= nil and \"Run: \" .. selected.name or \"Select a command\"),\
+\9\9\9Size = UDim2.new(1, 0, 1, 0),\
+\9\9\9BackgroundColor3 = runButtonActive and ACCENT or Color3.fromRGB(40, 40, 40),\
+\9\9\9TextColor3 = runButtonActive and Color3.fromRGB(10, 10, 10) or TEXT_DIM,\
+\9\9\9Font = Enum.Font.GothamBold,\
+\9\9\9TextSize = 14,\
+\9\9\9AutoButtonColor = false,\
+\9\9\9Active = runButtonActive,\
+\9\9\9[Roact.Event.Activated] = handleRun,\
+\9\9}, {\
+\9\9\9Roact.createElement(\"UICorner\", {\
+\9\9\9\9CornerRadius = UDim.new(0, 8),\
+\9\9\9}),\
+\9\9}),\
+\9})\
+\9_children.Status = Roact.createElement(\"TextLabel\", {\
+\9\9Text = status,\
+\9\9Size = UDim2.new(1, 0, 0, 16),\
+\9\9BackgroundTransparency = 1,\
+\9\9TextColor3 = TEXT_DIM,\
+\9\9Font = Enum.Font.Gotham,\
+\9\9TextSize = 11,\
+\9\9TextXAlignment = Enum.TextXAlignment.Left,\
+\9\9LayoutOrder = 3,\
+\9})\
+\9return Roact.createFragment({\
+\9\9GistLoader = Roact.createElement(\"Frame\", _attributes, _children),\
+\9})\
+end\
+function CommandItem(_param)\
+\9local entry = _param.entry\
+\9local isSelected = _param.isSelected\
+\9local layoutOrder = _param.layoutOrder\
+\9local onSelect = _param.onSelect\
+\9local _binding = useState(false)\
+\9local hovered = _binding[1]\
+\9local setHovered = _binding[2]\
+\9local _attributes = {\
+\9\9Text = \"\",\
+\9\9Size = UDim2.new(1, 0, 0, 52),\
+\9\9BackgroundColor3 = isSelected and Color3.fromRGB(30, 50, 35) or (hovered and BG_ITEM_HOVER or BG_ITEM),\
+\9\9AutoButtonColor = false,\
+\9\9LayoutOrder = layoutOrder,\
+\9\9[Roact.Event.Activated] = onSelect,\
+\9\9[Roact.Event.MouseEnter] = function()\
+\9\9\9return setHovered(true)\
+\9\9end,\
+\9\9[Roact.Event.MouseLeave] = function()\
+\9\9\9return setHovered(false)\
+\9\9end,\
+\9}\
+\9local _children = {\
+\9\9Roact.createElement(\"UICorner\", {\
+\9\9\9CornerRadius = UDim.new(0, 8),\
+\9\9}),\
+\9}\
+\9local _length = #_children\
+\9local _child = isSelected and Roact.createElement(\"UIStroke\", {\
+\9\9Color = ACCENT,\
+\9\9Thickness = 1,\
+\9})\
+\9if _child then\
+\9\9if _child.elements ~= nil or _child.props ~= nil and _child.component ~= nil then\
+\9\9\9_children[_length + 1] = _child\
+\9\9else\
+\9\9\9for _k, _v in ipairs(_child) do\
+\9\9\9\9_children[_length + _k] = _v\
+\9\9\9end\
+\9\9end\
+\9end\
+\9_length = #_children\
+\9_children.Name = Roact.createElement(\"TextLabel\", {\
+\9\9Text = entry.name,\
+\9\9Size = UDim2.new(1, -16, 0, 22),\
+\9\9Position = UDim2.new(0, 12, 0, 7),\
+\9\9BackgroundTransparency = 1,\
+\9\9TextColor3 = TEXT_PRIMARY,\
+\9\9Font = Enum.Font.GothamBold,\
+\9\9TextSize = 14,\
+\9\9TextXAlignment = Enum.TextXAlignment.Left,\
+\9})\
+\9_children.Description = Roact.createElement(\"TextLabel\", {\
+\9\9Text = entry.description,\
+\9\9Size = UDim2.new(1, -16, 0, 16),\
+\9\9Position = UDim2.new(0, 12, 0, 29),\
+\9\9BackgroundTransparency = 1,\
+\9\9TextColor3 = TEXT_SECONDARY,\
+\9\9Font = Enum.Font.Gotham,\
+\9\9TextSize = 11,\
+\9\9TextXAlignment = Enum.TextXAlignment.Left,\
+\9})\
+\9return Roact.createFragment({\
+\9\9[entry.gistId] = Roact.createElement(\"TextButton\", _attributes, _children),\
+\9})\
+end\
+local default = hooked(GistLoader)\
+return {\
+\9default = default,\
+}\
+", '@'.."hvcorca.views.Pages.Misc.GistLoader")) setfenv(fn, newEnv("hvcorca.views.Pages.Misc.GistLoader")) return fn() end)
+
+newModule("Misc", "ModuleScript", "hvcorca.views.Pages.Misc.Misc", "hvcorca.views.Pages.Misc", function () local fn = assert(loadstring("-- Compiled with roblox-ts v1.2.7\
+local TS = require(script.Parent.Parent.Parent.Parent.include.RuntimeLib)\
+local Roact = TS.import(script, TS.getModule(script, \"@rbxts\", \"roact\").src)\
+local hooked = TS.import(script, TS.getModule(script, \"@rbxts\", \"roact-hooked\").out).hooked\
+local Canvas = TS.import(script, script.Parent.Parent.Parent.Parent, \"components\", \"Canvas\").default\
+local Card = TS.import(script, script.Parent.Parent.Parent.Parent, \"components\", \"Card\").default\
+local useTheme = TS.import(script, script.Parent.Parent.Parent.Parent, \"hooks\", \"use-theme\").useTheme\
+local DashboardPage = TS.import(script, script.Parent.Parent.Parent.Parent, \"store\", \"models\", \"dashboard.model\").DashboardPage\
+local _udim2 = TS.import(script, script.Parent.Parent.Parent.Parent, \"utils\", \"udim2\")\
+local px = _udim2.px\
+local scale = _udim2.scale\
+local GistLoader = TS.import(script, script.Parent, \"GistLoader\").default\
+local function Misc()\
+\9local theme = useTheme(\"clock\")\
+\9return Roact.createElement(Card, {\
+\9\9index = 4,\
+\9\9page = DashboardPage.Misc,\
+\9\9theme = theme,\
+\9\9size = px(326, 500),\
+\9\9position = UDim2.new(0, 0, 0, 0),\
+\9}, {\
+\9\9Roact.createElement(\"TextLabel\", {\
+\9\9\9Text = \"Commands\",\
+\9\9\9Font = \"GothamBlack\",\
+\9\9\9TextSize = 20,\
+\9\9\9TextColor3 = theme.foreground,\
+\9\9\9TextXAlignment = \"Left\",\
+\9\9\9TextYAlignment = \"Top\",\
+\9\9\9Position = px(24, 24),\
+\9\9\9BackgroundTransparency = 1,\
+\9\9}),\
+\9\9Roact.createElement(Canvas, {\
+\9\9\9size = px(326, 412),\
+\9\9\9position = px(0, 68),\
+\9\9\9padding = {\
+\9\9\9\9left = 24,\
+\9\9\9\9right = 24,\
+\9\9\9\9top = 8,\
+\9\9\9},\
+\9\9\9clipsDescendants = true,\
+\9\9}, {\
+\9\9\9Roact.createElement(\"ScrollingFrame\", {\
+\9\9\9\9Size = scale(1, 1),\
+\9\9\9\9CanvasSize = px(0, 400),\
+\9\9\9\9BackgroundTransparency = 1,\
+\9\9\9\9BorderSizePixel = 0,\
+\9\9\9\9ScrollBarImageTransparency = 1,\
+\9\9\9\9ScrollBarThickness = 0,\
+\9\9\9\9ClipsDescendants = false,\
+\9\9\9}, {\
+\9\9\9\9Roact.createElement(GistLoader),\
+\9\9\9}),\
+\9\9}),\
+\9})\
 end\
 local default = hooked(Misc)\
 return {\
@@ -9834,6 +10050,7 @@ local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)\
 local Roact = TS.import(script, TS.getModule(script, \"@rbxts\", \"roact\").src)\
 local hooked = TS.import(script, TS.getModule(script, \"@rbxts\", \"roact-hooked\").out).hooked\
 local useDelayedUpdate = TS.import(script, script.Parent.Parent.Parent, \"hooks\", \"common\", \"use-delayed-update\").useDelayedUpdate\
+local useCommandBarShortcut = TS.import(script, script.Parent.Parent.Parent, \"hooks\", \"use-command-bar-shortcut\").useCommandBarShortcut\
 local useCurrentPage = TS.import(script, script.Parent.Parent.Parent, \"hooks\", \"use-current-page\").useCurrentPage\
 local DashboardPage = TS.import(script, script.Parent.Parent.Parent, \"store\", \"models\", \"dashboard.model\").DashboardPage\
 local Apps = TS.import(script, script.Parent, \"Apps\").default\
@@ -9843,10 +10060,8 @@ local Options = TS.import(script, script.Parent, \"Options\").default\
 local Scripts = TS.import(script, script.Parent, \"Scripts\").default\
 local function Pages()\
 \9local currentPage = useCurrentPage()\
+\9useCommandBarShortcut()\
 \9local isScriptsVisible = useDelayedUpdate(currentPage == DashboardPage.Scripts, 2000, function(isVisible)\
-\9\9return isVisible\
-\9end)\
-\9local isMiscVisible = useDelayedUpdate(currentPage == DashboardPage.Misc, 2000, function(isVisible)\
 \9\9return isVisible\
 \9end)\
 \9local _children = {\
@@ -9871,19 +10086,9 @@ local function Pages()\
 \9\9end\
 \9end\
 \9_length = #_children\
-\9local _child_1 = isMiscVisible and Roact.createFragment({\
+\9_children.misc = Roact.createFragment({\
 \9\9misc = Roact.createElement(Misc),\
 \9})\
-\9if _child_1 then\
-\9\9if _child_1.elements ~= nil or _child_1.props ~= nil and _child_1.component ~= nil then\
-\9\9\9_children[_length + 1] = _child_1\
-\9\9else\
-\9\9\9for _k, _v in ipairs(_child_1) do\
-\9\9\9\9_children[_length + _k] = _v\
-\9\9\9end\
-\9\9end\
-\9end\
-\9_length = #_children\
 \9_children.options = Roact.createFragment({\
 \9\9options = Roact.createElement(Options),\
 \9})\
@@ -12596,6 +12801,14 @@ local function Make(className, settings)\
 end\
 return Make\
 ", '@'.."hvcorca.include.node_modules.@rbxts.make")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.make")) return fn() end)
+
+newInstance("node_modules", "Folder", "hvcorca.include.node_modules.@rbxts.make.node_modules", "hvcorca.include.node_modules.@rbxts.make")
+
+newInstance("@rbxts", "Folder", "hvcorca.include.node_modules.@rbxts.make.node_modules.@rbxts", "hvcorca.include.node_modules.@rbxts.make.node_modules")
+
+newInstance("compiler-types", "Folder", "hvcorca.include.node_modules.@rbxts.make.node_modules.@rbxts.compiler-types", "hvcorca.include.node_modules.@rbxts.make.node_modules.@rbxts")
+
+newInstance("types", "Folder", "hvcorca.include.node_modules.@rbxts.make.node_modules.@rbxts.compiler-types.types", "hvcorca.include.node_modules.@rbxts.make.node_modules.@rbxts.compiler-types")
 
 newModule("object-utils", "ModuleScript", "hvcorca.include.node_modules.@rbxts.object-utils", "hvcorca.include.node_modules.@rbxts", function () local fn = assert(loadstring("local HttpService = game:GetService(\"HttpService\")\
 \
