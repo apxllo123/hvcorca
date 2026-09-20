@@ -75,7 +75,7 @@ local function newModule(name, className, path, parentPath, callback)
 end
 
 local function newEnv(path)
-	return modules[instances[path]].globals
+	return setmetatable(modules[instances[path]].globals, { __index = getfenv(0) })
 end
 
 local function init()
