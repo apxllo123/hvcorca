@@ -2,6 +2,17 @@ name: Publish Release
 
 on:
   workflow_dispatch:
+  # Refresh the committed bundles on every merge so public/latest.lua never lags
+  # master. The artifact commit below is ignored here, so publishing the
+  # generated files does not retrigger this workflow.
+  push:
+    branches: [ master ]
+    paths-ignore:
+      - public/latest.lua
+      - public/latest.debug.lua
+      - dist/main.lua
+      - dist/main-dev.lua
+      - dist/main.rbxm
   release:
     types: [ published, prereleased ]
     
@@ -75,6 +86,9 @@ jobs:
         message: "🐋 Release ${{ steps.version.outputs.tag }}"
         
     - name: Upload Release Assets
+      # Pushes only refresh the bundles; releases are cut by the release event
+      # or by a manual dispatch.
+      if: github.event_name != 'push'
       env:
         GH_TOKEN: ${{ github.token }}
         RELEASE_TAG: ${{ steps.version.outputs.tag }}
