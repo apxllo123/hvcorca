@@ -22,11 +22,16 @@ jobs:
       with:
         version: 7.33.7  # Matches pnpm-lock.yaml lockfileVersion 5.4
 
-    - name: Setup Aftman
-      uses: ok-nick/setup-aftman@v0.3.0
-    
-    - name: Install Rojo & Remodel
-      run: aftman install
+    - name: Setup Foreman
+      uses: rojo-rbx/setup-foreman@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Add Foreman tools to PATH
+      run: echo "$HOME/.foreman/bin" >> "$GITHUB_PATH"
+
+    - name: Install Rojo and Remodel
+      run: foreman install
         
     - name: Setup Node.js
       uses: actions/setup-node@v4
