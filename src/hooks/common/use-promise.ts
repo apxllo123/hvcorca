@@ -4,7 +4,7 @@ import { Reducer, useEffect, useReducer } from "@rbxts/roact-hooked";
 
 type PromiseState = "pending" | "rejected" | "resolved";
 
-interface State<T = any> {
+interface State<T = never> {
 	result?: T;
 	err?: unknown;
 	state: PromiseState;

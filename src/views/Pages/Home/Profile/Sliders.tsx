@@ -3,7 +3,6 @@ import { hooked, useBinding, useState } from "@rbxts/roact-hooked";
 import BrightButton from "components/BrightButton";
 import BrightSlider from "components/BrightSlider";
 import Canvas from "components/Canvas";
-import { SpringOptions } from "hooks/common/flipper-hooks";
 import { useAppDispatch, useAppSelector } from "hooks/common/rodux-hooks";
 import { useSpring } from "hooks/common/use-spring";
 import { useTheme } from "hooks/use-theme";
@@ -11,10 +10,6 @@ import { clearHint, setHint } from "store/actions/dashboard.action";
 import { setJobActive, setJobValue } from "store/actions/jobs.action";
 import { JobsWithValue } from "store/models/jobs.model";
 import { px, scale } from "utils/udim2";
-
-const SPRING_OPTIONS: SpringOptions = {
-	frequency: 5,
-};
 
 function Sliders() {
 	return (
