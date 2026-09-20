@@ -15,8 +15,8 @@ local DEBUG_MODE = getFlag("debug")
 local VERBOSE = getFlag("verbose")
 local MINIFY = getFlag("minify")
 
-local ROJO_INPUT = "Orca.rbxm"
-local RUNTIME_FILE = "ci/runtime.lua"
+local ROJO_INPUT = "dist/main.rbxm"
+local RUNTIME_FILE = "ci/include/runtime.lua"
 local BUNDLE_TEMP = "ci/bundle.tmp"
 
 ---Convert some specific snippets to work in luamin.
