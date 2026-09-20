@@ -12802,14 +12802,6 @@ end\
 return Make\
 ", '@'.."hvcorca.include.node_modules.@rbxts.make")) setfenv(fn, newEnv("hvcorca.include.node_modules.@rbxts.make")) return fn() end)
 
-newInstance("node_modules", "Folder", "hvcorca.include.node_modules.@rbxts.make.node_modules", "hvcorca.include.node_modules.@rbxts.make")
-
-newInstance("@rbxts", "Folder", "hvcorca.include.node_modules.@rbxts.make.node_modules.@rbxts", "hvcorca.include.node_modules.@rbxts.make.node_modules")
-
-newInstance("compiler-types", "Folder", "hvcorca.include.node_modules.@rbxts.make.node_modules.@rbxts.compiler-types", "hvcorca.include.node_modules.@rbxts.make.node_modules.@rbxts")
-
-newInstance("types", "Folder", "hvcorca.include.node_modules.@rbxts.make.node_modules.@rbxts.compiler-types.types", "hvcorca.include.node_modules.@rbxts.make.node_modules.@rbxts.compiler-types")
-
 newModule("object-utils", "ModuleScript", "hvcorca.include.node_modules.@rbxts.object-utils", "hvcorca.include.node_modules.@rbxts", function () local fn = assert(loadstring("local HttpService = game:GetService(\"HttpService\")\
 \
 local Object = {}\
