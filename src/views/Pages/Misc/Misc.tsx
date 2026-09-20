@@ -2,7 +2,7 @@ import Roact from "@rbxts/roact";
 import { hooked, useEffect, useState } from "@rbxts/roact-hooked";
 import Canvas from "components/Canvas";
 import * as http from "utils/http";
-import { scale, px } from "utils/udim2";
+import { scale } from "utils/udim2";
 
 // ─── Replace this with your Gist raw URL ───────────────────────────────────
 const GIST_URL = "https://gist.githubusercontent.com/apxllo1/YOUR_GIST_ID/raw/commands.json";
