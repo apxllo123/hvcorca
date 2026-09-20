@@ -3962,7 +3962,6 @@ local PAGE_TO_ICON = {
 	[DashboardPage.Home] = "rbxassetid://8992031167",
 	[DashboardPage.Apps] = "rbxassetid://8992031246",
 	[DashboardPage.Scripts] = "rbxassetid://8992030918",
-	[DashboardPage.Misc] = "rbxassetid://84061544875190",
 	[DashboardPage.Options] = "rbxassetid://8992031056",
 }
 return {
@@ -6728,6 +6727,7 @@ local PAGE_TO_INDEX = _dashboard_model.PAGE_TO_INDEX
 local _constants = TS.import(script, script.Parent, "constants")
 local TAB_COUNT = _constants.TAB_COUNT
 local TAB_SIZE = _constants.TAB_SIZE
+local TerminalIcon = TS.import(script, script.Parent, "TerminalIcon").default
 local _udim2 = TS.import(script, script.Parent.Parent.Parent, "utils", "udim2")
 local px = _udim2.px
 local scale = _udim2.scale
@@ -6739,6 +6739,8 @@ local function NavbarTab(_param)
 	local _binding = useState(false)
 	local isHovered = _binding[1]
 	local setHovered = _binding[2]
+	local icon = PAGE_TO_ICON[page]
+	local transparency = useSpring(isActive and 0 or (isHovered and 0.5 or 0.75), {})
 	return Roact.createElement("TextButton", {
 		Text = "",
 		AutoButtonColor = false,
@@ -6756,15 +6758,18 @@ local function NavbarTab(_param)
 			return setHovered(false)
 		end,
 	}, {
-		Roact.createElement("ImageLabel", {
-			Image = PAGE_TO_ICON[page],
+		icon ~= nil and (Roact.createElement("ImageLabel", {
+			Image = icon,
 			ImageColor3 = theme.foreground,
-			ImageTransparency = useSpring(isActive and 0 or (isHovered and 0.5 or 0.75), {}),
+			ImageTransparency = transparency,
 			Size = px(36, 36),
 			Position = scale(0.5, 0.5),
 			AnchorPoint = Vector2.new(0.5, 0.5),
 			BackgroundTransparency = 1,
-		}),
+		})) or (Roact.createElement(TerminalIcon, {
+			color = theme.foreground,
+			transparency = transparency,
+		})),
 	})
 end
 local default = hooked(NavbarTab)
@@ -6772,6 +6777,56 @@ return {
 	default = default,
 }
  end, newEnv("hvcorca.views.Navbar.NavbarTab"))() end)
+
+newModule("TerminalIcon", "ModuleScript", "hvcorca.views.Navbar.TerminalIcon", "hvcorca.views.Navbar", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
+local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
+local Roact = TS.import(script, TS.getModule(script, "@rbxts", "roact").src)
+local hooked = TS.import(script, TS.getModule(script, "@rbxts", "roact-hooked").out).hooked
+local _udim2 = TS.import(script, script.Parent.Parent.Parent, "utils", "udim2")
+local px = _udim2.px
+local scale = _udim2.scale
+local function TerminalIcon(_param)
+	local color = _param.color
+	local transparency = _param.transparency
+	return Roact.createElement("Frame", {
+		Size = px(36, 36),
+		Position = scale(0.5, 0.5),
+		AnchorPoint = Vector2.new(0.5, 0.5),
+		BackgroundTransparency = 1,
+	}, {
+		PromptUpper = Roact.createElement("Frame", {
+			Size = px(15, 3),
+			Position = px(14.9, 13.9),
+			AnchorPoint = Vector2.new(0.5, 0.5),
+			Rotation = 28.3,
+			BackgroundColor3 = color,
+			BackgroundTransparency = transparency,
+			BorderSizePixel = 0,
+		}),
+		PromptLower = Roact.createElement("Frame", {
+			Size = px(15, 3),
+			Position = px(14.9, 20.9),
+			AnchorPoint = Vector2.new(0.5, 0.5),
+			Rotation = -28.3,
+			BackgroundColor3 = color,
+			BackgroundTransparency = transparency,
+			BorderSizePixel = 0,
+		}),
+		Cursor = Roact.createElement("Frame", {
+			Size = px(9, 3),
+			Position = px(23.9, 25.4),
+			AnchorPoint = Vector2.new(0.5, 0.5),
+			BackgroundColor3 = color,
+			BackgroundTransparency = transparency,
+			BorderSizePixel = 0,
+		}),
+	})
+end
+local default = hooked(TerminalIcon)
+return {
+	default = default,
+}
+ end, newEnv("hvcorca.views.Navbar.TerminalIcon"))() end)
 
 newModule("constants", "ModuleScript", "hvcorca.views.Navbar.constants", "hvcorca.views.Navbar", function () return setfenv(function() -- Compiled with roblox-ts v1.2.7
 local TS = require(script.Parent.Parent.Parent.include.RuntimeLib)
@@ -12541,6 +12596,14 @@ local function Make(className, settings)
 end
 return Make
  end, newEnv("hvcorca.include.node_modules.@rbxts.make"))() end)
+
+newInstance("node_modules", "Folder", "hvcorca.include.node_modules.@rbxts.make.node_modules", "hvcorca.include.node_modules.@rbxts.make")
+
+newInstance("@rbxts", "Folder", "hvcorca.include.node_modules.@rbxts.make.node_modules.@rbxts", "hvcorca.include.node_modules.@rbxts.make.node_modules")
+
+newInstance("compiler-types", "Folder", "hvcorca.include.node_modules.@rbxts.make.node_modules.@rbxts.compiler-types", "hvcorca.include.node_modules.@rbxts.make.node_modules.@rbxts")
+
+newInstance("types", "Folder", "hvcorca.include.node_modules.@rbxts.make.node_modules.@rbxts.compiler-types.types", "hvcorca.include.node_modules.@rbxts.make.node_modules.@rbxts.compiler-types")
 
 newModule("object-utils", "ModuleScript", "hvcorca.include.node_modules.@rbxts.object-utils", "hvcorca.include.node_modules.@rbxts", function () return setfenv(function() local HttpService = game:GetService("HttpService")
 
