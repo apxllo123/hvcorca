@@ -21,8 +21,8 @@
   "author": "hvcorca (Richie0866 fork)",
   "license": "MIT",
   "devDependencies": {
-    "@rbxts/compiler-types": "2.0.4-types.1",
-    "@rbxts/types": "^1.0.658",
+    "@rbxts/compiler-types": "1.3.2-types.0",
+    "@rbxts/types": "1.0.571",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@typescript-eslint/parser": "^5.48.2",
     "cross-env": "^7.0.3",
@@ -32,15 +32,17 @@
     "eslint-plugin-roblox-ts": "^0.0.35",
     "mkdirp": "^2.1.3",
     "prettier": "^2.8.3",
-    "roblox-ts": "^2.0.4",
-    "typescript": "^4.9.4"
+    "roblox-ts": "1.2.7",
+    "typescript": "4.5.5"
   },
   "dependencies": {
-    "@rbxts/roact": "1.4.4-ts.0",
-    "@rbxts/roact-hooked": "^2.3.3",
-    "@rbxts/roact-rodux-hooked": "^1.1.3",
+    "@rbxts/roact": "1.4.0-ts.2",
+    "@rbxts/roact-hooked": "1.2.4",
+    "@rbxts/roact-rodux-hooked": "1.0.4",
     "@rbxts/rodux": "3.0.0-ts.3",
-    "@rbxts/services": "^1.5.1",
-    "rbxts-transform-debug": "^2.0.3"
+    "@rbxts/services": "1.2.0",
+    "rbxts-transform-debug": "^2.0.3",
+    "@rbxts/flipper": "2.0.1",
+    "@rbxts/make": "1.0.6"
   }
 }
