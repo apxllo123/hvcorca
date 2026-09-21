@@ -8925,7 +8925,7 @@ local function GistLoader()\
 \9\9GistLoader = Roact.createElement(\"Frame\", _attributes, _children),\
 \9})\
 end\
-function CommandItem(_param)\
+CommandItem = hooked(function(_param)\
 \9local entry = _param.entry\
 \9local isSelected = _param.isSelected\
 \9local layoutOrder = _param.layoutOrder\
@@ -8990,7 +8990,7 @@ function CommandItem(_param)\
 \9return Roact.createFragment({\
 \9\9[entry.gistId] = Roact.createElement(\"TextButton\", _attributes, _children),\
 \9})\
-end\
+end)\
 local default = hooked(GistLoader)\
 return {\
 \9default = default,\
