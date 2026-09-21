@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: "0 0 * * *"
 
+permissions:
+  contents: write
+
 jobs:
   bundle-snapshot:
     runs-on: ubuntu-22.04
@@ -12,6 +15,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          version: 7.33.7  # Matches pnpm-lock.yaml lockfileVersion 5.4
 
       - name: Install release tools
         run: |
@@ -25,17 +33,17 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
-          cache: npm
+          node-version: 20
+          cache: 'pnpm'
 
-      - name: Install NPM dependencies
-        run: npm ci
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Compile roblox-ts
-        run: npm run compile
+        run: pnpm run build
 
       - name: Build model
-        run: npm run build
+        run: pnpm run rojo
 
       - name: Get snapshot tag
         id: date
@@ -43,8 +51,11 @@ jobs:
 
       - name: Bundle snapshot
         run: |
-          remodel run ci/bundle.lua public/snapshot.lua ${{ steps.date.outputs.tag }}
-          remodel run ci/bundle.lua public/snapshot.debug.lua ${{ steps.date.outputs.tag }} debug
+          pnpm exec remodel run ci/bundle.lua public/snapshot.lua ${{ steps.date.outputs.tag }}
+          pnpm exec remodel run ci/bundle.lua public/snapshot.debug.lua ${{ steps.date.outputs.tag }} debug
+
+      - name: Verify bundle
+        run: node ci/verify-bundle.mjs public/snapshot.lua public/snapshot.debug.lua
 
       - name: Commit nightly snapshot
         uses: EndBug/add-and-commit@v9
