@@ -27,7 +27,11 @@ jobs:
           unzip -q /tmp/foreman.zip -d /tmp/foreman
           install /tmp/foreman/foreman /usr/local/bin/foreman
           foreman install
-          RUSTFLAGS="--cap-lints allow" cargo install --git https://github.com/rojo-rbx/remodel --tag v0.11.0 --locked remodel
+          # remodel 0.11.0 pins mlua 0.7.4, which fails to compile on newer rustc
+          # releases (E0277, never type fallback). The toolchain stays pinned until
+          # remodel publishes a release that uses a newer mlua.
+          rustup toolchain install 1.88.0 --profile minimal
+          RUSTFLAGS="--cap-lints allow" cargo +1.88.0 install --git https://github.com/rojo-rbx/remodel --tag v0.11.0 --locked remodel
           echo "$HOME/.foreman/bin" >> "$GITHUB_PATH"
 
       - name: Set up Node.js
