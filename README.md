@@ -2,8 +2,8 @@
 <div align="center">A free and open-source Roblox script hub</div>
 <br>
 <div align="center">
-	<a href="https://github.com/apxllo1/hsorca/actions"><img src="https://github.com/apxllo1/hsorca/actions/workflows/eslint.yaml/badge.svg" alt="ESLint Status" /></a>
-	<a href="https://github.com/apxllo1/hsorca/releases/latest"><img src="https://img.shields.io/github/v/release/apxllo1/hsorca?include_prereleases" alt="Latest Release" /></a>
+	<a href="https://github.com/apxllo123/hvcorca/actions"><img src="https://github.com/apxllo123/hvcorca/actions/workflows/eslint.yml/badge.svg" alt="ESLint Status" /></a>
+	<a href="https://github.com/apxllo123/hvcorca/releases/latest"><img src="https://img.shields.io/github/v/release/apxllo123/hvcorca?include_prereleases" alt="Latest Release" /></a>
 </div>
 <div>&nbsp;</div>
 
@@ -26,7 +26,7 @@ When run with auto-execution, Orca will start minimized by default.
 Runs the latest release build of Orca.
 
 ```lua
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/apxllo1/hsorca/master/public/latest.lua")
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/apxllo123/hvcorca/master/public/latest.lua")
 )()
 ```
 
@@ -35,7 +35,7 @@ loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/apxllo1/hsorca/m
 Runs a snapshot of new updates we have not published yet. You will get new features earlier, but they may be unstable.
 
 ```lua
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/apxllo1/hsorca/master/public/snapshot.lua")
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/apxllo123/hvcorca/master/public/snapshot.lua")
 )()
 ```
 
